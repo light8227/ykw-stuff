@@ -1,0 +1,258 @@
+YokaiWatch4++ [
+	CHARA_PARAM_INFO (
+		ParamID|True
+		BaseID|True
+		MinHP|False
+		MinStrength|False
+		MinSpirit|False
+		MinDefense|False
+		MinResist|False
+		MaxHP|False
+		MaxStrength|False
+		MaxSpirit|False
+		MaxDefense|False
+		MaxResist|False
+		ElementResist|False
+		ElementWeak|False
+		Speed|False
+		Unk16|False
+		Unk17|False
+		Unk18|False
+		Unk19|True
+		Unk20|True
+		Unk21|False
+		Unk22|False
+		Unk23|False
+		Unk24|False
+		Unk25|False
+		Unk26|False
+		Unk27|False
+		Unk28|False
+		Unk29|False
+		Unk30|False
+		Unk31|False
+		Unk32|False
+		Unk33|False
+		Unk34|False
+		Unk35|False
+		MinYP|False
+		MaxYP|False
+		Unk38|False
+		Unk39|False
+		Unk40|False
+		Unk41|False
+		Unk42|False
+		Unk43|False
+		120HP|False
+		120YP|False
+		120Strength|False
+		120Spirit|False
+		120Defense|False
+		120Resist|False
+	)
+
+	CHARA_BASE_INFO (
+		BaseID|True
+		ModelID|False
+	)
+
+	CPSL_PRIZE_INFO (
+		CapsuleID|True
+		TypeID|False
+		ParamID|True
+	)
+
+	ITEM_IMPORTANT_INFO (
+		Unk0|False
+		Unk1|False
+		Unk2|False
+		Unk3|False
+		Unk4|False
+		Unk5|False
+		Unk6|False
+		Unk7|False
+		Unk8|False
+		Unk9|False
+		Unk10|False
+		Unk11|False
+		Unk12|False
+		Unk13|False
+		Unk14|False
+		Unk15|False
+		Unk16|False
+	)
+
+	ITBL_ITEMS (
+		Unk0|True
+		Unk1|True
+		Unk2|True
+		Unk3|True
+		Unk4|True
+	)
+
+	CPSL_LOT_RANK_RATE_INFO (
+		Unk0|True
+	)
+
+	ITBL_BASE (
+		Unk0|True
+	)
+
+	ITEM_CONSUME_INFO (
+		ParamID|False
+		Unk1|False
+		Unk2|True
+		Unk3|True
+		Unk4|False
+		Unk5|False
+		Unk6|False
+		Unk7|False
+		Unk8|False
+		Unk9|False
+		Unk10|False
+		Unk11|False
+		Unk12|False
+		Unk13|False
+		Unk14|False
+		Unk15|False
+		Unk16|False
+		Unk17|False
+	)
+
+	CPSL_LOT_RANK_RATE_INFO_DATA_LIST_BEG (
+		Unk0|True
+	)
+
+	ITEM_EQUIP_INFO (
+		Unk0|True
+		Unk1|False
+		Unk2|False
+		Unk3|False
+		Unk4|False
+		Unk5|False
+		Unk6|False
+		Unk7|False
+		Unk8|False
+		Unk9|False
+		Unk10|False
+		Unk11|False
+		Unk12|False
+		Unk13|False
+		Unk14|False
+		Unk15|False
+		Unk16|False
+		Unk17|False
+		Unk18|False
+		Unk19|False
+		Unk20|False
+		Unk21|False
+		Unk22|False
+		Unk23|False
+	)
+
+	ITEM_SOUL_INFO (
+		ParamID|True
+		Unk1|False
+		Unk2|True
+		Unk3|False
+		Unk4|False
+		Unk5|False
+		Unk6|False
+		Unk7|False
+		Unk8|False
+		Unk9|False
+		Unk10|False
+		Unk11|False
+		Unk12|False
+		Unk13|False
+		Unk14|True
+		KonID|True
+		Unk16|False
+	)
+
+	ITEM_EQUIP_COND_CHARA (
+		Unk0|True
+	)
+
+	ITEM_EQUIP_COND (
+		Unk0|True
+		Unk1|True
+		Unk2|True
+		Unk3|True
+		Unk4|True
+		Unk5|True
+	)
+
+	ITEM_EQUIP_COND_REF_COND_CHARA (
+		Unk0|True
+		Unk1|True
+	)
+
+	ITBL_BASE_REF_ITEMS (
+		Unk0|True
+		Unk1|True
+	)
+
+	CPSL_PRIZE_TABLE_INFO_DATA (
+		CapsuleID|True
+		DailyPrizeChance|False
+		Unk2|False
+		Unk3|False
+		Availability|False
+	)
+
+	CPSL_PRIZE_TABLE_INFO (
+		Unk0|True
+	)
+
+	CPSL_CONFIG_INFO (
+		Unk0|True
+	)
+
+	CPSL_LOT_RANK_RATE_INFO_DATA (
+		Prize|False
+		PrizeChance|False
+	)
+
+	CPSL_CONFIG_INFO_DATA (
+		Unk0|True
+		Unk1|False
+		Coin|True
+		FreeGift|True
+		3rdPrize|True
+		2ndPrize|True
+		1stPrize|True
+	)
+
+	PROP_PARAM (
+		Unk0|False
+		Unk1|False
+	)
+]
+
+YSchoolHeroes [
+	CHARA_PARAM_COMMON_INFO (
+		ParamID|False
+		BaseID|True
+		HP|False
+		Strength|False
+		Spirit|False
+		Defense|False
+		Mentality|False
+	)
+
+	CHARA_PARAM_INFO (
+		Unk0|False
+		Unk1|True
+	)
+
+	PLAYABLE_CHARA_INFO (
+		ParamID|False
+		BaseID|True
+	)
+
+	CHARA_BASE_INFO (
+		BaseID|True
+		ModelID|False
+	)
+]
