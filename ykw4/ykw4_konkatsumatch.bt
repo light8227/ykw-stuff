@@ -1,0 +1,134 @@
+//------------------------------------------------
+//--- 010 Editor v13.0.1 Binary Template
+//
+//      File: konkatsu_match_config_0.16.04.cfg.bin
+//   Authors: Light8227
+//   Version: 1.0
+//   Purpose: 
+//  Category: 
+// File Mask: 
+//  ID Bytes: 
+//   History: 
+//------------------------------------------------
+LittleEndian();
+
+typedef struct
+{
+    char Magic[6];
+    short unk;
+    short unk2;
+    short unk3;
+    short EntryBlockOffset;
+    short unk4[12];
+    short unk5;
+    short unk6;
+    short unk7;
+    short unk8;
+    short unk9;
+    short unk10;
+    short unk11;
+    short stringCount;
+    short unk12;
+    short EntryBlockSize;
+    short h4[11];
+}Header;
+
+typedef struct{
+short unk[16];
+}entry;
+
+typedef struct
+{
+    short unk;
+    short unk2;
+    short unk3;
+    short unk4;
+    short MatchInfoSize;
+    short unk5;
+    short MatchInfoCount;
+    short unk6;
+    short unk7[10];
+    short Block2Size;
+    short unkData[61];
+    byte unk8[8];
+}Block2;
+
+enum<short>itemType
+{
+    Material = 0,
+    White = 402,
+    Red = 403,
+    Gold = 404,
+};
+
+typedef struct
+{
+    long charaParamID <name="charaParamID">;
+    long charaID <name="charaID">;
+    long money <name="money",comment="Base price to summon Yo-kai.">;
+    long moneyAdd <name="moneyAdd",comment="Multiplier to add or subtract money depending on level? Don't know exact formula.">;
+    long itemIDArray[3] <name="itemIDArray">;
+    long itemNumArray[3] <name="itemNumArray",comment="The number of required items.">;
+    itemType itemTypeArray[4] <name="itemTypeArray",comment="Entries with Material either means a Material is set there or nothing is. They both use 0.">;
+}MatchInfo;
+
+enum<short>Rank
+{
+    E = 0,
+    D = 1,
+    C = 2,
+    B = 3,
+    A = 4,
+    S = 5,
+};
+
+typedef struct
+{
+    Rank watchRank <name="watchRank">;
+    short level <name="level",comment="Normal summon level limit. Not applicable to gold aura Yo-kai.">;
+    Rank watchRank2 <name="watchRank">;
+    short level2 <name="level",comment="Normal summon level limit. Not applicable to gold aura Yo-kai.">;
+    Rank watchRank3 <name="watchRank">;
+    short level3 <name="level",comment="Normal summon level limit. Not applicable to gold aura Yo-kai.">;
+    Rank watchRank4 <name="watchRank">;
+    short level4 <name="level",comment="Normal summon level limit. Not applicable to gold aura Yo-kai.">;
+    Rank watchRank5 <name="watchRank">;
+    short level5 <name="level",comment="Normal summon level limit. Not applicable to gold aura Yo-kai.">;
+    Rank watchRank6 <name="watchRank">;
+    short level6 <name="level",comment="Normal summon level limit. Not applicable to gold aura Yo-kai.">;
+}MatchLevel;
+
+typedef struct
+{
+    long KonkatsuMatchInfo[5];
+    long charaParamID[3];
+    byte charaParamID2;
+    byte charaID[3];
+    long charaID2;
+    byte charaID3;
+    short money[3];
+    long moneyAdd[2];
+    byte moneyAdd;
+    long itemIDArray[3];
+    long itemNumArray[3];
+    byte itemNumArray2;
+    short itemTypeArray[7];
+    long KonkatsuMatchLevel[5];
+    byte KonkatsuMatchLevel;
+    short watchRank[5];
+    short level[3];
+    long mKonkatsuMatchInfoList[6];
+    long mKonkatsuMatchLevelList[6];
+    byte mKonkatsuMatchLevelList2;
+}Strings;
+
+
+struct
+{
+    Header fileHeader;
+    entry data[11];
+    Block2 Header2;
+    MatchInfo data2[132] <name="KONKATSU_MATCH_INFO">;
+    MatchLevel unke[1] <name="KONKATSU_MATCH_LEVEL">;
+    Strings catNames <name="Category Name Strings">;
+}fileData;
