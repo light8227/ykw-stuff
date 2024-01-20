@@ -1,0 +1,81 @@
+//------------------------------------------------
+//--- 010 Editor v13.0.1 Binary Template
+//
+//      File: konkatsu_equip_config_0.13.72.cfg.bin
+//   Authors: Light8227
+//   Version: 1.0
+//------------------------------------------------
+#include "ykw4_enums.bt"
+
+LittleEndian();
+
+typedef struct
+{
+    char Magic[6];
+    short unk;
+    short unk2;
+    short unk3;
+    short EntryBlockOffset;
+    short unk4[13];
+}Header;
+
+typedef struct
+{
+    long unk[180];
+}unk;
+
+typedef struct
+{
+    long itemID <name="itemID">;
+    long money <name="money">;
+    long matItemIDArray[4] <name="matItemIDArray">;
+    long matItemNumArray[3] <name="matItemNumArray">;
+    long matItemTypeArray[3] <name="matItemTypeArray">;
+}EquipData;
+
+typedef struct
+{
+    long um[15];
+}unk2;
+
+typedef struct
+{
+    long unk5[3];
+}unk3;
+
+typedef struct
+{
+    long KonkatsuEquipDataPowerup[7];
+    long itemID;
+    short itemID2;
+    byte itemID3;
+    long money;
+    short money2;
+    long matItemIDArray[3];
+    short matItemIDArray2;
+    byte matItemIDArray3;
+    long matItemNumArray[4];
+    long matItemTypeArray[4];
+    byte matItemTypeArray2;
+    long KonkatsuEquipData[5];
+    long receiptID[2];
+    short receiptID2;
+    long flagNo;
+    short flagNo2;
+    byte flagNo3;
+    long powerupList[3];
+    long mKonkatsuEquipDataPowerupList[7];
+    short mKonkatsuEquipDataPowerupList2;
+    byte mKonkatsuEquipDataPowerupList3;
+    long mKonkatsuEquipDataList[6];
+}Strings;
+
+struct
+{
+    Header fileheader;
+    unk unknown;
+    EquipData powerup[150] <name="KONKATSU_EQUIP_DATA_POWERUP">;
+    unk2 unknown2[389];
+    unk3 unknown3;
+    Strings catNames <name="Category Name Strings">;
+}fileData;

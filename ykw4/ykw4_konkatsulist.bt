@@ -1,0 +1,57 @@
+//------------------------------------------------
+//--- 010 Editor v13.0.1 Binary Template
+//
+//      File: konkatsu_list_config_0.13.72.cfg.bin
+//   Authors: Light8227
+//   Version: 1.0
+//------------------------------------------------
+LittleEndian();
+
+typedef struct
+{
+    char Magic[6];
+    short unk;
+    short unk2;
+    short unk3;
+    short EntryBlockOffset;
+    short unk4[12];
+    short unk5[273];
+}Header;
+
+typedef struct
+{
+    byte unk[544];
+}unk;
+
+typedef struct
+{
+    long KonkatsuListCombineInfo[6];
+    byte KonkatsuListCombineInfo2[3];
+    long rank;
+    byte rank2;
+    long numArray[2];
+    byte numArray2;
+    long moneyArray[2];
+    byte moneyArray2[3];
+    long KonkatsuListDivideInfo[6];
+    short KonkatsuListDivideInfo2;
+    long KonkatsuListDivideTypeInfo[7];
+    byte KonkatsuListDivideTypeInfo2[3];
+    long race;
+    byte race2;
+    long item;
+    byte item2;
+    long mKonkatsuListCombineInfoList[7];
+    short mKonktasuListCombineInfoList2;
+    long mKonkatsuListDivideInfoList[7];
+    byte mKonkatsuListDivideInfoList2;
+    long mKonkatsuListDivideTypeInfoList[8];
+    byte mKonkatsuListDivideTypeInfoList2;
+}Strings;
+
+struct
+{
+    Header fileheader;
+    unk unknown;
+    Strings catNames <name="Category Name Strings">;
+}fileData;

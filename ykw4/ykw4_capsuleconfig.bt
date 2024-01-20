@@ -1,0 +1,85 @@
+//------------------------------------------------
+//--- 010 Editor v13.0.1 Binary Template
+//
+//      File: capsule_config.cfg.bin
+//   Authors: Light8227, Century_
+//   Version: 1.0
+//------------------------------------------------
+#include "ykw4_enums.bt"
+
+LittleEndian();
+
+typedef struct
+{
+    short unk[14];
+}unk;
+
+typedef struct
+{
+    long unkh1;
+    long unkh2;
+    long capsuleID <name="capsuleID">;
+    long typeID <name="typeID">;
+    paramID ParamID <name="paramID">;
+    long unk2[3];
+}InfoList;
+
+typedef struct
+{
+    long unk3[4];
+    long entryCount;
+}unk2;
+
+typedef struct
+{
+    int unk4[9521];
+}TableInfo;
+
+typedef struct
+{
+    long unk5[897];
+}unk3;
+
+typedef struct
+{
+    byte unk6[597];
+}Strings;
+
+typedef struct
+{
+    byte unk7[27];
+}unk4;
+
+typedef struct{
+int field01;
+Availability field02;
+int capsuleID;
+int field04;
+int field05;
+int field06;
+int field07;
+}subentry;
+
+typedef struct{
+int EntryHeader;
+int unkh1;
+int unkh2;
+int unkh3;
+int unkh4;
+uint subentryCount;
+subentry entries[subentryCount];
+int unkh5;
+int unkh6;
+}entryData;
+
+struct
+{
+    unk Unknown;
+    InfoList CpslPrizeInfoListBeg[261] <name="CPSL_PRIZE_INFO_LIST_BEG">;
+    unk2 Unknown;
+    entryData CpslPrizeTableInfoListBeg[108] <optimize=false>;
+//<name="CPSL_PRIZE_TABLE_INFO_LIST_BEG">
+    unk3 Unknown;
+    Strings catNames;
+    unk4 Unknown;
+}fileData;

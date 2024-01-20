@@ -1,0 +1,110 @@
+//------------------------------------------------
+//--- 010 Editor v13.0.1 Binary Template
+//
+//      File: Yo-kai Watch 4++ files
+//   Authors: Light8227
+//   Version: 1.0
+//------------------------------------------------
+// This enum is for capsule_config availability.
+enum<int>Availability
+{
+    Normal = -16689915,
+    Merchandise = -16755451,
+};
+
+// This enum is for konkatsu item types.
+enum<short>itemType
+{
+    MaterialorNone = 0,
+    White = 402,
+    Red = 403,
+    Gold = 404,
+};
+
+// This enum is for konkatsu Watch Ranks.
+enum<short>Rank
+{
+    E = 0,
+    D = 1,
+    C = 2,
+    B = 3,
+    A = 4,
+    S = 5,
+};
+
+// This enum is for various paramIDs.
+enum<long>paramID
+{
+    LordAcala = -183658551,
+    DivineAcala = -952371893,
+    AcalaExalted = -841791583,
+    SuzakuBB = -1297224423,
+    Genbu = -1882340183,
+    ByakkoBB = 1038948537,
+    Asura = 9253129,
+    Matsu = 1194150873,
+    Minamoto = 2051891817,
+    Goemon = -132254280,
+    Benkei = -981607416,
+    SuzakuC = 53571036,
+    ByakkoC = 2045853372,
+    Kyryn = 1150359308,
+    Boreas = -435372161,
+    Eurus = 662855871,
+    EnmaAwoken = -1938712452,
+    YamiEnma = 2146359678,
+    YashaEnma = 859907613,
+    KaibyoKamaitachi = 237047725,
+    NekooBastet = -2052776078,
+    KappaoSagojo = -1195034942,
+    TenguoKurama = -10138606,
+    GunshinSusanoo = -1039833694,
+    KenshinAmaterasu = 1881520562,
+    GesshinTsukuyomi = 1296404482,
+    Jingeki = -1933356116,
+    Jingeki2 = 1436598083,
+    Jingeki3 = -861278471,
+    Jingeki4 = -1146167697,
+    Slimamander = -1121236687,
+    Slimamander2 = -1097399232,
+    Slimamander3 = 664688122,
+    Slimamander4 = 1352230252,
+    Slyball = -91540511,
+    Sproink = 459031173,
+    Sproink2 = 1364553598,
+    Sproink3 = -933478716,
+    Sproink4 = 23069950,
+    Hoggles = 38237124,
+    Hoggles2 = 1815430862,
+    Hoggles3 = -180611212,
+    Overseer = -434218874,
+    Overseer2 = 2079067069,
+    Overseer3 = -488285689,
+    Overseer4 = -1780323695,
+    OverseerRightHand = -1581374890,
+    OverseerLeftHand = -1663169562,
+    BewitchedCrystal = 788453366,
+    MatenOverseer = 1904298415,
+    MatenOverseer2 = 2132401024,
+    MatenOverseer3 = -435123654,
+    MatenOverseer4 = -1860715860,
+    ShinmaFukurou = -823765807,
+    ShinmaFukurou2 = 231474818,
+    ShinmaFukurou3 = -1799006408,
+    ShinmaFukurou4 = -473798738,
+    LadyArachnia = -15839668,
+    LadyArachnia2 = -419709567,
+    LadyArachnia3 = 2146626619,
+    LadyArachnia4 = 150330541,
+    ArachniaVictim = 1721050980,
+    ArachniaVictim2 = -1990767526,
+    ArachniaVictim3 = 1870563102,
+    ArachniaVictim4 = -2135102432,
+    Raidenryu = 188836447,
+    Raidenryu2 = 2017640074,
+    Raidenryu3 = -515117264,
+    LSBlizzaria = 1849221423,
+    LSVenoct = 541859057,
+    LSKyubi = 697867263,
+    LittleCharrmer = 1550624615,
+};

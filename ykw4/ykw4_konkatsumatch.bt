@@ -2,14 +2,11 @@
 //--- 010 Editor v13.0.1 Binary Template
 //
 //      File: konkatsu_match_config_0.16.04.cfg.bin
-//   Authors: Light8227
+//   Authors: Century_, Light8227
 //   Version: 1.0
-//   Purpose: 
-//  Category: 
-// File Mask: 
-//  ID Bytes: 
-//   History: 
 //------------------------------------------------
+#include "ykw4_enums.bt"
+
 LittleEndian();
 
 typedef struct
@@ -53,17 +50,9 @@ typedef struct
     byte unk8[8];
 }Block2;
 
-enum<short>itemType
-{
-    Material = 0,
-    White = 402,
-    Red = 403,
-    Gold = 404,
-};
-
 typedef struct
 {
-    long charaParamID <name="charaParamID">;
+    paramID charaParamID <name="charaParamID">;
     long charaID <name="charaID">;
     long money <name="money",comment="Base price to summon Yo-kai.">;
     long moneyAdd <name="moneyAdd",comment="Multiplier to add or subtract money depending on level? Don't know exact formula.">;
@@ -71,16 +60,6 @@ typedef struct
     long itemNumArray[3] <name="itemNumArray",comment="The number of required items.">;
     itemType itemTypeArray[4] <name="itemTypeArray",comment="Entries with Material either means a Material is set there or nothing is. They both use 0.">;
 }MatchInfo;
-
-enum<short>Rank
-{
-    E = 0,
-    D = 1,
-    C = 2,
-    B = 3,
-    A = 4,
-    S = 5,
-};
 
 typedef struct
 {
