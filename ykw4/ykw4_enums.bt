@@ -8,8 +8,8 @@
 // This enum is for capsule_config availability.
 enum<int>Availability
 {
-    Normal = -16689915,
-    Merchandise = -16755451,
+    Default = -16689915,
+    Restricted = -16755451,
 };
 
 // This enum is for konkatsu item types.
@@ -32,9 +32,24 @@ enum<short>Rank
     S = 5,
 };
 
+//This enum is for the Speed stat level.
+enum<long>speedStat
+{
+    Normal = 0,
+    Slow = 2,
+    Fast = 3,
+};
+
 // This enum is for various paramIDs.
 enum<long>paramID
 {
+    Cole = 69305524,
+    SummerAdams = 1132592740,
+    Bruno = 2128730068,
+    SlimBruno = -966938447,
+    JackCobbler = -859763772,
+    NateAdams = -241098124,
+    KatieForester = 154265285,
     LordAcala = -183658551,
     DivineAcala = -952371893,
     AcalaExalted = -841791583,

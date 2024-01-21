@@ -3,7 +3,7 @@
 //
 //      File: capsule_config.cfg.bin
 //   Authors: Light8227, Century_
-//   Version: 1.0
+//   Version: 2.0
 //------------------------------------------------
 #include "ykw4_enums.bt"
 
@@ -67,7 +67,7 @@ int unkh2;
 int unkh3;
 int unkh4;
 uint subentryCount;
-subentry entries[subentryCount];
+subentry entries[subentryCount] <name="CPSL_PRIZE_TABLE_INFO_LIST_DATA">;
 int unkh5;
 int unkh6;
 }entryData;
@@ -77,8 +77,7 @@ struct
     unk Unknown;
     InfoList CpslPrizeInfoListBeg[261] <name="CPSL_PRIZE_INFO_LIST_BEG">;
     unk2 Unknown;
-    entryData CpslPrizeTableInfoListBeg[108] <optimize=false>;
-//<name="CPSL_PRIZE_TABLE_INFO_LIST_BEG">
+    entryData CpslPrizeTableInfoListBeg[108] <optimize=false, name="CPSL_PRIZE_TABLE_INFO_LIST_BEG">;
     unk3 Unknown;
     Strings catNames;
     unk4 Unknown;

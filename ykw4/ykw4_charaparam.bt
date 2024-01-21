@@ -1,0 +1,116 @@
+//------------------------------------------------
+//--- 010 Editor v13.0.1 Binary Template
+//
+//      File: chara_param_0.13.62.cfg.bin
+//   Authors: Light8227
+//   Version: 1.0
+//------------------------------------------------
+#include "ykw4_enums.bt"
+
+LittleEndian();
+
+typedef struct
+{
+    long unk[6];
+    long entryCount;
+    long unk2;
+}unk;
+
+typedef struct
+{
+    long unk3[5];
+    paramID charaparamID <name="paramID">;
+    long baseID <name="baseID">;
+    long minHP <name="minHP", comment="Minimum HP from Lv1-99.">;
+    long minStrength <name="minStrength", comment="Minimum Strength from Lv1-99.">;
+    long minSpirit <name="minSpirit", comment="Minimum Spirit from Lv1-99.">;
+    long minDefense <name="minDefense", comment="Minimum Defense from Lv1-99.">;
+    long minResist <name="minResist", comment="Minimum Resistance from Lv1-99.">;
+    long maxHP <name="maxHP", comment="Maximum HP from Lv1-99.">;
+    long maxStrength <name="maxStrength", comment="Maximum Strength from Lv1-99.">;
+    long maxSpirit <name="maxSpirit", comment="Maximum Spirit from Lv1-99.">;
+    long maxDefense <name="maxDefense", comment="Maximum Defense from Lv1-99.">;
+    long maxResist <name="maxResist", comment="Maximum Resistance from Lv1-99.">;
+    long elementResist <name="elementResist", comment="Element that deals less damage.">;
+    long elementWeak <name="elementWeak", comment="Element that deals more damage.">;
+    speedStat speed <name="speed", comment="Speed level.">;
+    long unk4[20];
+    long minYP <name="minYP", comment="Minimum YP from Lv1-99.">;
+    long maxYP <name="maxYP", comment="Maximum YP from Lv1-99.">;
+    long unk5[6];
+    long godHP <name="120HP", comment="Base HP for Lv120.">;
+    long godYP <name="120YP", comment="Base YP for Lv120.">;
+    long godStrength <name="120Strength", comment="Base Strength for Lv120.">;
+    long godSpirit <name="120Spirit", comment="Base Spirit for Lv120.">;
+    long godDefense <name="120Defense", comment="Base Defense for Lv120.">;
+    long godResist <name="120Resist", comment="Base Resistance for Lv120.">;
+}charaParam;
+
+typedef struct
+{
+    long unk6[3];
+}sortIndex;
+
+typedef struct
+{
+    long unk7[4];
+    long entryCount;
+}unk2;
+
+typedef struct
+{
+    long unk8[25];
+}yokaiParam;
+
+typedef struct
+{
+    long unk9[4];
+    long entryCount;
+}unk3;
+
+typedef struct
+{
+    long unk10[7];
+}enemyParam;
+
+typedef struct
+{
+    long unk11[4];
+    long entryCount;
+}unk4;
+
+typedef struct
+{
+    long unk12[4];
+}charaExt;
+
+typedef struct
+{
+    long unk13[124];
+}unk5;
+
+typedef struct
+{
+    long strings[75];
+}Strings;
+
+typedef struct
+{
+    long unk14[5];
+}unk6;
+
+struct
+{
+    unk unknown;
+    charaParam charaparaminfolist[817];
+    sortIndex sortindex[817];
+    unk2 unknown;
+    yokaiParam yokaiparam[810];
+    unk3 unknown;
+    enemyParam enemyparam[810];
+    unk4 unknown;
+    charaExt charaext[7];
+    unk5 unknown;
+    Strings catnames;
+    unk6 unknown;
+}fileData;
