@@ -3,7 +3,7 @@
 //
 //      File: chara_base_0.00.00.cfg.bin
 //   Authors: Light8227
-//   Version: 1.0
+//   Version: 1.1
 //------------------------------------------------
 #include "ykw4_enums.bt"
 
@@ -11,8 +11,9 @@ LittleEndian();
 
 typedef struct
 {
-    long unk[7];
-}unk;
+    long unk[6];
+    long entryCount <name="EntryCount">;
+}header;
 
 typedef struct
 {
@@ -21,15 +22,16 @@ typedef struct
 
 typedef struct
 {
-    long unk3[5];
-}unk2;
+    long unk3[4];
+    long entryCount <name="EntryCount">;
+}header2;
 
 typedef struct
 {
-    long baseInfo[3];
-    long baseID;
-    long baseInfo2[13];
-    long refBattle[4];
+    long baseInfo[3] <name="BaseInfo">;
+    long baseID <name="BaseID">;
+    long baseInfo2[13] <name="BaseInfo">;
+    long refBattle[4] <name="RefBattle">;
 }baseInfo;
 
 typedef struct
@@ -39,7 +41,7 @@ typedef struct
 
 typedef struct
 {
-    long strings[41];
+    long strings[41] <name="Strings">;
 }Strings;
 
 typedef struct
@@ -49,11 +51,11 @@ typedef struct
 
 struct
 {
-    unk unknown;
-    battleList battlelist[355];
-    unk2 unknown;
-    baseInfo baseinfo[663];
+    header secHeader <name="Header">;
+    battleList battlelist[355] <name="CHARA_BASE_BATTLE_LIST_BEG">;
+    header2 secHeader2 <name="Header2">;
+    baseInfo baseinfo[663] <name="CHARA_BASE_INFO_LIST_BEG">;
     unk3 unknown;
-    Strings catNames;
+    Strings catNames <name="Category Name Strings">;
     unk4 unknown;
 }fileData;

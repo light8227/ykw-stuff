@@ -3,7 +3,7 @@
 //
 //      File: capsule_config.cfg.bin
 //   Authors: Light8227, Century_
-//   Version: 3.0
+//   Version: 3.1
 //------------------------------------------------
 #include "ykw4_enums.bt"
 
@@ -11,98 +11,97 @@ LittleEndian();
 
 typedef struct
 {
-    short unk[14];
-}unk;
+    long unk[6];
+    long entryCount <name="EntryCount">;
+}header;
 
 typedef struct
 {
-    long unkh1;
-    long unkh2;
-    long capsuleID <name="capsuleID">;
-    long typeID <name="typeID">;
-    paramID ParamID <name="paramID">;
-    long unk2[3];
+    long unk2[2];
+    long capsuleID <name="CapsuleID">;
+    long typeID <name="TypeID">;
+    paramID ParamID <name="ParamID">;
+    long unk3[3];
 }infoList;
 
 typedef struct
 {
-    long unk3[4];
-    long entryCount;
-}unk2;
+    long unk4[4];
+    long entryCount <name="EntryCount">;
+}header2;
 
 typedef struct
 {
     int unk5;
     Availability capsule <name="Availability">;
-    int capsuleID;
-    int unk6;
-    int unk7;
-    int unk8;
-    int unk9;
+    int capsuleID <name="CapsuleID">;
+    int dailyChance <name="DailyPrizeChance">;
+    int unk7[3];
 }subEntry;
 
 typedef struct
 {
-    int EntryHeader;
-    int unk10;
-    int unk11;
-    int unk12;
-    int unk13;
-    uint subEntryCount;
+    int EntryHeader <name="EntryHeader">;
+    int unk8[4];
+    uint subEntryCount <name="EntryCount">;
     subEntry entries[subEntryCount] <name="CPSL_PRIZE_TABLE_INFO_LIST_DATA">;
-    int unk14;
-    int unk15;
+    int unk9[2];
 }entryData;
 
 typedef struct
 {
-    long unk16[5];
-}unk3;
+    long unk10[4];
+    long entryCount <name="EntryCount">;
+}header3;
 
 typedef struct
 {
-    long unk17[24];
+    long rateInfo[3] <name="CPSL_LOT_RANK_RATE_INFO">;
+    long unk11[3] <name="CPSL_LOT_RANK_RATE_INFO_DATA_LIST">;
+    long unk12[2] <name="CPSL_LOT_RANK_RATE_INFO_DATA">;
+    long prize <name="Prize">;
+    long prizeChance <name="PrizeChance">;
+    long unk13[2] <name="CPSL_LOT_RANK_RATE_INFO_DATA">;
+    long prize2 <name="Prize">;
+    long prizeChance2 <name="PrizeChance">;
+    long unk14[2] <name="CPSL_LOT_RANK_RATE_INFO_DATA">;
+    long prize3 <name="Prize">;
+    long prizeChance3 <name="PrizeChance">;
+    long unk15[2] <name="CPSL_LOT_RANK_RATE_INFO_DATA">;
+    long prize4 <name="Prize">;
+    long prizeChance4 <name="PrizeChance">;
+    long unk16[2];
 }rankRate;
 
 typedef struct
 {
-    int unk18[7];
-}unk4;
+    long unk17[4];
+    long entryCount <name="EntryCount">;
+}header4;
 
 typedef struct
 {
-    int unk19;
-    int unk20;
-    int unk21;
-    int unk22;
-    int coin;
-    int freeGift;
-    int thirdPrize;
-    int secondPrize;
-    int firstPrize;
-    int unk23;
-    int unk24;
-    int unk25;
+    int configInfo[4] <name="CPSL_CONFIG_INFO">;
+    int coin <name="Coin">;
+    int freeGift <name="FreeGift">;
+    int thirdPrize <name="3rdPrize">;
+    int secondPrize <name="2ndPrize">;
+    int firstPrize <name="1stPrize">;
+    int dataList[3] <name="CPSL_CONFIG_INFO_DATA_LIST">;
 }subEntry2;
 
 typedef struct
 {
-    int EntryHeader;
-    int unk26;
-    int unk27;
-    int unk28;
-    int unk29;
-    uint subEntryCount;
-    subEntry2 entries[subEntryCount];
-    int unk30;
-    int unk31;
-    int unk32;
-    int unk33;
+    int EntryHeader <name="EntryHeader">;
+    int unk18[6];
+    uint subEntryCount <name="EntryCount">;
+    subEntry2 entries[subEntryCount] <name="CPSL_CONFIG_INFO_DATA_LIST_BEG">;
+    int unk19[2];
 }configInfo;
 
 typedef struct
 {
-    long unk34[295];
+    long unk20[297];
 }unk5;
 
 typedef struct
@@ -112,20 +111,20 @@ typedef struct
 
 typedef struct
 {
-    byte unk35[28];
+    byte unk21[28];
 }unk6;
 
 struct
 {
-    unk Unknown;
+    header secHeader <name="Header">;
     infoList CpslPrizeInfoListBeg[261] <name="CPSL_PRIZE_INFO_LIST_BEG">;
-    unk2 Unknown;
-    entryData CpslPrizeTableInfoListBeg[108] <optimize=false, name="CPSL_PRIZE_TABLE_INFO_LIST_BEG">;
-    unk3 Unknown;
-    rankRate rankrate[9];
-    unk4 unknown;
-    configInfo configinfo[5] <optimize=false>;
+    header2 secHeader2 <name="Header2">;
+    entryData CpslPrizeTableInfoListBeg[108] <name="CPSL_PRIZE_TABLE_INFO_LIST_BEG", optimize=false>;
+    header3 secHeader3 <name="Header3">;
+    rankRate rankrate[9] <name="CPSL_LOT_RANK_RATE_INFO_LIST_BEG">;
+    header4 secHeader4 <name="Header4">;
+    configInfo configinfo[5] <name="CPSL_CONFIG_INFO_LIST_BEG", optimize=false>;
     unk5 unknown;
-    Strings catNames;
+    Strings catNames <name="Category Name Strings">;
     unk6 Unknown;
 }fileData;

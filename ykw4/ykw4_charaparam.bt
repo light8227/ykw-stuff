@@ -3,7 +3,7 @@
 //
 //      File: chara_param_0.13.62.cfg.bin
 //   Authors: Light8227
-//   Version: 1.0
+//   Version: 1.1
 //------------------------------------------------
 #include "ykw4_enums.bt"
 
@@ -12,31 +12,31 @@ LittleEndian();
 typedef struct
 {
     long unk[6];
-    long entryCount;
+    long entryCount <name="EntryCount">;
     long unk2;
-}unk;
+}header;
 
 typedef struct
 {
     long unk3[5];
-    paramID charaparamID <name="paramID">;
-    long baseID <name="baseID">;
-    long minHP <name="minHP", comment="Minimum HP from Lv1-99.">;
-    long minStrength <name="minStrength", comment="Minimum Strength from Lv1-99.">;
-    long minSpirit <name="minSpirit", comment="Minimum Spirit from Lv1-99.">;
-    long minDefense <name="minDefense", comment="Minimum Defense from Lv1-99.">;
-    long minResist <name="minResist", comment="Minimum Resistance from Lv1-99.">;
-    long maxHP <name="maxHP", comment="Maximum HP from Lv1-99.">;
-    long maxStrength <name="maxStrength", comment="Maximum Strength from Lv1-99.">;
-    long maxSpirit <name="maxSpirit", comment="Maximum Spirit from Lv1-99.">;
-    long maxDefense <name="maxDefense", comment="Maximum Defense from Lv1-99.">;
-    long maxResist <name="maxResist", comment="Maximum Resistance from Lv1-99.">;
-    long elementResist <name="elementResist", comment="Element that deals less damage.">;
-    long elementWeak <name="elementWeak", comment="Element that deals more damage.">;
-    speedStat speed <name="speed", comment="Speed level.">;
+    paramID charaparamID <name="ParamID">;
+    long baseID <name="BaseID">;
+    long minHP <name="MinHP", comment="Minimum HP from Lv1-99.">;
+    long minStrength <name="MinStrength", comment="Minimum Strength from Lv1-99.">;
+    long minSpirit <name="MinSpirit", comment="Minimum Spirit from Lv1-99.">;
+    long minDefense <name="MinDefense", comment="Minimum Defense from Lv1-99.">;
+    long minResist <name="MinResist", comment="Minimum Resistance from Lv1-99.">;
+    long maxHP <name="MaxHP", comment="Maximum HP from Lv1-99.">;
+    long maxStrength <name="MaxStrength", comment="Maximum Strength from Lv1-99.">;
+    long maxSpirit <name="MaxSpirit", comment="Maximum Spirit from Lv1-99.">;
+    long maxDefense <name="MaxDefense", comment="Maximum Defense from Lv1-99.">;
+    long maxResist <name="MaxResist", comment="Maximum Resistance from Lv1-99.">;
+    elementAffinity elementResist <name="ElementResist", comment="Element that deals less damage.">;
+    elementAffinity elementWeak <name="ElementWeak", comment="Element that deals more damage.">;
+    speedStat speed <name="Speed", comment="Speed level.">;
     long unk4[20];
-    long minYP <name="minYP", comment="Minimum YP from Lv1-99.">;
-    long maxYP <name="maxYP", comment="Maximum YP from Lv1-99.">;
+    long minYP <name="MinYP", comment="Minimum YP from Lv1-99.">;
+    long maxYP <name="MaxYP", comment="Maximum YP from Lv1-99.">;
     long unk5[6];
     long godHP <name="120HP", comment="Base HP for Lv120.">;
     long godYP <name="120YP", comment="Base YP for Lv120.">;
@@ -54,8 +54,8 @@ typedef struct
 typedef struct
 {
     long unk7[4];
-    long entryCount;
-}unk2;
+    long entryCount <name="EntryCount">;
+}header2;
 
 typedef struct
 {
@@ -65,8 +65,8 @@ typedef struct
 typedef struct
 {
     long unk9[4];
-    long entryCount;
-}unk3;
+    long entryCount <name="EntryCount">;
+}header3;
 
 typedef struct
 {
@@ -76,8 +76,8 @@ typedef struct
 typedef struct
 {
     long unk11[4];
-    long entryCount;
-}unk4;
+    long entryCount <name="EntryCount">;
+}header4;
 
 typedef struct
 {
@@ -91,7 +91,7 @@ typedef struct
 
 typedef struct
 {
-    long strings[75];
+    long strings[75] <name="Strings">;
 }Strings;
 
 typedef struct
@@ -101,16 +101,16 @@ typedef struct
 
 struct
 {
-    unk unknown;
-    charaParam charaparaminfolist[817];
-    sortIndex sortindex[817];
-    unk2 unknown;
-    yokaiParam yokaiparam[810];
-    unk3 unknown;
-    enemyParam enemyparam[810];
-    unk4 unknown;
-    charaExt charaext[7];
+    header secHeader <name="Header">;
+    charaParam charaparaminfolist[817] <name="CHARA_PARAM_INFO_LIST_BEG">;
+    sortIndex sortindex[817] <name="__SORT_INDEX">;
+    header2 secHeader2 <name="Header2">;
+    yokaiParam yokaiparam[810] <name="YOKAI_PARAM_INFO_LIST_BEG">;
+    header3 secHeader3 <name="Header3">;
+    enemyParam enemyparam[810] <name="ENEMY_PARAM_INFO_LIST_BEG">;
+    header4 secHeader4 <name="Header4">;
+    charaExt charaext[7] <name="CHARA_EXT_PARAM_INFO_LIST_BEG">;
     unk5 unknown;
-    Strings catnames;
+    Strings catnames <name="Category Name Strings">;
     unk6 unknown;
 }fileData;
