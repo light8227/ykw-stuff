@@ -3,7 +3,7 @@
 //
 //      File: Yo-kai Watch 4++ files
 //   Authors: Light8227
-//   Version: 1.0
+//   Version: 2.0
 //------------------------------------------------
 // This enum is for capsule_config availability.
 enum<int>Availability
@@ -40,29 +40,49 @@ enum<long>speedStat
     Fast = 3,
 };
 
+enum<long>elementAffinity
+{
+    Fire = 1,
+    Water = 2,
+    Lightning = 3,
+    Earth = 4,
+    Ice = 5,
+    Wind = 6,
+    Light = 7,
+    Dark = 8,
+};
+
 // This enum is for various paramIDs.
 enum<long>paramID
 {
     Cole = 69305524,
     SummerAdams = 1132592740,
+    OniPrincessSummer= -79849215,
     Bruno = 2128730068,
     SlimBruno = -966938447,
     JackCobbler = -859763772,
     NateAdams = -241098124,
     KatieForester = 154265285,
+    Neptuna = 1494752368,
+    BrunoGrandma = 1362552612,
+    HaileyAnne = 53710815,
+    JinpeiJiba = -1027780577,
+    Dog = -1324131682,
+    Dog2 = 392450346,
+    Dog3 = 1406091751,
     LordAcala = -183658551,
     DivineAcala = -952371893,
     AcalaExalted = -841791583,
-    SuzakuBB = -1297224423,
+    SuzakuBladeBearer = -1297224423,
     Genbu = -1882340183,
-    ByakkoBB = 1038948537,
+    ByakkoBladeBearer = 1038948537,
     Asura = 9253129,
     Matsu = 1194150873,
     Minamoto = 2051891817,
     Goemon = -132254280,
     Benkei = -981607416,
-    SuzakuC = 53571036,
-    ByakkoC = 2045853372,
+    SuzakuCelestial = 53571036,
+    ByakkoCelestial = 2045853372,
     Kyryn = 1150359308,
     Boreas = -435372161,
     Eurus = 662855871,
@@ -118,8 +138,30 @@ enum<long>paramID
     Raidenryu = 188836447,
     Raidenryu2 = 2017640074,
     Raidenryu3 = -515117264,
+    WhisperFuture = 1036995675,
+    WhisperPresent = 2054108811,
+    Soulmian = 111821188,
+    Mikakunin = 196358595,
+    LSJibanyan = -1682421777,
+    SSJibanyan = 587473034,
+    LSKomasan = -602391233,
+    SSKomasan = 1688492634,
+    Sly = -512224113,
+    SSSlimamander = 1506046954,
+    LSBlazion = 1398327455,
+    SSBlazion = -337334278,
+    VirusSSBlazion = 172194938,
     LSBlizzaria = 1849221423,
-    LSVenoct = 541859057,
+    LSDamona = 1998835822,
+    SSBlizzaria = -695957942,
+    VirusSSBlizzaria = -875715654,
+    SSDamona = -811616501,
     LSKyubi = 697867263,
+    LSFrostail = 813935294,
+    SSKyubi = -1859847014,
+    VirusSSKyubi = 1378862523,
+    LSVenoct = 541859057,
+    YamiAnanta = -1521493351,
     LittleCharrmer = 1550624615,
+    Wobblewok = 1220350161,
 };

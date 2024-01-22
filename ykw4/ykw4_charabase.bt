@@ -1,0 +1,59 @@
+//------------------------------------------------
+//--- 010 Editor v13.0.1 Binary Template
+//
+//      File: chara_base_0.00.00.cfg.bin
+//   Authors: Light8227
+//   Version: 1.0
+//------------------------------------------------
+#include "ykw4_enums.bt"
+
+LittleEndian();
+
+typedef struct
+{
+    long unk[7];
+}unk;
+
+typedef struct
+{
+    long unk2[13];
+}battleList;
+
+typedef struct
+{
+    long unk3[5];
+}unk2;
+
+typedef struct
+{
+    long baseInfo[3];
+    long baseID;
+    long baseInfo2[13];
+    long refBattle[4];
+}baseInfo;
+
+typedef struct
+{
+    long unk4[1778];
+}unk3;
+
+typedef struct
+{
+    long strings[41];
+}Strings;
+
+typedef struct
+{
+    long unk5[7];
+}unk4;
+
+struct
+{
+    unk unknown;
+    battleList battlelist[355];
+    unk2 unknown;
+    baseInfo baseinfo[663];
+    unk3 unknown;
+    Strings catNames;
+    unk4 unknown;
+}fileData;

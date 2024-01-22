@@ -3,7 +3,7 @@
 //
 //      File: capsule_config.cfg.bin
 //   Authors: Light8227, Century_
-//   Version: 2.0
+//   Version: 3.0
 //------------------------------------------------
 #include "ykw4_enums.bt"
 
@@ -22,7 +22,7 @@ typedef struct
     long typeID <name="typeID">;
     paramID ParamID <name="paramID">;
     long unk2[3];
-}InfoList;
+}infoList;
 
 typedef struct
 {
@@ -32,53 +32,100 @@ typedef struct
 
 typedef struct
 {
-    int unk4[9521];
-}TableInfo;
+    int unk5;
+    Availability capsule <name="Availability">;
+    int capsuleID;
+    int unk6;
+    int unk7;
+    int unk8;
+    int unk9;
+}subEntry;
 
 typedef struct
 {
-    long unk5[897];
+    int EntryHeader;
+    int unk10;
+    int unk11;
+    int unk12;
+    int unk13;
+    uint subEntryCount;
+    subEntry entries[subEntryCount] <name="CPSL_PRIZE_TABLE_INFO_LIST_DATA">;
+    int unk14;
+    int unk15;
+}entryData;
+
+typedef struct
+{
+    long unk16[5];
 }unk3;
 
 typedef struct
 {
-    byte unk6[597];
+    long unk17[24];
+}rankRate;
+
+typedef struct
+{
+    int unk18[7];
+}unk4;
+
+typedef struct
+{
+    int unk19;
+    int unk20;
+    int unk21;
+    int unk22;
+    int coin;
+    int freeGift;
+    int thirdPrize;
+    int secondPrize;
+    int firstPrize;
+    int unk23;
+    int unk24;
+    int unk25;
+}subEntry2;
+
+typedef struct
+{
+    int EntryHeader;
+    int unk26;
+    int unk27;
+    int unk28;
+    int unk29;
+    uint subEntryCount;
+    subEntry2 entries[subEntryCount];
+    int unk30;
+    int unk31;
+    int unk32;
+    int unk33;
+}configInfo;
+
+typedef struct
+{
+    long unk34[295];
+}unk5;
+
+typedef struct
+{
+    byte strings[596];
 }Strings;
 
 typedef struct
 {
-    byte unk7[27];
-}unk4;
-
-typedef struct{
-int field01;
-Availability field02;
-int capsuleID;
-int field04;
-int field05;
-int field06;
-int field07;
-}subentry;
-
-typedef struct{
-int EntryHeader;
-int unkh1;
-int unkh2;
-int unkh3;
-int unkh4;
-uint subentryCount;
-subentry entries[subentryCount] <name="CPSL_PRIZE_TABLE_INFO_LIST_DATA">;
-int unkh5;
-int unkh6;
-}entryData;
+    byte unk35[28];
+}unk6;
 
 struct
 {
     unk Unknown;
-    InfoList CpslPrizeInfoListBeg[261] <name="CPSL_PRIZE_INFO_LIST_BEG">;
+    infoList CpslPrizeInfoListBeg[261] <name="CPSL_PRIZE_INFO_LIST_BEG">;
     unk2 Unknown;
     entryData CpslPrizeTableInfoListBeg[108] <optimize=false, name="CPSL_PRIZE_TABLE_INFO_LIST_BEG">;
     unk3 Unknown;
+    rankRate rankrate[9];
+    unk4 unknown;
+    configInfo configinfo[5] <optimize=false>;
+    unk5 unknown;
     Strings catNames;
-    unk4 Unknown;
+    unk6 Unknown;
 }fileData;

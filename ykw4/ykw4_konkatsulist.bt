@@ -14,13 +14,13 @@ typedef struct
     short unk2;
     short unk3;
     short EntryBlockOffset;
-    short unk4[12];
-    short unk5[273];
+    short unk4[13];
+    long unk5[10];
 }Header;
 
 typedef struct
 {
-    byte unk[544];
+    byte unk[1048];
 }unk;
 
 typedef struct
