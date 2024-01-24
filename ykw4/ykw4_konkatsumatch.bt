@@ -38,7 +38,7 @@ typedef struct
 
 typedef struct
 {
-    paramID charaParamID <name="CharaParamID">;
+    paramID charaParamID <name="ParamID">;
     long charaID <name="CharaID">;
     long money <name="Money",comment="Base price to summon Yo-kai.">;
     long moneyAdd <name="MoneyAdd",comment="Multiplier to add or subtract money depending on level? Don't know exact formula.">;

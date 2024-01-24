@@ -13,20 +13,25 @@ typedef struct
 {
     char Magic[6] <name="Magic">;
     short unk[3];
-    short EntryBlockOffset <name="EntryBlockOffset">;
-    short unk2[13];
+    long EntryBlockOffset <name="EntryBlockOffset">;
+    long unk2[9];
+    short stringCount <name="StringCount">;
+    short unk3;
+    long EntryBlockSize <name="EntryBlockSize">;
+    long unk4[5];
 }Header;
 
 typedef struct
 {
-    long unk3[180];
+    long unk3[169];
+    long entryCount;
 }unk;
 
 typedef struct
 {
     long itemID <name="ItemID">;
     long money <name="Money">;
-    long matItemIDArray[4] <name="MatItemIDArray">;
+    paramID matItemIDArray[4] <name="MatItemIDArray">;
     long matItemNumArray[3] <name="MatItemNumArray">;
     long matItemTypeArray[3] <name="MatItemTypeArray">;
 }EquipData;
@@ -72,7 +77,7 @@ struct
 {
     Header secHeader <name="Header">;
     unk unknown;
-    EquipData powerup[150] <name="KONKATSU_EQUIP_DATA_POWERUP">;
+    EquipData powerup[126] <name="KONKATSU_EQUIP_DATA_POWERUP">;
     unk2 unknown2[389];
     unk3 unknown3;
     Strings catNames <name="Category Name Strings">;
