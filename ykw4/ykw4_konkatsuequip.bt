@@ -14,11 +14,11 @@ typedef struct
     char Magic[6] <name="Magic">;
     short unk[3];
     long EntryBlockOffset <name="EntryBlockOffset">;
-    long unk2[9];
+    short unk2[18];
     short stringCount <name="StringCount">;
     short unk3;
     long EntryBlockSize <name="EntryBlockSize">;
-    long unk4[5];
+    short unk4[10];
 }Header;
 
 typedef struct
@@ -38,13 +38,8 @@ typedef struct
 
 typedef struct
 {
-    long unk4[15];
+    long unk4[5000];
 }unk2;
-
-typedef struct
-{
-    long unk5[3];
-}unk3;
 
 typedef struct
 {
@@ -77,8 +72,7 @@ struct
 {
     Header secHeader <name="Header">;
     unk unknown;
-    EquipData powerup[126] <name="KONKATSU_EQUIP_DATA_POWERUP">;
-    unk2 unknown2[389];
-    unk3 unknown3;
+    EquipData powerup[169] <name="KONKATSU_EQUIP_DATA_POWERUP">;
+    unk2 unknown2;
     Strings catNames <name="Category Name Strings">;
 }fileData;

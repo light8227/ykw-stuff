@@ -3,7 +3,7 @@
 //
 //      File: Yo-kai Watch 4++ files
 //   Authors: Light8227
-//   Version: 2.0
+//   Version: 3.0
 //------------------------------------------------
 // This enum is for capsule_config availability.
 enum<int>Availability
@@ -50,6 +50,30 @@ enum<long>elementAffinity
     Wind = 6,
     Light = 7,
     Dark = 8,
+};
+
+// This enum is for Skill IDs.
+enum<long>skillID
+{
+    GreatKing = 1915960541,
+    SerpentKingsJudgement = -348492441,
+    ExtremeCritical = -1673699855,
+    Starver = -329799298,
+    AmaterasusBlessing = -1130192682,
+    WebMaster = 587489090,
+    DarkPalm = 2133736471,
+    WashedOut = 683078054,
+    WaterGod = 812624592,
+    GriponYou = 1152258750,
+    Messy = 1605484848,
+    BlazingSpirit = 1989701692,
+};
+
+// This enum is for Soultimate Move IDs.
+enum<long>soultID
+{
+    SupremeEnmaBlast = -1280050613,
+    SerpentKingWave = 2132409045,
 };
 
 // This enum is for various paramIDs.
@@ -369,12 +393,18 @@ enum<long>paramID
     SuperSly = -1029615278,
     Slyju = 2048734775,
     Enma = 1089586819,
+    Enma2 = 86705751,
+    Enma3 = -232009674,
+    Enma4 = -2060656480,
+    Enma5 = 472232218,
+    Enma6 = 1797423500,
+    Enma7 = -1148170601,
     LordAnanta = 2106715955,
     VirusLordAnanta = 1829130341,
     YamiAnanta = -1521493351,
     Shutendoji = -1143120153,
     Voidera = -2034403497,
-    Voidera2 = -1616493034,
+    VoideraSword = -1616493034,
     VirusVoidera = 1204128072,
     Juno = -782167764,
     Saros = 284151532,

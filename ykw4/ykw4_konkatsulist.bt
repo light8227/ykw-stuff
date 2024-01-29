@@ -11,14 +11,17 @@ typedef struct
 {
     char Magic[6] <name="Magic">;
     short unk[3];
-    short EntryBlockOffset <name="EntryBlockOffset">;
-    short unk2[13];
-    short unk3[20];
+    long EntryBlockOffset <name="EntryBlockOffset">;
+    long unk2[9];
+    short stringCount <name="StringCount">;
+    short unk3;
+    long EntryBlockSize <name="EntryBlockSize">;
+    long unk4[5];
 }Header;
 
 typedef struct
 {
-    short unk4[524];
+    ushort unk4[524];
 }unk;
 
 typedef struct

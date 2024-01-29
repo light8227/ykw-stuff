@@ -1,0 +1,115 @@
+//------------------------------------------------
+//--- 010 Editor v13.0.1 Binary Template
+//
+//      File: item_config_0.13.66.cfg.bin
+//   Authors: Light8227
+//   Version: 1.0
+//------------------------------------------------
+#include "ykw4_enums.bt"
+
+LittleEndian();
+
+typedef struct
+{
+    long unk[6];
+    long entryCount <name="EntryCount">;
+}header;
+
+typedef struct
+{
+    long unk2[20];
+}itemImportant;
+
+typedef struct
+{
+    long unk3[4];
+    long entryCount <name="EntryCount">;
+}header2;
+
+typedef struct
+{
+    long unk4[3];
+    paramID consumeParamID <name="ParamID">;
+    long unk5[17];
+}itemConsume;
+
+typedef struct
+{
+    long unk6[4];
+    long entryCount <name="EntryCount">;
+}header3;
+
+typedef struct
+{
+    long unk7[27];
+}itemEquip;
+
+typedef struct
+{
+    long unk8[4];
+    long entryCount <name="EntryCount">;
+}header4;
+
+typedef struct
+{
+    long unk9[3];
+    paramID soulParamID <name="ParamID">;
+    long unk10[16];
+}itemSoul;
+
+typedef struct
+{
+    long unk10[4];
+    long entryCount <name="EntryCount">;
+}header5;
+
+typedef struct
+{
+    long unk11[3];
+}condChara;
+
+typedef struct
+{
+    long unk12[4];
+    long entryCount <name="EntryCount">;
+}header6;
+
+typedef struct
+{
+    long unk13[8] <name="ITEM_EQUIP_COND">;
+    long unk14[4] <name="ITEM_EQUIP_COND_REF_COND_CHARA">;
+}condList;
+
+typedef struct
+{
+    long unk15[3978];
+}unk;
+
+typedef struct
+{
+    long strings[115] <name="Strings">;
+}Strings;
+
+typedef struct
+{
+    long unk16[5];
+}unk2;
+
+struct
+{
+    header secheader <name="Header">;
+    itemImportant itemimportant[115] <name="ITEM_IMPORTANT_INFO_LIST_BEG">;
+    header2 secheader2 <name="Header2">;
+    itemConsume itemconsume[267] <name="ITEM_CONSUME_INFO_LIST_BEG">;
+    header3 secheader3 <name="Header3">;
+    itemEquip itemequip[439] <name="ITEM_EQUIP_INFO_LIST_BEG">;
+    header4 secheader4 <name="Header4">;
+    itemSoul itemsoul[181] <name="ITEM_SOUL_INFO_LIST_BEG">;
+    header5 secheader5 <name="Header5">;
+    condChara condchara[182] <name="ITEM_EQUIP_COND_CHARA_LIST_BEG">;
+    header6 secheader6 <name="Header6">;
+    condList condlist[185] <name="ITEM_EQUIP_COND_LIST_BEG">;
+    unk unknown;
+    Strings catnames <name="Category Name Strings">;
+    unk2 unknown2;
+}fileData;

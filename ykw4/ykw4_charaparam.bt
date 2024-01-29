@@ -3,7 +3,7 @@
 //
 //      File: chara_param_0.13.62.cfg.bin
 //   Authors: Light8227
-//   Version: 1.1
+//   Version: 2.0
 //------------------------------------------------
 #include "ykw4_enums.bt"
 
@@ -59,34 +59,52 @@ typedef struct
 
 typedef struct
 {
-    long unk8[25];
+    long unk8[3];
+    paramID yokaiparamID <name="ParamID">;
+    long unk9[3];
+    skillID yokaiskillID <name="SkillID">;
+    long ymove <name="YMove", comment="Attack tied to the Y Button.">;
+    soultID yokaisoultimateID <name="SoultimateID">;
+    long xmove1 <name="XMove1", comment="Attack tied to the X Button.">;
+    long xmove1unlock <name="XMove1Unlock", comment="Level that XMove1 unlocks at.">;
+    long xmove2 <name="XMove2", comment="Attack tied to the X Button.">;
+    long xmove2unlock <name="XMove2Unlock", comment="Level that XMove2 unlocks at.">;
+    long xmove3 <name="XMove3", comment="Attack tied to the X Button.">;
+    long xmove3unlock <name="XMove3Unlock", comment="Level that XMove3 unlocks at.">;
+    long xmove4 <name="XMove4", comment="Attack tied to the X Button.">;
+    long xmove4unlock <name="XMove4Unlock", comment="Level that XMove4 unlocks at.">;
+    long unk11[7];
 }yokaiParam;
-
-typedef struct
-{
-    long unk9[4];
-    long entryCount <name="EntryCount">;
-}header3;
-
-typedef struct
-{
-    long unk10[7];
-}enemyParam;
 
 typedef struct
 {
     long unk11[4];
     long entryCount <name="EntryCount">;
+}header3;
+
+typedef struct
+{
+    long unk12[2];
+    paramID enemyparamID <name="ParamID">;
+    long unk13[4];
+}enemyParam;
+
+typedef struct
+{
+    long unk14[4];
+    long entryCount <name="EntryCount">;
 }header4;
 
 typedef struct
 {
-    long unk12[4];
+    long unk15[2];
+    paramID charaextparam <name="ParamID">;
+    long unk16;
 }charaExt;
 
 typedef struct
 {
-    long unk13[124];
+    long unk17[124];
 }unk5;
 
 typedef struct
@@ -96,7 +114,7 @@ typedef struct
 
 typedef struct
 {
-    long unk14[5];
+    long unk18[5];
 }unk6;
 
 struct
