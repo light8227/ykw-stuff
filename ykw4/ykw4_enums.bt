@@ -52,6 +52,36 @@ enum<long>elementAffinity
     Dark = 8,
 };
 
+enum<int>missionName
+{
+    PlayingwithGodsName = -1857368477,
+    KingintheSunsShadowName = -498026519,
+};
+
+enum<int>missionObjective
+{
+    PlayingwithGodsObjective = 1381799206,
+    KingintheSunsShadowObjective = -1159110811,
+};
+
+enum<int>missionQuote
+{
+    PlayingwithGodsQuote = 1728658595,
+    KingintheSunsShadowQuote = -1587137244,
+};
+
+enum<int>missionLocation
+{
+    BlossomHeightsLocation = -2107601204,
+    SpringdaleCityLocation = 1840022999,
+};
+
+enum<int>missionIcon
+{
+    ShienIcon = 40100,
+    AmaterasuIcon = 50100,
+};
+
 // This enum is for Skill IDs.
 enum<long>skillID
 {
@@ -72,6 +102,7 @@ enum<long>skillID
 // This enum is for Soultimate Move IDs.
 enum<long>soultID
 {
+    ThousandOniBranches = -17565154,
     SupremeEnmaBlast = -1280050613,
     SerpentKingWave = 2132409045,
 };
@@ -81,12 +112,17 @@ enum<long>paramID
 {
     Cole = 69305524,
     SummerAdams = 1132592740,
+    SummerAdams2 = -1015542991,
     OniPrincessSummer= -79849215,
     Bruno = 2128730068,
+    Bruno2 = 750411791,
     SlimBruno = -966938447,
     JackCobbler = -859763772,
+    JackCobbler2 = -832144522,
     NateAdams = -241098124,
+    NateAdams2 = 564400200,
     KatieForester = 154265285,
+    KatieForester2 = -732259336,
     Neptuna = 1494752368,
     BrunoGrandma = 1362552612,
     HaileyAnne = 53710815,

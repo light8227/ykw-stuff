@@ -1,0 +1,56 @@
+//------------------------------------------------
+//--- 010 Editor v13.0.1 Binary Template
+//
+//      File: mission_setting_5.00.10.cfg.bin
+//   Authors: Light8227
+//   Version: 1.0
+//------------------------------------------------
+#include "ykw4_enums.bt"
+
+LittleEndian();
+
+typedef struct
+{
+    long unk[6];
+    long entryCount;
+}header;
+
+typedef struct
+{
+    int unk2[2];
+    paramID enemyParamID <name="ParamID">;
+}subEntry;
+
+typedef struct
+{
+    int unk3[9];
+    int rank <name="Rank", comment="Busters Rank required to unlock Mission.">;
+    int unk4[3];
+    int reccLevel <name="RecommendedLevel">;
+    int timeLimit <name="TimeLimit", comment="The number of minutes a Mission has.">;
+    int unk5;
+    int clearReward <name="ClearReward", comment="The number of Oni Orbs you get for clearing the Mission.">;
+    int unk6[5];
+    missionName name <name="MissionName", comment="The name of the Mission.">;
+    missionObjective objective <name="MissionObjective", comment="The main objective for the Mission.">;
+    missionQuote quote <name="MissionQuote", comment="The quote Sgt. Burly says when viewing a Mission.">;
+    int unk7[4];
+    missionLocation location <name="MissionLocation", comment="The name of where the Mission takes place. Display only, does not change image or actual location.">;
+    missionIcon icon <name="MissionIcon", comment="The character icon a Mission uses.">;
+    int unk8[9];
+    int subEntryCount <name="EntryCount">;
+    subEntry entries[subEntryCount] <name="YokaiSightings">;
+    int unk9[2];
+}infoList;
+
+typedef struct
+{
+    int unk10[38];
+}infoList2;
+
+struct
+{
+    header secheader;
+    infoList infolist[43] <optimize=false>;
+    infoList2 infolist2[7];
+}fileData;
