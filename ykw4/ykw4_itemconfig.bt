@@ -11,88 +11,99 @@ LittleEndian();
 
 typedef struct
 {
-    long unk[6];
-    long entryCount <name="EntryCount">;
+    uint unk[6];
+    uint entryCount <name="EntryCount">;
 }header;
 
 typedef struct
 {
-    long unk2[20];
+    uint unk2[20];
 }itemImportant;
 
 typedef struct
 {
-    long unk3[4];
-    long entryCount <name="EntryCount">;
+    uint unk3[4];
+    uint entryCount <name="EntryCount">;
 }header2;
 
 typedef struct
 {
-    long unk4[3];
+    uint unk4[3];
     paramID consumeParamID <name="ParamID">;
-    long unk5[17];
+    uint unk5[17];
 }itemConsume;
 
 typedef struct
 {
-    long unk6[4];
-    long entryCount <name="EntryCount">;
+    uint unk6[4];
+    uint entryCount <name="EntryCount">;
 }header3;
 
 typedef struct
 {
-    long unk7[27];
+    uint unk7[3];
+    paramID equipID <name="ParamID">;
+    uint categoryID <name="CategoryID">;
+    uint unk8[13];
+    AbilityID extraability <name="AbilityID">;
+    ExclusivityID exclusive <name="ExclusivityID">;
+    uint unk9[2];
+    int strengthstat <name="StrengthStat">;
+    int spiritstat <name="SpiritStat">;
+    int defensestat <name="DefenseStat">;
+    int restat <name="ResistanceStat">;
+    uint unk10;
 }itemEquip;
 
 typedef struct
 {
-    long unk8[4];
-    long entryCount <name="EntryCount">;
+    uint unk11[4];
+    uint entryCount <name="EntryCount">;
 }header4;
 
 typedef struct
 {
-    long unk9[3];
+    uint unk12[3];
     paramID soulParamID <name="ParamID">;
-    long unk10[16];
+    uint unk13[16];
 }itemSoul;
 
 typedef struct
 {
-    long unk10[4];
-    long entryCount <name="EntryCount">;
+    uint unk14[4];
+    uint entryCount <name="EntryCount">;
 }header5;
 
 typedef struct
 {
-    long unk11[3];
+    uint unk15[3];
 }condChara;
 
 typedef struct
 {
-    long unk12[4];
-    long entryCount <name="EntryCount">;
+    uint unk16[4];
+    uint entryCount <name="EntryCount">;
 }header6;
 
 typedef struct
 {
-    long unk13[8] <name="ITEM_EQUIP_COND">;
-    long unk14[4] <name="ITEM_EQUIP_COND_REF_COND_CHARA">;
+    uint unk17[8] <name="ITEM_EQUIP_COND">;
+    uint unk18[4] <name="ITEM_EQUIP_COND_REF_COND_CHARA">;
 }condList;
 
 typedef struct
 {
-    long unk15[3978];
+    uint unk19[3978];
 }unk;
 
 typedef struct
 {
-    long strings[115] <name="Strings">;
+    uint strings[115] <name="Strings">;
 }Strings;
 
 typedef struct
 {
-    long unk16[5];
+    uint unk20[5];
 }unk2;
 
 struct

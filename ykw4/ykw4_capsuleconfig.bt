@@ -11,107 +11,107 @@ LittleEndian();
 
 typedef struct
 {
-    short unk[12];
-    long entryCount <name="EntryCount">;
+    uint unk[6];
+    uint entryCount <name="EntryCount">;
 }header;
 
 typedef struct
 {
-    long unk2[2];
-    long capsuleID <name="CapsuleID">;
-    long typeID <name="TypeID">;
+    uint unk2[2];
+    uint capsuleID <name="CapsuleID">;
+    TypeID typeid <name="TypeID">;
     paramID ParamID <name="ParamID">;
-    long unk3[3];
+    uint unk3[3];
 }infoList;
 
 typedef struct
 {
-    long unk4[4];
-    long entryCount <name="EntryCount">;
+    byte unk4[16];
+    uint entryCount <name="EntryCount">;
 }header2;
 
 typedef struct
 {
-    int unk5;
+    uint unk5;
     Availability capsule <name="Availability">;
-    int capsuleID <name="CapsuleID">;
-    int dailyChance <name="DailyPrizeChance">;
-    int unk7[3];
+    uint capsuleID <name="CapsuleID">;
+    uint dailyChance <name="DailyPrizeChance">;
+    uint unk7[3];
 }subEntry;
 
 typedef struct
 {
-    int EntryHeader <name="EntryHeader">;
-    int unk8[4];
+    uint EntryHeader <name="EntryHeader">;
+    byte unk8[16];
     uint subEntryCount <name="EntryCount">;
     subEntry entries[subEntryCount] <name="CPSL_PRIZE_TABLE_INFO_LIST_DATA">;
-    int unk9[2];
+    uint unk9[2];
 }entryData;
 
 typedef struct
 {
-    long unk10[4];
-    long entryCount <name="EntryCount">;
+    uint unk10[4];
+    uint entryCount <name="EntryCount">;
 }header3;
 
 typedef struct
 {
-    long rateInfo[3] <name="CPSL_LOT_RANK_RATE_INFO">;
-    long unk11[3] <name="CPSL_LOT_RANK_RATE_INFO_DATA_LIST">;
-    long unk12[2] <name="CPSL_LOT_RANK_RATE_INFO_DATA">;
-    long prize <name="Prize">;
-    long prizeChance <name="PrizeChance">;
-    long unk13[2] <name="CPSL_LOT_RANK_RATE_INFO_DATA">;
-    long prize2 <name="Prize">;
-    long prizeChance2 <name="PrizeChance">;
-    long unk14[2] <name="CPSL_LOT_RANK_RATE_INFO_DATA">;
-    long prize3 <name="Prize">;
-    long prizeChance3 <name="PrizeChance">;
-    long unk15[2] <name="CPSL_LOT_RANK_RATE_INFO_DATA">;
-    long prize4 <name="Prize">;
-    long prizeChance4 <name="PrizeChance">;
-    long unk16[2];
+    uint rateInfo[3] <name="CPSL_LOT_RANK_RATE_INFO">;
+    uint unk11[3] <name="CPSL_LOT_RANK_RATE_INFO_DATA_LIST">;
+    uint unk12[2] <name="CPSL_LOT_RANK_RATE_INFO_DATA">;
+    uint prize <name="Prize">;
+    uint prizeChance <name="PrizeChance">;
+    uint unk13[2] <name="CPSL_LOT_RANK_RATE_INFO_DATA">;
+    uint prize2 <name="Prize">;
+    uint prizeChance2 <name="PrizeChance">;
+    uint unk14[2] <name="CPSL_LOT_RANK_RATE_INFO_DATA">;
+    uint prize3 <name="Prize">;
+    uint prizeChance3 <name="PrizeChance">;
+    uint unk15[2] <name="CPSL_LOT_RANK_RATE_INFO_DATA">;
+    uint prize4 <name="Prize">;
+    uint prizeChance4 <name="PrizeChance">;
+    uint unk16[2];
 }rankRate;
 
 typedef struct
 {
-    long unk17[4];
-    long entryCount <name="EntryCount">;
+    uint unk17[4];
+    uint entryCount <name="EntryCount">;
 }header4;
 
 typedef struct
 {
-    int configInfo[4] <name="CPSL_CONFIG_INFO">;
-    int coin <name="Coin">;
-    int freeGift <name="FreeGift">;
-    int thirdPrize <name="3rdPrize">;
-    int secondPrize <name="2ndPrize">;
-    int firstPrize <name="1stPrize">;
-    int dataList[3] <name="CPSL_CONFIG_INFO_DATA_LIST">;
+    uint configInfo[4] <name="CPSL_CONFIG_INFO">;
+    uint coin <name="Coin">;
+    uint freeGift <name="FreeGift">;
+    uint thirdPrize <name="3rdPrize">;
+    uint secondPrize <name="2ndPrize">;
+    uint firstPrize <name="1stPrize">;
+    uint dataList[3] <name="CPSL_CONFIG_INFO_DATA_LIST">;
 }subEntry2;
 
 typedef struct
 {
-    int EntryHeader <name="EntryHeader">;
-    int unk18[6];
+    uint EntryHeader <name="EntryHeader">;
+    uint unk18[6];
     uint subEntryCount <name="EntryCount">;
     subEntry2 entries[subEntryCount] <name="CPSL_CONFIG_INFO_DATA_LIST_BEG">;
-    int unk19[2];
+    uint unk19[2];
 }configInfo;
 
 typedef struct
 {
-    long unk20[297];
+    uint unk20[297];
 }unk5;
 
 typedef struct
 {
-    byte strings[596] <name="Strings">;
+    uint strings[149] <name="Strings">;
 }Strings;
 
 typedef struct
 {
-    byte unk21[28];
+    uint unk21[7];
 }unk6;
 
 struct

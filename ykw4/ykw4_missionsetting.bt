@@ -11,41 +11,52 @@ LittleEndian();
 
 typedef struct
 {
-    long unk[6];
-    long entryCount;
+    byte unk[24];
+    uint entryCount;
 }header;
 
 typedef struct
 {
-    int unk2[2];
+    byte unk2[8];
     paramID enemyParamID <name="ParamID">;
 }subEntry;
 
 typedef struct
 {
-    int unk3[9];
-    int rank <name="Rank", comment="Busters Rank required to unlock Mission.">;
-    int unk4[3];
-    int reccLevel <name="RecommendedLevel">;
-    int timeLimit <name="TimeLimit", comment="The number of minutes a Mission has.">;
-    int unk5;
-    int clearReward <name="ClearReward", comment="The number of Oni Orbs you get for clearing the Mission.">;
-    int unk6[5];
+    uint unk3[9];
+    uint rank <name="Rank", comment="Busters Rank required to unlock Mission.">;
+    uint unk4[3];
+    uint reccLevel <name="RecommendedLevel">;
+    uint timeLimit <name="TimeLimit", comment="The number of minutes a Mission has.">;
+    uint unk5;
+    uint clearReward <name="ClearReward", comment="The number of Oni Orbs you get for clearing the Mission.">;
+    uint unk6[5];
     missionName name <name="MissionName", comment="The name of the Mission.">;
     missionObjective objective <name="MissionObjective", comment="The main objective for the Mission.">;
     missionQuote quote <name="MissionQuote", comment="The quote Sgt. Burly says when viewing a Mission.">;
-    int unk7[4];
+    uint unk7[4];
     missionLocation location <name="MissionLocation", comment="The name of where the Mission takes place. Display only, does not change image or actual location.">;
     missionIcon icon <name="MissionIcon", comment="The character icon a Mission uses.">;
-    int unk8[9];
-    int subEntryCount <name="EntryCount">;
+    uint unk8[9];
+    uint subEntryCount <name="EntryCount">;
     subEntry entries[subEntryCount] <name="YokaiSightings">;
-    int unk9[2];
+    uint unk9[2];
 }infoList;
 
 typedef struct
 {
-    int unk10[38];
+    uint unk10[9];
+    uint rank <name="Rank", comment="Busters Rank required to unlock Mission.">;
+    uint unk11[6];
+    uint clearReward <name="ClearReward", comment="The number of Oni Orbs you get for clearing the Mission.">;
+    uint unk12[5];
+    missionName name <name="MissionName", comment="The name of the Mission.">;
+    missionObjective objective <name="MissionObjective", comment="The main objective for the Mission.">;
+    missionQuote quote <name="MissionQuote", comment="The quote Sgt. Burly says when viewing a Mission.">;
+    uint unk13[4];
+    missionLocation location <name="MissionLocation", comment="The name of where the Mission takes place. Display only, does not change image or actual location.">;
+    missionIcon icon <name="MissionIcon", comment="The character icon a Mission uses.">;
+    uint unk14[7];
 }infoList2;
 
 struct

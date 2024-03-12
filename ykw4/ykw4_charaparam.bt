@@ -11,110 +11,110 @@ LittleEndian();
 
 typedef struct
 {
-    long unk[6];
-    long entryCount <name="EntryCount">;
-    long unk2;
+    byte unk[24];
+    uint entryCount <name="EntryCount">;
+    byte unk2[4];
 }header;
 
 typedef struct
 {
-    long unk3[5];
+    byte unk3[20];
     paramID charaparamID <name="ParamID">;
-    long baseID <name="BaseID">;
-    long minHP <name="MinHP", comment="Minimum HP from Lv1-99.">;
-    long minStrength <name="MinStrength", comment="Minimum Strength from Lv1-99.">;
-    long minSpirit <name="MinSpirit", comment="Minimum Spirit from Lv1-99.">;
-    long minDefense <name="MinDefense", comment="Minimum Defense from Lv1-99.">;
-    long minResist <name="MinResist", comment="Minimum Resistance from Lv1-99.">;
-    long maxHP <name="MaxHP", comment="Maximum HP from Lv1-99.">;
-    long maxStrength <name="MaxStrength", comment="Maximum Strength from Lv1-99.">;
-    long maxSpirit <name="MaxSpirit", comment="Maximum Spirit from Lv1-99.">;
-    long maxDefense <name="MaxDefense", comment="Maximum Defense from Lv1-99.">;
-    long maxResist <name="MaxResist", comment="Maximum Resistance from Lv1-99.">;
+    uint baseID <name="BaseID">;
+    uint minHP <name="MinHP", comment="Minimum HP from Lv1-99.">;
+    uint minStrength <name="MinStrength", comment="Minimum Strength from Lv1-99.">;
+    uint minSpirit <name="MinSpirit", comment="Minimum Spirit from Lv1-99.">;
+    uint minDefense <name="MinDefense", comment="Minimum Defense from Lv1-99.">;
+    uint minResist <name="MinResist", comment="Minimum Resistance from Lv1-99.">;
+    uint maxHP <name="MaxHP", comment="Maximum HP from Lv1-99.">;
+    uint maxStrength <name="MaxStrength", comment="Maximum Strength from Lv1-99.">;
+    uint maxSpirit <name="MaxSpirit", comment="Maximum Spirit from Lv1-99.">;
+    uint maxDefense <name="MaxDefense", comment="Maximum Defense from Lv1-99.">;
+    uint maxResist <name="MaxResist", comment="Maximum Resistance from Lv1-99.">;
     elementAffinity elementResist <name="ElementResist", comment="Element that deals less damage.">;
     elementAffinity elementWeak <name="ElementWeak", comment="Element that deals more damage.">;
     speedStat speed <name="Speed", comment="Speed level.">;
-    long unk4[20];
-    long minYP <name="MinYP", comment="Minimum YP from Lv1-99.">;
-    long maxYP <name="MaxYP", comment="Maximum YP from Lv1-99.">;
-    long unk5[6];
-    long godHP <name="120HP", comment="Base HP for Lv120.">;
-    long godYP <name="120YP", comment="Base YP for Lv120.">;
-    long godStrength <name="120Strength", comment="Base Strength for Lv120.">;
-    long godSpirit <name="120Spirit", comment="Base Spirit for Lv120.">;
-    long godDefense <name="120Defense", comment="Base Defense for Lv120.">;
-    long godResist <name="120Resist", comment="Base Resistance for Lv120.">;
+    byte unk4[80];
+    uint minYP <name="MinYP", comment="Minimum YP from Lv1-99.">;
+    uint maxYP <name="MaxYP", comment="Maximum YP from Lv1-99.">;
+    byte unk5[24];
+    uint godHP <name="120HP", comment="Base HP for Lv120.">;
+    uint godYP <name="120YP", comment="Base YP for Lv120.">;
+    uint godStrength <name="120Strength", comment="Base Strength for Lv120.">;
+    uint godSpirit <name="120Spirit", comment="Base Spirit for Lv120.">;
+    uint godDefense <name="120Defense", comment="Base Defense for Lv120.">;
+    uint godResist <name="120Resist", comment="Base Resistance for Lv120.">;
 }charaParam;
 
 typedef struct
 {
-    long unk6[3];
+    byte unk6[12];
 }sortIndex;
 
 typedef struct
 {
-    long unk7[4];
-    long entryCount <name="EntryCount">;
+    byte unk7[16];
+    uint entryCount <name="EntryCount">;
 }header2;
 
 typedef struct
 {
-    long unk8[3];
+    byte unk8[12];
     paramID yokaiparamID <name="ParamID">;
-    long unk9[3];
+    byte unk9[12];
     skillID yokaiskillID <name="SkillID">;
-    long ymove <name="YMove", comment="Attack tied to the Y Button.">;
-    soultID yokaisoultimateID <name="SoultimateID">;
-    long xmove1 <name="XMove1", comment="Attack tied to the X Button.">;
-    long xmove1unlock <name="XMove1Unlock", comment="Level that XMove1 unlocks at.">;
-    long xmove2 <name="XMove2", comment="Attack tied to the X Button.">;
-    long xmove2unlock <name="XMove2Unlock", comment="Level that XMove2 unlocks at.">;
-    long xmove3 <name="XMove3", comment="Attack tied to the X Button.">;
-    long xmove3unlock <name="XMove3Unlock", comment="Level that XMove3 unlocks at.">;
-    long xmove4 <name="XMove4", comment="Attack tied to the X Button.">;
-    long xmove4unlock <name="XMove4Unlock", comment="Level that XMove4 unlocks at.">;
-    long unk11[7];
+    moveID ymove <name="YMove", comment="Attack tied to the Y Button.">;
+    moveID yokaisoultimateID <name="SoultimateID">;
+    moveID xmove1 <name="XMove1", comment="Attack tied to the X Button.">;
+    uint xmove1unlock <name="XMove1Unlock", comment="Level that XMove1 unlocks at.">;
+    moveID xmove2 <name="XMove2", comment="Attack tied to the X Button.">;
+    uint xmove2unlock <name="XMove2Unlock", comment="Level that XMove2 unlocks at.">;
+    moveID xmove3 <name="XMove3", comment="Attack tied to the X Button.">;
+    uint xmove3unlock <name="XMove3Unlock", comment="Level that XMove3 unlocks at.">;
+    moveID xmove4 <name="XMove4", comment="Attack tied to the X Button.">;
+    uint xmove4unlock <name="XMove4Unlock", comment="Level that XMove4 unlocks at.">;
+    byte unk11[28];
 }yokaiParam;
 
 typedef struct
 {
-    long unk11[4];
-    long entryCount <name="EntryCount">;
+    byte unk11[16];
+    uint entryCount <name="EntryCount">;
 }header3;
 
 typedef struct
 {
-    long unk12[2];
+    byte unk12[8];
     paramID enemyparamID <name="ParamID">;
-    long unk13[4];
+    byte unk13[16];
 }enemyParam;
 
 typedef struct
 {
-    long unk14[4];
-    long entryCount <name="EntryCount">;
+    byte unk14[16];
+    uint entryCount <name="EntryCount">;
 }header4;
 
 typedef struct
 {
-    long unk15[2];
+    byte unk15[8];
     paramID charaextparam <name="ParamID">;
-    long unk16;
+    byte unk16[4];
 }charaExt;
 
 typedef struct
 {
-    long unk17[124];
+    byte unk17[496];
 }unk5;
 
 typedef struct
 {
-    long strings[75] <name="Strings">;
+    byte strings[300] <name="Strings">;
 }Strings;
 
 typedef struct
 {
-    long unk18[5];
+    byte unk18[20];
 }unk6;
 
 struct

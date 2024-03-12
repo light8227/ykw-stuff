@@ -12,78 +12,68 @@ LittleEndian();
 typedef struct
 {
     char Magic[6] <name="Magic">;
-    short unk[3];
-    long EntryBlockOffset <name="EntryBlockOffset">;
-    long unk2[9];
-    short stringCount <name="StringCount">;
-    short unk3;
-    long EntryBlockSize <name="EntryBlockSize">;
-    long unk4[5];
+    byte unk[6];
+    uint EntryBlockOffset <name="EntryBlockOffset">;
+    byte unk2[36];
+    ushort stringCount <name="StringCount">;
+    byte unk3[2];
+    uint EntryBlockSize <name="EntryBlockSize">;
+    byte unk4[20];
 }Header;
 
 typedef struct
 {
-    long unk5[8];
+    byte unk5[352];
 }entry;
 
 typedef struct
 {
-    short unk6[4];
-    long entrySize <name="EntrySize">;
-    long entryCount <name="EntryCount">;
-    short unk7[10];
-    long sectionSize <name="SectionSize">;
-    short unk8[64];
+    byte unk6[8];
+    uint entrySize <name="EntrySize">;
+    uint entryCount <name="EntryCount">;
+    byte unk7[20];
+    uint sectionSize <name="SectionSize">;
+    byte unk8[128];
 }Header2;
 
 typedef struct
 {
     paramID charaParamID <name="ParamID">;
-    long charaID <name="CharaID">;
-    long money <name="Money",comment="Base price to summon Yo-kai.">;
-    long moneyAdd <name="MoneyAdd",comment="Multiplier to add or subtract money depending on level? Don't know exact formula.">;
-    long itemIDArray[3] <name="ItemIDArray">;
-    long itemNumArray[3] <name="ItemNumArray",comment="The number of required items.">;
+    uint charaID <name="CharaID">;
+    uint money <name="Money",comment="Base price to summon Yo-kai.">;
+    uint moneyAdd <name="MoneyAdd",comment="Multiplier to add or subtract money depending on level? Don't know exact formula.">;
+    uint itemIDArray[3] <name="ItemIDArray">;
+    uint itemNumArray[3] <name="ItemNumArray",comment="The number of required items.">;
     itemType itemTypeArray[4] <name="ItemTypeArray",comment="Entries with Material either means a Material is set there or nothing is. They both use 0.">;
 }MatchInfo;
 
 typedef struct
 {
     Rank watchRank <name="WatchRank">;
-    short level <name="Level",comment="Normal summon level limit. Not applicable to gold aura Yo-kai.">;
-    Rank watchRank2 <name="WatchRank">;
-    short level2 <name="Level",comment="Normal summon level limit. Not applicable to gold aura Yo-kai.">;
-    Rank watchRank3 <name="WatchRank">;
-    short level3 <name="Level",comment="Normal summon level limit. Not applicable to gold aura Yo-kai.">;
-    Rank watchRank4 <name="WatchRank">;
-    short level4 <name="Level",comment="Normal summon level limit. Not applicable to gold aura Yo-kai.">;
-    Rank watchRank5 <name="WatchRank">;
-    short level5 <name="Level",comment="Normal summon level limit. Not applicable to gold aura Yo-kai.">;
-    Rank watchRank6 <name="WatchRank">;
-    short level6 <name="Level",comment="Normal summon level limit. Not applicable to gold aura Yo-kai.">;
-}MatchLevel;
+    ushort level <name="Level",comment="Normal summon level limit. Not applicable to gold aura Yo-kai.">;
+}MatchLevel[6];
 
 typedef struct
 {
-    long KonkatsuMatchInfo[5];
-    long charaParamID[3];
+    int KonkatsuMatchInfo[5];
+    int charaParamID[3];
     byte charaParamID2;
     byte charaID[3];
-    long charaID2;
+    int charaID2;
     byte charaID3;
     short money[3];
-    long moneyAdd[2];
+    int moneyAdd[2];
     byte moneyAdd;
-    long itemIDArray[3];
-    long itemNumArray[3];
+    int itemIDArray[3];
+    int itemNumArray[3];
     byte itemNumArray2;
     short itemTypeArray[7];
-    long KonkatsuMatchLevel[5];
+    int KonkatsuMatchLevel[5];
     byte KonkatsuMatchLevel;
     short watchRank[5];
     short level[3];
-    long mKonkatsuMatchInfoList[6];
-    long mKonkatsuMatchLevelList[6];
+    int mKonkatsuMatchInfoList[6];
+    int mKonkatsuMatchLevelList[6];
     byte mKonkatsuMatchLevelList2;
 }Strings;
 
@@ -91,9 +81,9 @@ typedef struct
 struct
 {
     Header secHeader <name="Header">;
-    entry data[11];
+    entry data;
     Header2 secHeader2 <name="Header2">;
     MatchInfo data2[132] <name="KONKATSU_MATCH_INFO">;
-    MatchLevel unke[1] <name="KONKATSU_MATCH_LEVEL">;
+    MatchLevel watchlevel <name="KONKATSU_MATCH_LEVEL">;
     Strings catNames <name="Category Name Strings">;
 }fileData;
