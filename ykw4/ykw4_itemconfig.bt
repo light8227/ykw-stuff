@@ -30,7 +30,8 @@ typedef struct
 {
     uint unk4[3];
     paramID consumeParamID <name="ParamID">;
-    uint unk5[17];
+    uint categoryID <name="CategoryID">;
+    uint unk5[16];
 }itemConsume;
 
 typedef struct
