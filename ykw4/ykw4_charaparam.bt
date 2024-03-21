@@ -19,7 +19,7 @@ typedef struct
 typedef struct
 {
     int unk3[5];
-    paramID charaparamID <name="ParamID">;
+    charaID charaparamID <name="ParamID">;
     baseID base <name="BaseID">;
     uint minHP <name="MinHP", comment="Minimum HP from Lv1-99.">;
     uint minStrength <name="MinStrength", comment="Minimum Strength from Lv1-99.">;
@@ -60,7 +60,7 @@ typedef struct
 typedef struct
 {
     int unk8[3];
-    paramID yokaiparamID <name="ParamID">;
+    charaID yokaiparamID <name="ParamID">;
     int unk9[3];
     skillID yokaiskillID <name="SkillID">;
     moveID ymove <name="YMove", comment="Attack tied to the Y Button.">;
@@ -85,7 +85,7 @@ typedef struct
 typedef struct
 {
     int unk12[2];
-    paramID enemyparamID <name="ParamID">;
+    charaID enemyparamID <name="ParamID">;
     int unk13[4];
 }enemyParam;
 
@@ -98,7 +98,7 @@ typedef struct
 typedef struct
 {
     int unk15[2];
-    paramID charaextparam <name="ParamID">;
+    charaID charaextparam <name="ParamID">;
     int unk16;
 }charaExt;
 

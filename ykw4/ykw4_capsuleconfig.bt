@@ -20,7 +20,11 @@ typedef struct
     uint unk2[2];
     uint capsuleID <name="CapsuleID">;
     TypeID typeid <name="TypeID">;
-    paramID ParamID <name="ParamID">;
+    union
+    {
+        charaID ParamID <name="CharaID">;
+        itemID ParamID <name="ItemID">;
+    }data <name="ParamID">;
     uint unk3[3];
 }infoList;
 

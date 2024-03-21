@@ -5,120 +5,126 @@
 //   Authors: Light8227
 //   Version: 1.0
 //------------------------------------------------
+#include "ykw4_enums.bt"
+
 LittleEndian();
 
 typedef struct
 {
-    long unk;
-    long entryBlockSize <name="EntryBlockSize">;
-    long unk2;
-    long catCount <name="CategoryCount">;
-    long unk3[2];
-    long entryCount <name="EntryCount">;
+    uint unk;
+    uint entryBlockSize <name="EntryBlockSize">;
+    uint unk2;
+    uint catCount <name="CategoryCount">;
+    uint unk3[2];
+    uint entryCount <name="EntryCount">;
 }header;
 
 typedef struct
 {
-    long unk4[4];
+    uint unk4[4];
 }tableInfo;
 
 typedef struct
 {
-    long unk5[4];
-    long entryCount <name="EntryCount">;
+    uint unk5[4];
+    uint entryCount <name="EntryCount">;
 }header2;
 
 typedef struct
 {
-    long unk6[3] <name="SKILL_TREE_TABLE">;
-    long unk7[4] <name="SKILL_TREE_TABLE_REF_TABLE_INFO">;
+    uint unk6[3] <name="SKILL_TREE_TABLE">;
+    uint unk7[4] <name="SKILL_TREE_TABLE_REF_TABLE_INFO">;
 }tableList;
 
 typedef struct
 {
-    long unk8[4];
-    long entryCount <name="EntryCount">;
+    uint unk8[4];
+    uint entryCount <name="EntryCount">;
 }header3;
 
 typedef struct
 {
-    long unk9[10];
+    uint unk9[3];
+    uint reqpoints <name="Required Points", comment="Number of Watch Points needed to acquire.">;
+    uint unk10;
+    moveID paramid <name="MoveID">;
+    uint unk11[4];
 }lvInfo;
 
 typedef struct
 {
-    long unk10[4];
-    long entryCount <name="EntryCount">;
+    uint unk12[4];
+    uint entryCount <name="EntryCount">;
 }header4;
 
 typedef struct
 {
-    long unk11[9] <name="SKILL_TREE_INFO">;
-    long unk12[4] <name="SKILL_TREE_INFO_REF_LV_INFO">;
+    uint unk13[9] <name="SKILL_TREE_INFO">;
+    uint unk14[4] <name="SKILL_TREE_INFO_REF_LV_INFO">;
 }infoList;
 
 typedef struct
 {
-    long unk13[4];
-    long entryCount <name="EntryCount">;
+    uint unk15[4];
+    uint entryCount <name="EntryCount">;
 }header5;
 
 typedef struct
 {
-    long unk14[3];
+    uint unk16[3];
 }connectList;
 
 typedef struct
 {
-    long unk15[4];
-    long entryCount <name="EntryCount">;
+    uint unk17[4];
+    uint entryCount <name="EntryCount">;
 }header6;
 
 typedef struct
 {
-    long unk16[4] <name="SKILL_TREE_CONNECT_SKILL">;
-    long unk17[4] <name="SKILL_TREE_CONNECT_SKILL_REF_CONNECT">;
+    uint unk18[4] <name="SKILL_TREE_CONNECT_SKILL">;
+    uint unk19[4] <name="SKILL_TREE_CONNECT_SKILL_REF_CONNECT">;
 }connectSkill;
 
 typedef struct
 {
-    long unk18[4];
-    long entryCount <name="EntryCount">;
+    uint unk20[4];
+    uint entryCount <name="EntryCount">;
 }header7;
 
 typedef struct
 {
-    long unk19[4] <name="SKILL_TREE_CONNECT_TYPE">;
-    long unk20[4] <name="SKILL_TREE_CONNECT_TYPE_REF_SKILL">;
+    uint unk21[4] <name="SKILL_TREE_CONNECT_TYPE">;
+    uint unk22[4] <name="SKILL_TREE_CONNECT_TYPE_REF_SKILL">;
 }connectType;
 
 typedef struct
 {
-    long unk21[4];
-    long entryCount <name="EntryCount">;
+    uint unk23[4];
+    uint entryCount <name="EntryCount">;
 }header8;
 
 typedef struct
 {
-    long unk22[3] <name="SKILL_TREE_CONNECT_INFO">;
-    long unk23[4] <name="SKILL_TREE_CONNECT_INFO_REF_TYPE">;
+    uint unk24[3] <name="SKILL_TREE_CONNECT_INFO">;
+    uint unk25[4] <name="SKILL_TREE_CONNECT_INFO_REF_TYPE">;
 }connectInfo;
 
 typedef struct
 {
-    long unk24[133];
+    uint unk26[133];
 }unk;
 
 typedef struct
 {
-    long strings[207] <name="Strings">;
+    uint strings[207] <name="Strings">;
     short strings2 <name="Strings">;
 }Strings;
 
 typedef struct
 {
-    short unk25;
-    long unk26[4];
+    short unk27;
+    uint unk28[4];
 }unk2;
 
 struct
