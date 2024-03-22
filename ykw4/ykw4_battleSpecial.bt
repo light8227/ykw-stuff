@@ -1,0 +1,81 @@
+//------------------------------------------------
+//--- 010 Editor v13.0.1 Binary Template
+//
+//      File: battle_special_0.13.89.cfg.bin
+//   Authors: Light8227
+//   Version: 1.0
+//------------------------------------------------
+#include "ykw4_enums.bt"
+
+LittleEndian();
+
+typedef struct
+{
+    int unk[6];
+    uint entryCount <name="EntryCount">;
+}header;
+
+typedef struct
+{
+    int unk2[4];
+    float unk3;
+    int unk4;
+    float unk5[2];
+    int unk6;
+    float unk7[2];
+    int unk8;
+}specialCamera;
+
+typedef struct
+{
+    int unk9[4];
+    uint entryCount2 <name="EntryCount">;
+}header2;
+
+typedef struct
+{
+    int unk10[7];
+}subEntry <name="BTL_SPECIAL_TENSION_DATA_INFO_LIST_BEG">;
+
+typedef struct
+{
+    int unk11[4];
+    int unk12[2];
+    uint subEntryCount <name="SubEntryCount">;
+    subEntry entries[subEntryCount];
+    int unk13[2];
+}specialTension;
+
+typedef struct
+{
+    int unk14[4];
+    uint entryCount3 <name="EntryCount">;
+}header3;
+
+typedef struct
+{
+    int unk15[3];
+    soultID soultimate <name="ParamID">;
+    int unk16[6];
+    union
+    {
+        float unk18[10];
+        int unk19[10];
+    }data;
+}specialData;
+
+typedef struct
+{
+    uint unk20[128];
+}unk;
+    
+struct
+{
+    header secheader <name="Header">;
+    specialCamera speccam[3] <name="BTL_SPECIAL_CAMERA_DATA_LIST_BEG">;
+    header2 secheader2 <name="Header2">;
+    specialTension spectens[7] <name="BTL_SPECIAL_TENSION_DATA", optimize=false>;
+    header3 secheader3 <name="Header3">;
+    specialData specdata[201] <name="BTL_SPECIAL_DATA_LIST_BEG">;
+    unk unknown <name="Unknown">;
+}fileData;

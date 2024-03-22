@@ -47,7 +47,7 @@ typedef struct
 {
     uint EntryHeader <name="EntryHeader">;
     byte unk8[16];
-    uint subEntryCount <name="EntryCount">;
+    uint subEntryCount <name="SubEntryCount">;
     subEntry entries[subEntryCount] <name="CPSL_PRIZE_TABLE_INFO_LIST_DATA">;
     uint unk9[2];
 }entryData;

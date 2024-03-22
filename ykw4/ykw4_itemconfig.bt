@@ -17,84 +17,87 @@ typedef struct
 
 typedef struct
 {
-    uint unk2[20];
+    uint unk2[3];
+    importantID importid <name="ParamID">;
+    uint categoryID <name="CategoryID">;
+    uint unk3[15];
 }itemImportant;
 
 typedef struct
 {
-    uint unk3[4];
+    uint unk4[4];
     uint entryCount <name="EntryCount">;
 }header2;
 
 typedef struct
 {
-    uint unk4[3];
-    paramID consumeParamID <name="ParamID">;
+    uint unk5[3];
+    itemID consumeParamID <name="ParamID">;
     uint categoryID <name="CategoryID">;
-    uint unk5[16];
+    uint unk6[16];
 }itemConsume;
 
 typedef struct
 {
-    uint unk6[4];
+    uint unk7[4];
     uint entryCount <name="EntryCount">;
 }header3;
 
 typedef struct
 {
-    uint unk7[3];
-    paramID equipID <name="ParamID">;
+    uint unk8[3];
+    itemID equipID <name="ParamID">;
     uint categoryID <name="CategoryID">;
-    uint unk8[13];
+    uint unk9[13];
     AbilityID extraability <name="AbilityID">;
     ExclusivityID exclusive <name="ExclusivityID">;
-    uint unk9[2];
+    uint unk10[2];
     int strengthstat <name="StrengthStat">;
     int spiritstat <name="SpiritStat">;
     int defensestat <name="DefenseStat">;
     int restat <name="ResistanceStat">;
-    uint unk10;
+    uint unk11;
 }itemEquip;
 
 typedef struct
 {
-    uint unk11[4];
+    uint unk12[4];
     uint entryCount <name="EntryCount">;
 }header4;
 
 typedef struct
 {
-    uint unk12[3];
-    paramID soulParamID <name="ParamID">;
-    uint unk13[16];
+    uint unk13[3];
+    itemID soulParamID <name="ParamID">;
+    uint unk14[16];
 }itemSoul;
 
 typedef struct
 {
-    uint unk14[4];
+    uint unk15[4];
     uint entryCount <name="EntryCount">;
 }header5;
 
 typedef struct
 {
-    uint unk15[3];
+    uint unk16[3];
 }condChara;
 
 typedef struct
 {
-    uint unk16[4];
+    uint unk17[4];
     uint entryCount <name="EntryCount">;
 }header6;
 
 typedef struct
 {
-    uint unk17[8] <name="ITEM_EQUIP_COND">;
-    uint unk18[4] <name="ITEM_EQUIP_COND_REF_COND_CHARA">;
+    uint unk18[8] <name="ITEM_EQUIP_COND">;
+    uint unk19[4] <name="ITEM_EQUIP_COND_REF_COND_CHARA">;
 }condList;
 
 typedef struct
 {
-    uint unk19[3978];
+    uint unk20[3978];
 }unk;
 
 typedef struct
@@ -104,7 +107,7 @@ typedef struct
 
 typedef struct
 {
-    uint unk20[5];
+    uint unk21[5];
 }unk2;
 
 struct
