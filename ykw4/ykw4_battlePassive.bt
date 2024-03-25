@@ -1,0 +1,167 @@
+//------------------------------------------------
+//--- 010 Editor v13.0.1 Binary Template
+//
+//      File: battle_passive_skill.cfg_7.00.18.bin
+//   Authors: Light8227
+//   Version: 1.0
+//------------------------------------------------
+#include "ykw4_enums.bt"
+#include "ykw4_structs.bt"
+
+LittleEndian();
+
+typedef struct
+{
+    int unk[6];
+    uint entrycount <name="EntryCount">;
+}header;
+
+typedef struct
+{
+    int unk2[12];
+}passiveEffect;
+
+typedef struct
+{
+    int unk3[4];
+    uint entryCount2 <name="EntryCount">;
+}header2;
+
+typedef struct
+{
+    int unk4[20];
+    groupExec exec;
+    groupEffect effect;
+    groupCondition condition;
+}passiveGroup;
+
+typedef struct
+{
+    int unk4[20];
+    groupExec exec;
+    groupCondition2 condition2;
+}passiveGroup2;
+
+typedef struct
+{
+    int unk4[20];
+    groupExec exec;
+    groupEffect effect;
+    groupCondition condition;
+}passiveGroup3;
+
+typedef struct
+{
+    int unk4[20];
+    groupExec exec;
+    groupEffect2 effect;
+    groupCondition2 condition;
+}passiveGroup4;
+
+typedef struct
+{
+    int unk4[20];
+    groupExec exec;
+    groupEffect effect;
+    groupCondition condition;
+}passiveGroup5;
+
+typedef struct
+{
+    passiveGroup passgroup[63] <optimize=false>;
+    passiveGroup2 passgroup2[6] <optimize=false>;
+    passiveGroup3 passgroup3[54] <optimize=false>;
+    passiveGroup4 passgroup4 <optimize=false>;
+    passiveGroup5 passgroup5[55] <optimize=false>;
+}passiveGroupAll;
+
+typedef struct
+{
+    int unk5[4];
+    uint entryCount3 <name="EntryCount">;
+}header3;
+
+typedef struct
+{
+    int unk6[3];
+    skillID paramID <name="ParamID">;
+    int unk7[8];
+    int nounid <name="NounID">;
+    int unk8[4];
+}passkill;
+
+typedef struct
+{
+    int unk9[3];
+    skillID paramID <name="ParamID">;
+    int unk10[8];
+    int nounid <name="NounID">;
+    int unk11[4];
+    skillSub overwrite;
+}passkill2;
+
+typedef struct
+{
+    passkill skill;
+    passkill2 skill2[10] <optimize=false>;
+    passkill skill3;
+    passkill2 skill4[13] <optimize=false>;
+    passkill skill5[3];
+    passkill2 skill6[6] <optimize=false>;
+    passkill skill7;
+    passkill2 skill8 <optimize=false>;
+    passkill skill9;
+    passkill2 skill10[3] <optimize=false>;
+    passkill skill11;
+    passkill2 skill12[12] <optimize=false>;
+    passkill skill13;
+    passkill2 skill14 <optimize=false>;
+    passkill skill15[2];
+    passkill2 skill16[2] <optimize=false>;
+    passkill skill17;
+    passkill2 skill18[7] <optimize=false>;
+    passkill skill19;
+    passkill2 skill20[14] <optimize=false>;
+    passkill skill21[2];
+    passkill2 skill22[3] <optimize=false>;
+    passkill skill23;
+    passkill2 skill24[12] <optimize=false>;
+    passkill skill25[2];
+    passkill2 skill26[8] <optimize=false>;
+    passkill skill27;
+    passkill2 skill28[4] <optimize=false>;
+    passkill skill29;
+    passkill2 skill30[26] <optimize=false>;
+    passkill skill31;
+    passkill2 skill32[12] <optimize=false>;
+    passkill skill33;
+    passkill2 skill34[20] <optimize=false>;
+    passkill skill35;
+    passkill2 skill36[39] <optimize=false>;
+    passkill skill37;
+    passkill2 skill38[62] <optimize=false>;
+    passkill skill39;
+    passkill2 skill40[2] <optimize=false>;
+    passkill skill41;
+    passkill2 skill42[7] <optimize=false>;
+    passkill skill43;
+    passkill2 skill44[25] <optimize=false>;
+    passkill skill45[6];
+    passkill2 skill46[4] <optimize=false>;
+    passkill skill47[2];
+    passkill2 skill48[59] <optimize=false>;
+    passkill skill49;
+    passkill2 skill50[42] <optimize=false>;
+    passkill skill51;
+    passkill2 skill52[120] <optimize=false>;
+}passiveSkillAll;
+
+struct
+{
+    header secheader <name="Header">;
+    passiveEffect passeff[90];
+    header2 secheader2 <name="Header2">;
+    passiveGroupAll passgroup;
+    header3 secheader3 <name="Header3">;
+    passiveSkillAll passivekill;
+}fileData;

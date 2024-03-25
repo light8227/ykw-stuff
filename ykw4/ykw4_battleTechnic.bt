@@ -1,0 +1,35 @@
+//------------------------------------------------
+//--- 010 Editor v13.0.1 Binary Template
+//
+//      File: battle_technic_0.13.62.cfg.bin
+//   Authors: Light8227
+//   Version: 1.0
+//------------------------------------------------
+#include "ykw4_enums.bt"
+
+LittleEndian();
+
+typedef struct
+{
+    int unk[6];
+    uint entrycount <name="EntryCount">;
+}header;
+
+typedef struct
+{
+    int unk2[2];
+    moveID paramID <name="ParamID">;
+    int unk3[10];
+}btlTechnic;
+
+typedef struct
+{
+    int unk3[25];
+}unk;
+
+struct
+{
+    header secheader <name="Header">;
+    btlTechnic list[724];
+    unk unknown;
+}fileData;

@@ -49,7 +49,7 @@ typedef struct
     itemID equipID <name="ParamID">;
     uint categoryID <name="CategoryID">;
     uint unk9[13];
-    AbilityID extraability <name="AbilityID">;
+    skillID extraability <name="AbilityID">;
     ExclusivityID exclusive <name="ExclusivityID">;
     uint unk10[2];
     int strengthstat <name="StrengthStat">;
