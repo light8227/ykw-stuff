@@ -12,28 +12,28 @@ LittleEndian();
 typedef struct
 {
     int unk[6];
-    int entryCount <name="EntryCount">;
+    uint entryCount <name="EntryCount">;
 }header;
 
 typedef struct
 {
     int unk2[2];
-    paramID itemParamID <name="ParamID">;
+    itemID paramID <name="ParamID">;
     int unk3[4];
 }itemsList;
 
 typedef struct
 {
     int unk4[4];
-    int entryCount <name="EntryCount">;
+    uint entryCount <name="EntryCount">;
 }header2;
 
 typedef struct
 {
     int unk5[3] <name="ITBL_BASE">;
     int unk6[2] <name="ITBL_BASE_REF_ITEMS">;
-    int rewardID <name="RewardID", comment="Lines up with entry numbers in ITBL_ITEMS_LIST_BEG. For example, ITBL_ITEMS_LIST_BEG[895] would be RewardID: 895.">;
-    int rewardNum <name="ItemRewardNumber", comment="Number of possible rewards for the Mission.">;
+    uint rewardID <name="RewardID", comment="Lines up with entry numbers in ITBL_ITEMS_LIST_BEG. For example, ITBL_ITEMS_LIST_BEG[895] would be RewardID: 895.">;
+    uint rewardNum <name="ItemRewardNumber", comment="Number of possible rewards for the Mission.">;
 }baseList;
 
 typedef struct

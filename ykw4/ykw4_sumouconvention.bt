@@ -1,0 +1,27 @@
+//------------------------------------------------
+//--- 010 Editor v13.0.1 Binary Template
+//
+//      File: sumou_convention_config.cfg.bin
+//   Authors: Light8227
+//   Version: 1.0
+//------------------------------------------------
+#include "ykw4_enums.bt"
+
+LittleEndian();
+
+typedef struct
+{
+    int unk[6];
+    uint entryCount <name="EntryCount">;
+}header;
+
+typedef struct
+{
+    int unk2[52];
+}convList;
+
+struct
+{
+    header secheader;
+    convList convlist[31];
+}fileData;

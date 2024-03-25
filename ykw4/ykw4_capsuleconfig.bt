@@ -11,13 +11,13 @@ LittleEndian();
 
 typedef struct
 {
-    uint unk[6];
+    int unk[6];
     uint entryCount <name="EntryCount">;
 }header;
 
 typedef struct
 {
-    uint unk2[2];
+    int unk2[2];
     uint capsuleID <name="CapsuleID">;
     TypeID typeid <name="TypeID">;
     union
@@ -25,36 +25,36 @@ typedef struct
         charaID ParamID <name="CharaID">;
         itemID ParamID <name="ItemID">;
     }data <name="ParamID">;
-    uint unk3[3];
+    int unk3[3];
 }infoList;
 
 typedef struct
 {
-    byte unk4[16];
+    int unk4[4];
     uint entryCount <name="EntryCount">;
 }header2;
 
 typedef struct
 {
-    uint unk5;
+    int unk5;
     Availability capsule <name="Availability">;
     uint capsuleID <name="CapsuleID">;
     uint dailyChance <name="DailyPrizeChance">;
-    uint unk7[3];
+    int unk7[3];
 }subEntry;
 
 typedef struct
 {
     uint EntryHeader <name="EntryHeader">;
-    byte unk8[16];
+    int unk8[4];
     uint subEntryCount <name="SubEntryCount">;
     subEntry entries[subEntryCount] <name="CPSL_PRIZE_TABLE_INFO_LIST_DATA">;
-    uint unk9[2];
+    int unk9[2];
 }entryData;
 
 typedef struct
 {
-    uint unk10[4];
+    int unk10[4];
     uint entryCount <name="EntryCount">;
 }header3;
 
@@ -74,12 +74,12 @@ typedef struct
     uint unk15[2] <name="CPSL_LOT_RANK_RATE_INFO_DATA">;
     uint prize4 <name="Prize">;
     uint prizeChance4 <name="PrizeChance">;
-    uint unk16[2];
+    int unk16[2];
 }rankRate;
 
 typedef struct
 {
-    uint unk17[4];
+    int unk17[4];
     uint entryCount <name="EntryCount">;
 }header4;
 
@@ -97,25 +97,25 @@ typedef struct
 typedef struct
 {
     uint EntryHeader <name="EntryHeader">;
-    uint unk18[6];
+    int unk18[6];
     uint subEntryCount <name="EntryCount">;
     subEntry2 entries[subEntryCount] <name="CPSL_CONFIG_INFO_DATA_LIST_BEG">;
-    uint unk19[2];
+    int unk19[2];
 }configInfo;
 
 typedef struct
 {
-    uint unk20[297];
+    int unk20[297];
 }unk5;
 
 typedef struct
 {
-    uint strings[149] <name="Strings">;
+    int strings[149] <name="Strings">;
 }Strings;
 
 typedef struct
 {
-    uint unk21[7];
+    int unk21[7];
 }unk6;
 
 struct

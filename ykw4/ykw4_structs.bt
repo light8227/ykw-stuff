@@ -1,0 +1,108 @@
+//------------------------------------------------
+//--- 010 Editor v13.0.1 Binary Template
+//
+//      File: 
+//   Authors: 
+//   Version: 
+//------------------------------------------------
+typedef struct
+{
+    int unk[3];
+}subEntry;
+
+typedef struct
+{
+    int unk2[2];
+    uint subEntryCount <name="SubEntryCount">;
+    subEntry entries[subEntryCount] <optimize=false>;
+    int unk3[2];
+}groupExec;
+
+typedef struct
+{
+    int unk4[8];
+    int unk5[2];
+}subEntry3;
+
+typedef struct
+{
+    int unk6[2];
+    uint subEntryCount3 <name="SubEntryCount">;
+    subEntry3 entries3[subEntryCount3] <optimize=false>;
+}effectCondition;
+
+typedef struct
+{
+    int unk7[13];
+    effectCondition cond;
+}subEntry2;
+
+typedef struct
+{
+    int unk8[2];
+    uint subEntryCount2 <name="SubEntryCount">;
+    subEntry2 entries2[subEntryCount2] <optimize=false>;
+}groupEffect;
+
+typedef struct
+{
+    int unk9[8];
+}subEntry4;
+
+typedef struct
+{
+    int unk10[4];
+    uint subEntryCount4 <name="SubEntryCount">;
+    subEntry4 entries4[subEntryCount4] <optimize=false>;
+    int unk11[2];
+}groupCondition;
+
+typedef struct
+{
+    int unk12[2];
+    uint subEntryCount4 <name="SubEntryCount">;
+    subEntry4 entries4[subEntryCount4] <optimize=false>;
+    int unk13[2];
+}groupCondition2;
+
+typedef struct
+{
+    int unk14[8];
+}subEntry32;
+
+typedef struct
+{
+    int unk15[2];
+    uint subEntryCount32 <name="SubEntryCount">;
+    subEntry32 entries32[subEntryCount32] <optimize=false>;
+    int unk16[4];
+}effectCondition2;
+
+typedef struct
+{
+    int unk17[13];
+    effectCondition2 cond;
+}subEntry22;
+
+typedef struct
+{
+    int unk18[2];
+    uint subEntryCount22 <name="SubEntryCount">;
+    subEntry22 entries22[subEntryCount22] <optimize=false>;
+}groupEffect2;
+
+
+
+
+typedef struct
+{
+    int unk19[10];
+    int unk20[2];
+}subEntry5;
+
+typedef struct
+{
+    int unk21[2];
+    uint subEntryCount5 <name="SubEntryCount">;
+    subEntry5 entries5[subEntryCount5] <optimize=false>;
+}skillSub;

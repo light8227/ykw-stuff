@@ -11,12 +11,12 @@ typedef struct
 {
     char Magic[6] <name="Magic">;
     short unk[3];
-    long EntryBlockOffset <name="EntryBlockOffset">;
-    long unk2[9];
+    uint EntryBlockOffset <name="EntryBlockOffset">;
+    int unk2[9];
     short stringCount <name="StringCount">;
     short unk3;
-    long EntryBlockSize <name="EntryBlockSize">;
-    long unk4[5];
+    uint EntryBlockSize <name="EntryBlockSize">;
+    int unk4[5];
 }Header;
 
 typedef struct
@@ -26,27 +26,27 @@ typedef struct
 
 typedef struct
 {
-    long KonkatsuListCombineInfo[6];
+    int KonkatsuListCombineInfo[6];
     byte KonkatsuListCombineInfo2[3];
-    long rank;
+    int rank;
     byte rank2;
-    long numArray[2];
+    int numArray[2];
     byte numArray2;
-    long moneyArray[2];
+    int moneyArray[2];
     byte moneyArray2[3];
-    long KonkatsuListDivideInfo[6];
+    int KonkatsuListDivideInfo[6];
     short KonkatsuListDivideInfo2;
-    long KonkatsuListDivideTypeInfo[7];
+    int KonkatsuListDivideTypeInfo[7];
     byte KonkatsuListDivideTypeInfo2[3];
-    long race;
+    int race;
     byte race2;
-    long item;
+    int item;
     byte item2;
-    long mKonkatsuListCombineInfoList[7];
+    int mKonkatsuListCombineInfoList[7];
     short mKonktasuListCombineInfoList2;
-    long mKonkatsuListDivideInfoList[7];
+    int mKonkatsuListDivideInfoList[7];
     byte mKonkatsuListDivideInfoList2;
-    long mKonkatsuListDivideTypeInfoList[8];
+    int mKonkatsuListDivideTypeInfoList[8];
     byte mKonkatsuListDivideTypeInfoList2;
 }Strings;
 

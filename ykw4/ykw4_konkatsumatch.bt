@@ -14,32 +14,32 @@ typedef struct
     char Magic[6] <name="Magic">;
     byte unk[6];
     uint EntryBlockOffset <name="EntryBlockOffset">;
-    byte unk2[36];
-    ushort stringCount <name="StringCount">;
+    int unk2[9];
+    short stringCount <name="StringCount">;
     byte unk3[2];
     uint EntryBlockSize <name="EntryBlockSize">;
-    byte unk4[20];
+    int unk4[5];
 }Header;
 
 typedef struct
 {
-    byte unk5[352];
+    byte unk5[88];
 }entry;
 
 typedef struct
 {
-    byte unk6[8];
+    int unk6[2];
     uint entrySize <name="EntrySize">;
     uint entryCount <name="EntryCount">;
-    byte unk7[20];
+    int unk7[5];
     uint sectionSize <name="SectionSize">;
-    byte unk8[128];
+    int unk8[32];
 }Header2;
 
 typedef struct
 {
-    paramID charaParamID <name="ParamID">;
-    uint charaID <name="CharaID">;
+    charaID paramID <name="ParamID">;
+    uint characID <name="CharaID">;
     uint money <name="Money",comment="Base price to summon Yo-kai.">;
     uint moneyAdd <name="MoneyAdd",comment="Multiplier to add or subtract money depending on level? Don't know exact formula.">;
     uint itemIDArray[3] <name="ItemIDArray">;
@@ -50,7 +50,7 @@ typedef struct
 typedef struct
 {
     Rank watchRank <name="WatchRank">;
-    ushort level <name="Level",comment="Normal summon level limit. Not applicable to gold aura Yo-kai.">;
+    short level <name="Level",comment="Normal summon level limit. Not applicable to gold aura Yo-kai.">;
 }MatchLevel[6];
 
 typedef struct
@@ -58,9 +58,9 @@ typedef struct
     int KonkatsuMatchInfo[5];
     int charaParamID[3];
     byte charaParamID2;
-    byte charaID[3];
-    int charaID2;
-    byte charaID3;
+    byte characID[3];
+    int characID2;
+    byte characID3;
     short money[3];
     int moneyAdd[2];
     byte moneyAdd;

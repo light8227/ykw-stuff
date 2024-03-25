@@ -11,14 +11,14 @@ LittleEndian();
 
 typedef struct
 {
-    uint unk[6];
+    int unk[6];
     uint entryCount <name="EntryCount">;
-    uint unk2;
+    int unk2;
 }header;
 
 typedef struct
 {
-    uint unk3[5];
+    int unk3[5];
     charaID charaparamID <name="ParamID">;
     baseID base <name="BaseID">;
     uint minHP <name="MinHP", comment="Minimum HP from Lv1-99.">;
@@ -34,10 +34,10 @@ typedef struct
     elementAffinity elementResist <name="ElementResist", comment="Element that deals less damage.">;
     elementAffinity elementWeak <name="ElementWeak", comment="Element that deals more damage.">;
     speedStat speed <name="Speed", comment="Speed level.">;
-    uint unk4[20];
+    int unk4[20];
     uint minYP <name="MinYP", comment="Minimum YP from Lv1-99.">;
     uint maxYP <name="MaxYP", comment="Maximum YP from Lv1-99.">;
-    uint unk5[6];
+    int unk5[6];
     uint godHP <name="120HP", comment="Base HP for Lv120.">;
     uint godYP <name="120YP", comment="Base YP for Lv120.">;
     uint godStrength <name="120Strength", comment="Base Strength for Lv120.">;
@@ -48,23 +48,23 @@ typedef struct
 
 typedef struct
 {
-    uint unk6[3];
+    int unk6[3];
 }sortIndex;
 
 typedef struct
 {
-    uint unk7[4];
+    int unk7[4];
     uint entryCount <name="EntryCount">;
 }header2;
 
 typedef struct
 {
-    uint unk8[3];
+    int unk8[3];
     charaID yokaiparamID <name="ParamID">;
-    uint unk9[3];
-    skillID yokaiskillID <name="SkillID">;
+    int unk9[3];
+    moveID yokaiskillID <name="SkillID">;
     moveID ymove <name="YMove", comment="Attack tied to the Y Button.">;
-    soultID yokaisoultimateID <name="SoultimateID">;
+    moveID yokaisoultimateID <name="SoultimateID">;
     moveID xmove1 <name="XMove1", comment="Attack tied to the X Button.">;
     uint xmove1unlock <name="XMove1Unlock", comment="Level that XMove1 unlocks at.">;
     moveID xmove2 <name="XMove2", comment="Attack tied to the X Button.">;
@@ -73,48 +73,48 @@ typedef struct
     uint xmove3unlock <name="XMove3Unlock", comment="Level that XMove3 unlocks at.">;
     moveID xmove4 <name="XMove4", comment="Attack tied to the X Button.">;
     uint xmove4unlock <name="XMove4Unlock", comment="Level that XMove4 unlocks at.">;
-    uint unk11[7];
+    int unk11[7];
 }yokaiParam;
 
 typedef struct
 {
-    uint unk11[4];
+    int unk11[4];
     uint entryCount <name="EntryCount">;
 }header3;
 
 typedef struct
 {
-    uint unk12[2];
+    int unk12[2];
     charaID enemyparamID <name="ParamID">;
-    uint unk13[4];
+    int unk13[4];
 }enemyParam;
 
 typedef struct
 {
-    uint unk14[4];
+    int unk14[4];
     uint entryCount <name="EntryCount">;
 }header4;
 
 typedef struct
 {
-    uint unk15[2];
+    int unk15[2];
     charaID charaextparam <name="ParamID">;
-    uint unk16;
+    int unk16;
 }charaExt;
 
 typedef struct
 {
-    uint unk17[124];
+    int unk17[124];
 }unk5;
 
 typedef struct
 {
-    uint strings[75] <name="Strings">;
+    int strings[75] <name="Strings">;
 }Strings;
 
 typedef struct
 {
-    uint unk18[5];
+    int unk18[5];
 }unk6;
 
 struct

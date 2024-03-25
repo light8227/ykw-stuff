@@ -11,52 +11,52 @@ LittleEndian();
 
 typedef struct
 {
-    byte unk[24];
-    uint entryCount;
+    int unk[6];
+    uint entryCount <name="EntryCount">;
 }header;
 
 typedef struct
 {
-    byte unk2[8];
-    paramID enemyParamID <name="ParamID">;
+    int unk2[2];
+    chara paramID <name="ParamID">;
 }subEntry;
 
 typedef struct
 {
-    uint unk3[9];
+    int unk3[9];
     uint rank <name="Rank", comment="Busters Rank required to unlock Mission.">;
-    uint unk4[3];
+    int unk4[3];
     uint reccLevel <name="RecommendedLevel">;
     uint timeLimit <name="TimeLimit", comment="The number of minutes a Mission has.">;
-    uint unk5;
+    int unk5;
     uint clearReward <name="ClearReward", comment="The number of Oni Orbs you get for clearing the Mission.">;
-    uint unk6[5];
+    int unk6[5];
     missionName name <name="MissionName", comment="The name of the Mission.">;
     missionObjective objective <name="MissionObjective", comment="The main objective for the Mission.">;
     missionQuote quote <name="MissionQuote", comment="The quote Sgt. Burly says when viewing a Mission.">;
-    uint unk7[4];
+    int unk7[4];
     missionLocation location <name="MissionLocation", comment="The name of where the Mission takes place. Display only, does not change image or actual location.">;
     missionIcon icon <name="MissionIcon", comment="The character icon a Mission uses.">;
-    uint unk8[9];
-    uint subEntryCount <name="EntryCount">;
+    int unk8[9];
+    uint subEntryCount <name="SubEntryCount">;
     subEntry entries[subEntryCount] <name="YokaiSightings">;
-    uint unk9[2];
+    int unk9[2];
 }infoList;
 
 typedef struct
 {
-    uint unk10[9];
+    int unk10[9];
     uint rank <name="Rank", comment="Busters Rank required to unlock Mission.">;
-    uint unk11[6];
+    int unk11[6];
     uint clearReward <name="ClearReward", comment="The number of Oni Orbs you get for clearing the Mission.">;
-    uint unk12[5];
+    int unk12[5];
     missionName name <name="MissionName", comment="The name of the Mission.">;
     missionObjective objective <name="MissionObjective", comment="The main objective for the Mission.">;
     missionQuote quote <name="MissionQuote", comment="The quote Sgt. Burly says when viewing a Mission.">;
-    uint unk13[4];
+    int unk13[4];
     missionLocation location <name="MissionLocation", comment="The name of where the Mission takes place. Display only, does not change image or actual location.">;
     missionIcon icon <name="MissionIcon", comment="The character icon a Mission uses.">;
-    uint unk14[7];
+    int unk14[7];
 }infoList2;
 
 struct

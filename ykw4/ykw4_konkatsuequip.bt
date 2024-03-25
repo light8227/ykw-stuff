@@ -13,59 +13,59 @@ typedef struct
 {
     char Magic[6] <name="Magic">;
     short unk[3];
-    long EntryBlockOffset <name="EntryBlockOffset">;
+    uint EntryBlockOffset <name="EntryBlockOffset">;
     short unk2[18];
     short stringCount <name="StringCount">;
     short unk3;
-    long EntryBlockSize <name="EntryBlockSize">;
+    uint EntryBlockSize <name="EntryBlockSize">;
     short unk4[10];
 }Header;
 
 typedef struct
 {
-    long unk3[169];
-    long entryCount;
+    int unk3[169];
+    uint entryCount <name="EntryCount">;
 }unk;
 
 typedef struct
 {
-    long itemID <name="ItemID">;
-    long money <name="Money">;
-    paramID matItemIDArray[4] <name="MatItemIDArray">;
-    long matItemNumArray[3] <name="MatItemNumArray">;
-    long matItemTypeArray[3] <name="MatItemTypeArray">;
+    itemID paramid <name="ItemID">;
+    int money <name="Money">;
+    itemID matItemIDArray[4] <name="MatItemIDArray">;
+    int matItemNumArray[3] <name="MatItemNumArray">;
+    int matItemTypeArray[3] <name="MatItemTypeArray">;
 }EquipData;
 
 typedef struct
 {
-    long unk4[5000];
+    int unk4[5000];
 }unk2;
 
 typedef struct
 {
-    long KonkatsuEquipDataPowerup[7];
-    long itemID;
+    int KonkatsuEquipDataPowerup[7];
+    int iemID;
     short itemID2;
     byte itemID3;
-    long money;
+    int money;
     short money2;
-    long matItemIDArray[3];
+    int matItemIDArray[3];
     short matItemIDArray2;
     byte matItemIDArray3;
-    long matItemNumArray[4];
-    long matItemTypeArray[4];
+    int matItemNumArray[4];
+    int matItemTypeArray[4];
     byte matItemTypeArray2;
-    long KonkatsuEquipData[5];
-    long receiptID[2];
+    int KonkatsuEquipData[5];
+    int receiptID[2];
     short receiptID2;
-    long flagNo;
+    int flagNo;
     short flagNo2;
     byte flagNo3;
-    long powerupList[3];
-    long mKonkatsuEquipDataPowerupList[7];
+    int powerupList[3];
+    int mKonkatsuEquipDataPowerupList[7];
     short mKonkatsuEquipDataPowerupList2;
     byte mKonkatsuEquipDataPowerupList3;
-    long mKonkatsuEquipDataList[6];
+    int mKonkatsuEquipDataList[6];
 }Strings;
 
 struct

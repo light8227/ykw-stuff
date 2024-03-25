@@ -11,42 +11,42 @@ LittleEndian();
 
 typedef struct
 {
-    long unk[6];
-    long entryCount <name="EntryCount">;
+    int unk[6];
+    uint entryCount <name="EntryCount">;
 }header;
 
 typedef struct
 {
-    long unk2[13];
+    int unk2[13];
 }battleList;
 
 typedef struct
 {
-    long unk3[4];
-    long entryCount <name="EntryCount">;
+    int unk3[4];
+    uint entryCount <name="EntryCount">;
 }header2;
 
 typedef struct
 {
-    long baseInfo[3] <name="BaseInfo">;
-    long baseID <name="BaseID">;
-    long baseInfo2[13] <name="BaseInfo">;
-    long refBattle[4] <name="RefBattle">;
+    uint baseInfo[3] <name="BaseInfo">;
+    baseID id <name="BaseID">;
+    uint baseInfo2[13] <name="BaseInfo">;
+    uint refBattle[4] <name="RefBattle">;
 }baseInfo;
 
 typedef struct
 {
-    long unk4[1778];
+    int unk4[1778];
 }unk3;
 
 typedef struct
 {
-    long strings[41] <name="Strings">;
+    int strings[41] <name="Strings">;
 }Strings;
 
 typedef struct
 {
-    long unk5[7];
+    int unk5[7];
 }unk4;
 
 struct

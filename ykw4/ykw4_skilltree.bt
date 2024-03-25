@@ -11,120 +11,120 @@ LittleEndian();
 
 typedef struct
 {
-    uint unk;
+    int unk;
     uint entryBlockSize <name="EntryBlockSize">;
-    uint unk2;
+    int unk2;
     uint catCount <name="CategoryCount">;
-    uint unk3[2];
+    int unk3[2];
     uint entryCount <name="EntryCount">;
 }header;
 
 typedef struct
 {
-    uint unk4[4];
+    int unk4[4];
 }tableInfo;
 
 typedef struct
 {
-    uint unk5[4];
+    int unk5[4];
     uint entryCount <name="EntryCount">;
 }header2;
 
 typedef struct
 {
-    uint unk6[3] <name="SKILL_TREE_TABLE">;
-    uint unk7[4] <name="SKILL_TREE_TABLE_REF_TABLE_INFO">;
+    int unk6[3] <name="SKILL_TREE_TABLE">;
+    int unk7[4] <name="SKILL_TREE_TABLE_REF_TABLE_INFO">;
 }tableList;
 
 typedef struct
 {
-    uint unk8[4];
+    int unk8[4];
     uint entryCount <name="EntryCount">;
 }header3;
 
 typedef struct
 {
-    uint unk9[3];
+    int unk9[3];
     uint reqpoints <name="Required Points", comment="Number of Watch Points needed to acquire.">;
-    uint unk10;
+    int unk10;
     moveID paramid <name="MoveID">;
-    uint unk11[4];
+    int unk11[4];
 }lvInfo;
 
 typedef struct
 {
-    uint unk12[4];
+    int unk12[4];
     uint entryCount <name="EntryCount">;
 }header4;
 
 typedef struct
 {
-    uint unk13[9] <name="SKILL_TREE_INFO">;
-    uint unk14[4] <name="SKILL_TREE_INFO_REF_LV_INFO">;
+    int unk13[9] <name="SKILL_TREE_INFO">;
+    int unk14[4] <name="SKILL_TREE_INFO_REF_LV_INFO">;
 }infoList;
 
 typedef struct
 {
-    uint unk15[4];
+    int unk15[4];
     uint entryCount <name="EntryCount">;
 }header5;
 
 typedef struct
 {
-    uint unk16[3];
+    int unk16[3];
 }connectList;
 
 typedef struct
 {
-    uint unk17[4];
+    int unk17[4];
     uint entryCount <name="EntryCount">;
 }header6;
 
 typedef struct
 {
-    uint unk18[4] <name="SKILL_TREE_CONNECT_SKILL">;
-    uint unk19[4] <name="SKILL_TREE_CONNECT_SKILL_REF_CONNECT">;
+    int unk18[4] <name="SKILL_TREE_CONNECT_SKILL">;
+    int unk19[4] <name="SKILL_TREE_CONNECT_SKILL_REF_CONNECT">;
 }connectSkill;
 
 typedef struct
 {
-    uint unk20[4];
+    int unk20[4];
     uint entryCount <name="EntryCount">;
 }header7;
 
 typedef struct
 {
-    uint unk21[4] <name="SKILL_TREE_CONNECT_TYPE">;
-    uint unk22[4] <name="SKILL_TREE_CONNECT_TYPE_REF_SKILL">;
+    int unk21[4] <name="SKILL_TREE_CONNECT_TYPE">;
+    int unk22[4] <name="SKILL_TREE_CONNECT_TYPE_REF_SKILL">;
 }connectType;
 
 typedef struct
 {
-    uint unk23[4];
+    int unk23[4];
     uint entryCount <name="EntryCount">;
 }header8;
 
 typedef struct
 {
-    uint unk24[3] <name="SKILL_TREE_CONNECT_INFO">;
-    uint unk25[4] <name="SKILL_TREE_CONNECT_INFO_REF_TYPE">;
+    int unk24[3] <name="SKILL_TREE_CONNECT_INFO">;
+    int unk25[4] <name="SKILL_TREE_CONNECT_INFO_REF_TYPE">;
 }connectInfo;
 
 typedef struct
 {
-    uint unk26[133];
+    int unk26[133];
 }unk;
 
 typedef struct
 {
-    uint strings[207] <name="Strings">;
+    int strings[207] <name="Strings">;
     short strings2 <name="Strings">;
 }Strings;
 
 typedef struct
 {
     short unk27;
-    uint unk28[4];
+    int unk28[4];
 }unk2;
 
 struct

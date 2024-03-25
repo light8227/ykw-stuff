@@ -87,7 +87,8 @@ typedef struct
     skillID paramID <name="ParamID">;
     int unk7[8];
     int nounid <name="NounID">;
-    int unk8[4];
+    int textid <name="TextID">;
+    int unk8[3];
 }passkill;
 
 typedef struct
@@ -96,7 +97,8 @@ typedef struct
     skillID paramID <name="ParamID">;
     int unk10[8];
     int nounid <name="NounID">;
-    int unk11[4];
+    int textid <name="TextID">;
+    int unk11[3];
     skillSub overwrite;
 }passkill2;
 
