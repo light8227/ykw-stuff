@@ -23,8 +23,8 @@ typedef struct
 
 typedef struct
 {
-    byte unk5[88];
-}entry;
+    int unk5[88];
+}unk;
 
 typedef struct
 {
@@ -33,13 +33,15 @@ typedef struct
     uint entryCount <name="EntryCount">;
     int unk7[5];
     uint sectionSize <name="SectionSize">;
-    int unk8[32];
+    uint entrySize2 <name="EntrySize">;
+    uint entryCount2 <name="EntryCount">;
+    int unk8[30];
 }Header2;
 
 typedef struct
 {
-    charaID paramID <name="ParamID">;
-    uint characID <name="CharaID">;
+    charaID paramID <name="charaParamID">;
+    baseID characID <name="CharaID">;
     uint money <name="Money",comment="Base price to summon Yo-kai.">;
     uint moneyAdd <name="MoneyAdd",comment="Multiplier to add or subtract money depending on level? Don't know exact formula.">;
     uint itemIDArray[3] <name="ItemIDArray">;
@@ -81,7 +83,7 @@ typedef struct
 struct
 {
     Header secHeader <name="Header">;
-    entry data;
+    unk unknown <name="Unknown">;
     Header2 secHeader2 <name="Header2">;
     MatchInfo data2[132] <name="KONKATSU_MATCH_INFO">;
     MatchLevel watchlevel <name="KONKATSU_MATCH_LEVEL">;

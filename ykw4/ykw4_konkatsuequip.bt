@@ -23,23 +23,30 @@ typedef struct
 
 typedef struct
 {
-    int unk3[169];
+    int unk3[122];
+    uint entrySize <name="EntrySize">;
     uint entryCount <name="EntryCount">;
-}unk;
+    int unk4[6];
+    uint entrySize2 <name="EntrySize">;
+    uint entryCount2 <name="EntryCount">;
+    int unk5[38];
+}Header2;
 
 typedef struct
 {
-    itemID paramid <name="ItemID">;
-    int money <name="Money">;
+    itemID paramID <name="ItemID">;
+    uint money <name="Money">;
     itemID matItemIDArray[4] <name="MatItemIDArray">;
     int matItemNumArray[3] <name="MatItemNumArray">;
     int matItemTypeArray[3] <name="MatItemTypeArray">;
-}EquipData;
+}EquipPower;
 
 typedef struct
 {
-    int unk4[5000];
-}unk2;
+    itemID receiptid <name="ReceiptID">;
+    itemID flagno <name="FlagNo">;
+    int unk6[13];
+}EquipData;
 
 typedef struct
 {
@@ -71,8 +78,8 @@ typedef struct
 struct
 {
     Header secHeader <name="Header">;
-    unk unknown;
-    EquipData powerup[169] <name="KONKATSU_EQUIP_DATA_POWERUP">;
-    unk2 unknown2;
+    Header2 secheader2 <name="Header2">;
+    EquipPower powerup[149] <name="KONKATSU_EQUIP_DATA_POWERUP">;
+    EquipData idk[390] <name="KONKATSU_EQUIP_DATA">;
     Strings catNames <name="Category Name Strings">;
 }fileData;

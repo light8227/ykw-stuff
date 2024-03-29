@@ -62,7 +62,7 @@ typedef struct
     int unk8[3];
     charaID yokaiparamID <name="ParamID">;
     int unk9[3];
-    moveID yokaiskillID <name="SkillID">;
+    moveID paramID <name="SkillID">;
     moveID ymove <name="YMove", comment="Attack tied to the Y Button.">;
     moveID yokaisoultimateID <name="SoultimateID">;
     moveID xmove1 <name="XMove1", comment="Attack tied to the X Button.">;
