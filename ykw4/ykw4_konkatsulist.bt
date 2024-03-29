@@ -61,7 +61,7 @@ typedef struct
 struct
 {
     Header secheader <name="Header">;
-    unk unknown <name="KONKATSU_LIST_COMBINE_INFO">;
+    unk unknown;
     divideType divide[13] <name="KONKATSU_LIST_DIVIDE_TYPE_INFO">;
     Strings catNames <name="Category Name Strings">;
 }fileData;
