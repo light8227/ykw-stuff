@@ -23,15 +23,27 @@ typedef struct
 
 typedef struct
 {
-    uint unk[178];
+    uint unk[170];
 }unk;
 
 typedef struct
 {
+    charaID paramid <name="ParamID">;
+    uint max <name="Max">;
+    uint hp <name="HP">;
+    uint yp <name="YP">;
+    uint str <name="Strength">;
+    uint yk <name="Spirit">;
+    uint def <name="Defense">;
+    uint mdef <name="Resistance">;
+}maxData;
+
+typedef struct
+{
     charaID paramid <name="charaParamID">;
-    uint konnum <name="KonNum">;
+    uint konnum <name="KonNum", comment="Number of Kon needed to train stat.">;
     itemID paramid <name="ItemID">;
-    uint itemnum <name="ItemNum">;
+    uint itemnum <name="ItemNum", comment="Number of ItemID needed to train stat.">;
     uint gold <name="Gold">;
 }growData;
 
@@ -45,6 +57,7 @@ struct
 {
     Header secheader <name="Header">;
     unk unknown;
+    maxData max <name="KONKATSU_TRAINING_MAX_DATA">;
     growData grow[169] <name="KONKATSU_TRAINING_GROW_DATA">;
     strings catnames <name="Strings">;
 }fileData;
