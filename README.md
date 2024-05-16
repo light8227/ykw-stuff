@@ -11,3 +11,5 @@ ysh - Folder for Y School Heroes (JP).
 
     Spreadsheet for Y School Heroes (JP) IDs: https://docs.google.com/spreadsheets/d/1wa6APIIgk4d_72eug1-QdVLUPEGRzk17JAerPSyKzqw/edit?usp=sharing
     Templates are only supported for use in 010 Editor.
+
+YKW4 templates were deleted in favor of OnePieceFreak's CFGBinEditor. YSH templates have been converted as of yet.
