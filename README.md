@@ -16,7 +16,7 @@
 
 [Yo-kai Watch Busters 2 Map IDs](https://tcrf.net/Notes:Yo-kai_Watch_Busters_2:_Hihou_Densetsu_Banbarayaa)
 
-#Yo-kai Watch 4++
+# Yo-kai Watch 4++
 
 [Yo-kai Watch 4++ Character, Item, and Move IDs](https://docs.google.com/spreadsheets/d/1JABcMLPR1lp2cjappmUGu_1kkLk2wTXtklrH5WlZcBM/edit?usp=sharing)
 
