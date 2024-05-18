@@ -106,6 +106,105 @@ YKW1 [
 		Unk1|False
 		Unk2|False
 	)
+
+	ITEM_CONSUME (
+		ItemID|True
+		NameID|True
+		InventorySort|False
+		ItemType|False
+		Offset1|False
+		Offset2|False
+		CarryCap|False
+		IsBuyable|False
+		IsSellable|False
+		IsFusable|False
+		SellPrice|False
+		PurchasePrice|False
+		IconPosX|False
+		IconPosY|False
+		DescriptionID|True
+		AllyEffectTextID|True
+		FoeEffectTextID|True
+		Unk17|False
+		EffectValue|False
+		Unk19|False
+		Unk20|True
+		Unk21|False
+		Unk22|True
+	)
+
+	ITEM_EQUIPMENT (
+		ItemID|True
+		NameID|True
+		InventorySort|False
+		ItemType|False
+		Offset1|False
+		Offset2|False
+		CarryCap|False
+		Unk7|False
+		Unk8|False
+		Unk9|False
+		SellPrice|False
+		BuyPrice|False
+		IconPosX|False
+		IconPosY|False
+		DescriptionID|True
+		BuffTextID|False
+		DebuffTextID|False
+		Unk17|False
+		Unk18|False
+		Unk19|False
+		Unk20|False
+		Unk21|False
+		Unk22|False
+		Unk23|False
+		Unk24|True
+	)
+
+	ITEM_IMPORTANT (
+		ItemID|True
+		NameID|True
+		InventorySort|False
+		ItemType|False
+		Offset1|False
+		Offset2|False
+		CarryCap|False
+		Unk7|False
+		Unk8|False
+		Unk9|False
+		Unk10|False
+		Unk11|False
+		IconPosX|False
+		IconPosY|False
+		Unk14|True
+		Unk15|False
+		Unk16|False
+		Unk17|True
+	)
+
+	ITEM_INDEX (
+		ItemID|True
+		InventorySort|False
+		ItemOffset|False
+	)
+
+	SHOP_CONFIG_INFO (
+		SlotID|True
+		ItemID|True
+		Price|False
+		Unk3|False
+		Unk4|False
+		Unk5|False
+		Unk6|False
+		Unk7|False
+		Unk8|False
+		Unk9|False
+		Unk10|False
+	)
+
+	ITEM_CREATURE (
+		Unk0|True
+	)
 ]
 
 YKW2 [
