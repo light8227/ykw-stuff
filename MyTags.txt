@@ -138,8 +138,8 @@ YKW1 [
 		NameID|True
 		InventorySort|False
 		ItemType|False
-		Offset1|False
-		Offset2|False
+		Unk5|False
+		Unk6|False
 		CarryCap|False
 		Unk7|False
 		Unk8|False
@@ -166,8 +166,8 @@ YKW1 [
 		NameID|True
 		InventorySort|False
 		ItemType|False
-		Offset1|False
-		Offset2|False
+		Unk5|False
+		Unk6|False
 		CarryCap|False
 		Unk7|False
 		Unk8|False
