@@ -742,6 +742,12 @@ YKW2 [
 		Unk5|False
 		Area|False
 	)
+
+	TEXT_WASHA_MAP (
+		KeyID|True
+		TextOffset|False
+		TalkerBaseID|True
+	)
 ]
 
 YKWB [
