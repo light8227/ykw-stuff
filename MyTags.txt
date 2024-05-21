@@ -433,7 +433,7 @@ YKW2 [
 	SKILL_CONFIG_INFO (
 		SkillConfigID|True
 		Unk1|False
-		NounID|True
+		TextID|True
 		TextID|True
 		Unk3|False
 		Power|False
@@ -854,7 +854,7 @@ YKWB [
 	)
 
 	NOUN_INFO (
-		NounID|False
+		TextID|False
 		Unk1|False
 		Unk2|False
 		Unk3|False
@@ -2153,8 +2153,8 @@ YW4 [
 	)
 
 	DELIVERY_INFO_DATA (
-		Unk0|False
-		Unk1|False
+		ParamID|False
+		NumberReceived|False
 		Unk2|False
 	)
 
@@ -2171,7 +2171,7 @@ YW4 [
 		ParamID|False
 		Unk1|False
 		Unk2|False
-		NounID|False
+		TextID|False
 		Unk4|False
 		Unk5|False
 		Unk6|False
@@ -2191,7 +2191,7 @@ YW4 [
 		Unk6|False
 		Unk7|False
 		Unk8|False
-		NounID|False
+		TextID|False
 		TextID|False
 	)
 
@@ -2218,7 +2218,7 @@ YW4 [
 		Unk15|False
 		Unk16|False
 		Unk17|False
-		NounID|False
+		TextID|False
 		ObjectiveID|False
 		TextID|False
 		Unk21|False
@@ -2238,6 +2238,80 @@ YW4 [
 		RequiredPoints|False
 		Unk2|False
 		SkillID|False
+	)
+
+	HELP_LIST_IMAGE (
+		FileName|False
+	)
+
+	TEXT_INFO (
+		TextID|False
+	)
+
+	HELP_LIST_INFO (
+		Unk0|False
+		Unk1|False
+		Unk2|False
+		HelpTextID|False
+		TextID|False
+		TextID|False
+		Unk6|False
+		PS4TextID|False
+	)
+
+	SHOP_INFO_ITEM (
+		Unk0|False
+		ParamID|False
+	)
+
+	SHOP_INFO (
+		Unk0|False
+		ShopNameID|False
+		Unk2|False
+		TextID|False
+	)
+
+	QUEST_DATA_PPS_INFO (
+		Unk0|False
+		Cond|False
+	)
+
+	QUEST_DATA_PHASE (
+		Unk0|False
+		TextID|False
+		ObjectiveTextID|False
+	)
+
+	QUEST_DATA_REWARD_ITEM (
+		ParamID|False
+		NumberReceived|False
+	)
+
+	QUEST_DATA_CFG (
+		Unk0|False
+		Unk1|False
+		Unk2|False
+		TextID|False
+		Unk4|False
+		Cond|False
+	)
+
+	DATA_COUNT (
+		Unk0|False
+	)
+
+	DATA_ITEM (
+		Unk0|False
+		Unk1|False
+		Unk2|False
+		Unk3|False
+	)
+
+	DELIVERY_INFO (
+		Unk0|False
+		TextID|False
+		Unk2|False
+		TextID|False
 	)
 ]
 
