@@ -1,0 +1,97 @@
+{
+  20: "call", // return 0 (Calls another method by name or crc with all arguments, ignoring the first one)
+  40: "typeof", // return 0 (Gets the type of the static or variable value)
+  500: "log", // return 0 (no-op)
+  501: "format", // return 0 (Formats a string like printf)
+  503: "substring", // return 0 (Cuts a string at the beginning by n bytes)
+  510: "parameter_count", // return 0 (returns the amount of input parameters of the current function)
+  520: "random", // return 0 (Take one random from the n arguments and use it as the ceiling to create a random value)
+  521: "crc16", // return 0 (0, the value of the argument, or the CRC16 of the string)
+  522: "crc32", // return 0 (0, the value of the argument, or the CRC32 of the string)
+  600: "math_abs", // return 0 (Gets the absolute representation of a value)
+  601: "math_sqrt", // return 0 (Gets the square root of a value)
+  602: "math_floor", // return 0 (Rounds to next integer towards negative infinity)
+  603: "math_round", // return 0 (Rounds to nearest integer. At .5 towards positive infinity)
+  604: "math_ceiling", // return 0 (Rounds to next integer towards positive infinity)
+  605: "math_min", // return 0 (Gets the lowest of any 2 or more values)
+  606: "math_max", // return 0 (Gets the highest of any 2 or more values)
+  607: "math_clamp", // return 0 (Clamps a value between a minimum and maximum, given in that order)
+  //608: "", // return 0 (Something with 2*PI and 1/(2*PI))
+  610: "math_sin", // return 0 (Gets the sin of the value)
+  611: "math_cos", // return 0 (Gets the cos of the value)
+  612: "math_tan", // return 0 (Gets the tan of the value)
+  620: "math_asin", // return 0 (Gets the inverse sin of the value)
+  621: "math_acos", // return 0 (Gets the inverse cos of the value)
+  622: "math_atan", // return 0 (Gets the inverse tan of the value)
+  14040: "set_daytime",
+  13609: "reserve_jump_map", //params: mapid, startingPositionX, startingPositionY, startingPositionZ
+  3502: "load_xi",
+  13612: "load_battle_ev", //params: battle event id, battle map
+  16526: "load_xa",
+  3702: "load_xc",
+  14051: "reserve_jump_map_2", //params: mapid, startingPositionX, startingPositionY, startingPositionZ
+  16532: "get_game_region", //no params
+  //Added Feb. 20th. Source: YW1 Mobile binary
+  13734: "CMND_STRING_GET_BY_TEXTTYPE",
+  13735: "CMND_STRING_GET_BY_TEXTTYPE_IDX",
+  13736: "CMND_BUILD_RES_TEXT",
+  13750: "CMND_DELETE_RES_TEXT",
+  15171: "CMND_SET_PLAY_DATA_TBOX",
+  15170: "CMND_CREATE_TBOX_EXT",
+  15151: "get_player_name", //no params
+  15150: "get_player_type", //no params
+  15145: "CMND_IS_NOT_OBTAIN_ITEM",
+  //Source: B2 debug logs
+  21302: "CMND_EV_SET_SHADOW_TYPE",
+  21301: "CMND_EV_SET_SHADOW BONE",
+  21304: "CMND_EV_SET_SHADOW SCALE",
+  21303: "CMND_EV_SET_SHADOW ROTY",
+  21204: "CMND_EV_SET_CHARA_CHECK_GROUND_ATTR",
+  26003: "CMND_EV_CUT_INFO_COUNT",
+  26004: "CMND_EV_CUT_INFO_SETUP",
+  26000: "CMND_EV_CUT_INFO",
+  25500: "CMND_EV_LOAD_EVENT_CAMERA",
+  13410: "CMND_SET_ENABLE",
+  21200: "CMND_EV_SET_CHARA_GROUND",
+  13401: "CMND_SET_POSRY",
+  20051: "CMND_EV_PROC_START",
+  21300: "CMND_EV_SET_SHADOW_VISIBLE",
+  20012: "CMND_EV_SET_EV_FRAME_STOP",
+  21214: "CMND_EV_SET_ICON_TO_CHARA",
+  13229: "CMND_SET_MAP_BUILD_POS",
+  26002 : "CMND_EV_START_CUT",
+  21209: "CMND_EV_ATTACH_CHARA",
+  22012: "CMND_EV_SET_ROT",
+  22011: "CMND_EV_SET_MAP_SHADOW",
+  3407: "CMND_IMG_IS_EXIST",
+  14001: "CMND_GET_GLOBAL_BIT_FLAG",
+  15260: "CMND_GET_QR_RESULT",
+  26101: "CMND_EV_NPC_DISABLE_EVENT_APP",
+  21205: "CMND_EV_SET_CHARA_MESH_VISIBLE",
+  24101: "CMND_EV_SET_WEATHER",
+  25002: "CMND_EV_SET_CHARA_LIGHT",
+  21002: "CMND_EV_CREATE_CHARA_BY_FILEPATH",
+  21210: "CMND_EV_DETACH_CHARA",
+  21217: "CMND_EV_KEEP_MANIP_MOT",
+  21003: "CMND_EV_CREATE_CHARA_2D_BY_FILEPATH",
+  23601: "CMND_EV_IMG_SET_ANM",
+  16385: "CMND_HACKSLASH_GET_HS_EQUIP_ITEM_DESC_TEXT",
+  21305: "CMND_EV_SET_SHADOW_RAY_CAST",
+  21201: "CMND_EV_SET_CHARA_CULLING",
+  21203: "CMND_EV_SET_CHARA_FOOTEFFECT",
+  15461: "CMND_BTL_GET_VIEW_STATE",
+  24100: "CMND_EV_MAP_FILTER_FADE",
+  21004 : "CMND_EV_DELETE_CHARA",
+  23501: "CMND_EV_IMG_DELETE",
+  13608: "reserve_event",
+  // context clues
+  13668 : "set_bike_state",
+  13010 : "display_chapter_title", //chapter number
+  15310 : "heal_party", //no params
+  13792 : "set_game_variable",
+  15599: "get_watch_type",
+  1103 : "get_controller_input", //unknown
+  13101 : "change_character", //parameters (0, baseid)
+  13733 : "get_menu_text",
+  14000 : "set_global_bit_flag" //(flagID,value)
+}
