@@ -1,4 +1,4 @@
-YKW1 [
+YW1 [
 	CHARA_BASE_YOKAI_INFO (
 		BaseID|True
 		FileNamePrefix|False
@@ -207,7 +207,7 @@ YKW1 [
 	)
 ]
 
-YKW2 [
+YW2 [
 	CHARA_BASE_YOKAI_INFO (
 		BaseID|True
 		FileNamePrefix|False
@@ -750,7 +750,7 @@ YKW2 [
 	)
 ]
 
-YKWB [
+YWB [
 	CHARA_BASE_YOKAI_INFO (
 		BaseID|True
 		FileNamePrefix|False
@@ -907,7 +907,7 @@ YKWB [
 	)
 ]
 
-YKW3 [
+YW3 [
 	CHARA_BASE_YOKAI_INFO (
 		BaseID|True
 		FileNamePrefix|False
@@ -1895,8 +1895,8 @@ YKW3 [
 
 YW4 [
 	CHARA_PARAM_INFO (
-		ParamID|True
-		BaseID|True
+		ParamID|False
+		BaseID|False
 		MinHP|False
 		MinStr|False
 		MinSpr|False
@@ -1949,12 +1949,16 @@ YW4 [
 	CHARA_BASE_INFO (
 		BaseID|False
 		ModelID|False
+		Unk2|False
+		NameNounID|False
+		CharaModelID|False
+		CharaMotionID|False
 	)
 
 	CPSL_PRIZE_INFO (
 		CapsuleID|True
 		TypeID|False
-		ParamID|True
+		ParamID|False
 	)
 
 	ITEM_IMPORTANT_INFO (
@@ -1986,7 +1990,7 @@ YW4 [
 	)
 
 	CPSL_LOT_RANK_RATE_INFO (
-		Unk0|True
+		CoinCorrelation|False
 	)
 
 	ITBL_BASE (
@@ -1994,7 +1998,7 @@ YW4 [
 	)
 
 	ITEM_CONSUME_INFO (
-		ParamID|True
+		ParamID|False
 		CategoryID|False
 		Unk2|False
 		Unk3|False
@@ -2015,7 +2019,7 @@ YW4 [
 	)
 
 	CPSL_LOT_RANK_RATE_INFO_DATA_LIST_BEG (
-		Unk0|True
+		Unk0|False
 	)
 
 	ITEM_EQUIP_INFO (
@@ -2046,7 +2050,7 @@ YW4 [
 	)
 
 	ITEM_SOUL_INFO (
-		ParamID|True
+		ParamID|False
 		CategoryID|False
 		Unk2|False
 		Unk3|False
@@ -2097,11 +2101,11 @@ YW4 [
 	)
 
 	CPSL_PRIZE_TABLE_INFO (
-		Unk0|True
+		PoolCorrelation|False
 	)
 
 	CPSL_CONFIG_INFO (
-		Unk0|True
+		Unk0|False
 	)
 
 	CPSL_LOT_RANK_RATE_INFO_DATA (
@@ -2110,41 +2114,41 @@ YW4 [
 	)
 
 	CPSL_CONFIG_INFO_DATA (
-		Unk0|True
+		Coin|False
 		Unk1|False
-		Unk2|True
-		FreeGift|True
-		3rdPrize|True
-		2ndPrize|True
-		1stPrize|True
+		CoinCorrelation|False
+		FreeGiftPoolCorrelation|False
+		3rdPrizePoolCorrelation|False
+		2ndPrizePoolCorrelation|False
+		1stPrizePoolCorrelation|False
 	)
 
 	ENEMY_PARAM_INFO (
-		ParamID|True
-		Unk1|False
-		Unk2|False
-		Unk3|True
-		Unk4|True
-	)
-
-	YOKAI_PARAM_INFO (
-		ParamID|True
+		ParamID|False
 		Unk1|False
 		Unk2|False
 		Unk3|False
-		SkillID|True
-		YMoveID|True
-		SoultimateID|True
-		XMove1ID|True
+		Unk4|False
+	)
+
+	YOKAI_PARAM_INFO (
+		ParamID|False
+		Unk1|False
+		Unk2|False
+		Unk3|False
+		SkillID|False
+		YMoveID|False
+		SoultimateID|False
+		XMove1ID|False
 		XMove1Unlock|False
-		XMove2ID|True
+		XMove2ID|False
 		XMove2Unlock|False
-		XMove3ID|True
+		XMove3ID|False
 		XMove3Unlock|False
-		XMove4ID|True
+		XMove4ID|False
 		XMove4Unlock|False
 		Unk15|False
-		Unk16|True
+		Unk16|False
 		Unk17|False
 		Unk18|False
 		Unk19|False
@@ -2170,14 +2174,14 @@ YW4 [
 	BTL_TECHNIC_INFO (
 		ParamID|False
 		Unk1|False
-		Unk2|False
+		Attribute?|False
 		TextID|False
 		Unk4|False
 		Unk5|False
 		Unk6|False
 		Unk7|False
 		Unk8|False
-		Unk9|False
+		NumberOfHits|False
 		Unk10|False
 	)
 
@@ -2216,7 +2220,7 @@ YW4 [
 		Unk13|False
 		Unk14|False
 		Unk15|False
-		Unk16|False
+		Cond|False
 		Unk17|False
 		TextID|False
 		ObjectiveID|False
@@ -2245,7 +2249,9 @@ YW4 [
 	)
 
 	TEXT_INFO (
-		TextID|False
+		ParamID|False
+		TypeID|False
+		Text|False
 	)
 
 	HELP_LIST_INFO (
@@ -2313,12 +2319,78 @@ YW4 [
 		Unk2|False
 		TextID|False
 	)
+
+	CONVENTION_INFO_CFG (
+		Unk0|False
+		Cond|False
+		Unk2|False
+		TextID|False
+		RecommendedLevel|False
+		Unk5|False
+		GPReward|False
+		SumoEXPReward|False
+	)
+
+	NOUN_INFO (
+		NounID|False
+	)
+
+	CHARA_BASE_INFO_REF_BATTLE (
+		BASEBATTLERef|False
+		TypeID|False
+	)
+
+	CHARA_BASE_BATTLE (
+		Role|False
+		Unk1|False
+		Unk2|False
+		Unk3|False
+		Tribe|False
+		Rank|False
+	)
+
+	CHARA_BASE_INFO_LIST_BEG (
+		EntryCount|False
+	)
+
+	CHARA_PARAM_INFO_LIST_BEG (
+		EntryCount|False
+	)
+
+	YOKAI_PARAM_INFO_LIST_BEG (
+		EntryCount|False
+	)
+
+	TEXT_INFO_BEGIN (
+		EntryCount|False
+	)
+
+	CHARA_MENU_RESOURCE_INFO (
+		BaseID|False
+	)
+
+	NOUN_INFO_BEGIN (
+		EntryCount|False
+	)
+
+	CHARA_MODEL_INFO (
+		CharaModelID|False
+		Unk1|False
+		Unk2|False
+		Unk3|False
+		Unk4|False
+		Unk5|False
+	)
+
+	CHARA_BASE_BATTLE_LIST_BEG (
+		EntryCount|False
+	)
 ]
 
 YSH [
 	CHARA_PARAM_COMMON_INFO (
 		ParamID|False
-		BaseID|True
+		BaseID|False
 		HP|False
 		Strength|False
 		Spirit|False
@@ -2331,16 +2403,16 @@ YSH [
 
 	CHARA_PARAM_INFO (
 		Unk0|False
-		Unk1|True
+		Unk1|False
 	)
 
 	PLAYABLE_CHARA_INFO (
 		Unk0|False
-		BaseID|True
+		BaseID|False
 	)
 
 	CHARA_BASE_INFO (
-		BaseID|True
+		BaseID|False
 		ModelID|False
 	)
 
