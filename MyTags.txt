@@ -519,7 +519,7 @@ YKW2 [
 		NPCName|False
 		Unk1|False
 		Unk2|False
-		PhaseAppear|False
+		Cond|False
 		Unk3|False
 		Unk4|False
 		Unk5|False
@@ -730,7 +730,7 @@ YKW2 [
 	OP_SEARCH_POINT (
 		SearchID|True
 		PositionID|True
-		PhaseAppear|False
+		Cond|False
 	)
 
 	SHAPE_DATA_ITEM (
@@ -1185,7 +1185,7 @@ YKW3 [
 	MEDAL_LOAD_VALID (
 		Unk0|False
 		Unk1|False
-		PhaseAppear|False
+		Cond|False
 	)
 
 	MEDAL_LOAD_CFG (
@@ -1256,7 +1256,7 @@ YKW3 [
 		Unk14|False
 		Unk15|False
 		MissionMenuNumber|False
-		MissionPhaseAppear|False
+		MissionCond|False
 		MissionTextID|True
 		BtMapID|True
 		Unk20|False
