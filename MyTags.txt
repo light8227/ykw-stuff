@@ -100,7 +100,7 @@ YW1 [
 	)
 
 	ITABLE_DATA_MORE (
-		ItemID|False
+		ItemID|True
 		Quantity|False
 		Percentage|False
 		Unk1|False
@@ -204,6 +204,11 @@ YW1 [
 
 	ITEM_CREATURE (
 		Unk0|True
+	)
+
+	ITABLE_DATA (
+		TboxID|True
+		TreasureDataOffset|False
 	)
 ]
 
@@ -401,7 +406,7 @@ YW2 [
 	)
 
 	FLAG_INFO (
-		FlagNumber|False
+		FlagSlot|False
 		FlagID|True
 	)
 
@@ -747,6 +752,33 @@ YW2 [
 		KeyID|True
 		TextOffset|False
 		TalkerBaseID|True
+	)
+
+	POINT (
+		X|False
+		Z|False
+		Y|False
+		Rot|False
+	)
+
+	SAFE_POS_INFO (
+		Unk0|False
+		Unk1|False
+		CondOfSomeKind|False
+		HashedMapID|True
+		X|False
+		Z|False
+		Y|False
+		Unk7|True
+	)
+
+	EVENT_SET_CONFIG (
+		EventID|True
+		Unk1|False
+		Unk2|False
+		Unk3|False
+		Unk4|False
+		IsUnskippable|False
 	)
 ]
 
@@ -1889,6 +1921,24 @@ YW3 [
 	)
 
 	YOUKAI_SUMMON_INFO (
+		Unk0|True
+	)
+
+	SET_PATH_POP (
+		EncountID|True
+		Unk1|False
+		Unk2|False
+		Unk3|False
+		Unk4|False
+		Unk5|False
+		Unk6|False
+		Unk7|False
+		Unk8|False
+		PositionDataFilePath|False
+		Cond|False
+	)
+
+	SET_PATH (
 		Unk0|True
 	)
 ]
