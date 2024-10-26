@@ -1,6 +1,6 @@
 YW1 [
 	CHARA_BASE_YOKAI_INFO (
-		BaseID|True
+		BaseID|False
 		FileNamePrefix|False
 		FileNameNumber|False
 		FileNameVariant|False
@@ -10,7 +10,7 @@ YW1 [
 		Unk3|False
 		Unk4|False
 		Unk5|False
-		DescriptionID|True
+		DescriptionID|False
 		Unk6|False
 		Unk7|False
 		Unk8|False
@@ -27,8 +27,8 @@ YW1 [
 	)
 
 	CHARA_PARAM_INFO (
-		ParamID|True
-		BaseID|True
+		ParamID|False
+		BaseID|False
 		Tribe|False
 		MinHP|False
 		MinStrength|False
@@ -36,11 +36,11 @@ YW1 [
 		MinDefense|False
 		MinSpeed|False
 		Unk1|False
-		AttackID|True
+		AttackID|False
 		Unk2|False
-		TechniqueID|True
+		TechniqueID|False
 		Unk3|False
-		InspiritID|True
+		InspiritID|False
 		Unk4|False
 		Unk5|False
 		Unk6|False
@@ -51,16 +51,16 @@ YW1 [
 		AttributeDamageLigthning|False
 		AttributeDamageWater|False
 		AttributeDamageWind|False
-		SoultimateID|True
+		SoultimateID|False
 		Unk8|False
 		Unk9|False
 		Unk10|False
-		SkillID|True
+		SkillID|False
 		Money|False
 		Experience|False
-		Drop1ID|True
+		Drop1ID|False
 		Drop1Rate|False
-		Drop2ID|True
+		Drop2ID|False
 		Drop2Rate|False
 		Unk11|False
 		Unk12|False
@@ -100,7 +100,7 @@ YW1 [
 	)
 
 	ITABLE_DATA_MORE (
-		ItemID|True
+		ItemID|False
 		Quantity|False
 		Percentage|False
 		Unk1|False
@@ -209,6 +209,37 @@ YW1 [
 	ITABLE_DATA (
 		TboxID|True
 		TreasureDataOffset|False
+	)
+
+	OP_SEARCH_POINT (
+		Unk0|False
+	)
+
+	LEGEND_DATA_CONFIG (
+		Unk0|False
+		LegendaryParamID|False
+		RequiredParamID1|False
+		Revealed|False
+		RequiredParamID2|False
+		Revealed|False
+		RequiredParamID3|False
+		Revealed|False
+		RequiredParamID4|False
+		Revealed|False
+		RequiredParamID5|False
+		Revealed|False
+		RequiredParamID6|False
+		Revealed|False
+		RequiredParamID7|False
+		Revealed|False
+		RequiredParamID8|False
+		Revealed|False
+	)
+
+	NPC_BASE (
+		Unk0|False
+		Unk1|False
+		BaseID|False
 	)
 ]
 
@@ -811,7 +842,7 @@ YWB [
 
 	CHARA_PARAM_INFO (
 		ParamID|True
-		BaseID|True
+		BaseID|False
 		ShowInMedallium|False
 		MedalliumOffset|False
 		MinHP|False
@@ -827,16 +858,16 @@ YWB [
 		Unk14|False
 		ElementIsStrongTo|False
 		ElementIsWeakTo|False
-		SkillID|True
-		A-MoveID|True
-		SoultimateID|True
-		SpecialMove1|True
+		SkillID|False
+		A-MoveID|False
+		SoultimateID|False
+		SpecialMove1|False
 		SpecialMove1UnlockLevel|False
-		SpecialMove2|True
+		SpecialMove2|False
 		SpecialMove2UnlockLevel|False
-		SpecialMove3|True
+		SpecialMove3|False
 		SpecialMove3UnlockLevel|False
-		SpecialMove4|True
+		SpecialMove4|False
 		SpecialMove4UnlockLevel|False
 		Unk28|False
 		Unk29|False
@@ -880,7 +911,7 @@ YWB [
 	)
 
 	TEXT_INFO (
-		TextID|True
+		TextID|False
 		Unk1|False
 		Text|False
 	)
@@ -937,21 +968,109 @@ YWB [
 		FusionID|False
 		FusionIsItem|False
 	)
-]
 
-YW3 [
-	CHARA_BASE_YOKAI_INFO (
-		BaseID|True
-		FileNamePrefix|False
-		FileNameNumber|False
-		FileNameVariant|False
-		NameID|True
+	MISSION_CONFIG_INFO (
+		Unk0|False
 		Unk1|False
 		Unk2|False
 		Unk3|False
 		Unk4|False
 		Unk5|False
-		DescriptionID|True
+		Unk6|False
+		Unk7|False
+		Unk8|False
+		Unk9|False
+		Unk10|False
+		Unk11|False
+		Unk12|False
+		Unk13|False
+		Unk14|False
+		Unk15|False
+		Unk16|False
+		Unk17|False
+		NameTextID|False
+		ObjectiveTextID|False
+		InfoTextID|False
+	)
+
+	CHARA_PARAM_INFO_LIST_BEG (
+		Unk0|False
+	)
+
+	BOSS_CHARA_PARAM_INFO_LIST_BEG (
+		Unk0|True
+	)
+
+	ITEM_AURA (
+		Unk0|False
+		NounID|False
+		Unk2|False
+		Unk3|False
+		Unk4|False
+		Unk5|False
+		Unk6|False
+		Unk7|False
+		Unk8|False
+		Unk9|False
+		Unk10|False
+		Unk11|False
+		Unk12|False
+		Unk13|False
+		TextID|False
+		TextID|False
+		Unk16|False
+		Unk17|False
+		Unk18|False
+		Unk19|False
+		SkillID|False
+	)
+
+	CHARA_ABILITY_CONFIG_INFO (
+		SkillID|False
+		Unk1|False
+		Unk2|False
+		Unk3|False
+		EffectID|False
+		Multipliers|False
+		AoE|False
+	)
+
+	CHARA_ABILITY_EFFECT_INFO (
+		EffectID|False
+		Unk1|False
+		Unk2|False
+		Unk3|False
+		Unk4|False
+		Unk5|False
+		Unk6|False
+		Unk7|False
+		Unk8|False
+		Unk9|False
+		Unk10|False
+		Unk11|False
+		Effects|False
+		AoE|False
+		AoE|False
+	)
+
+	CHARA_ABLITY_BUFF_EFFECT_INFO (
+		EffectID|False
+	)
+]
+
+YW3 [
+	CHARA_BASE_YOKAI_INFO (
+		BaseID|False
+		FileNamePrefix|False
+		FileNameNumber|False
+		FileNameVariant|False
+		NameID|False
+		Unk1|False
+		Unk2|False
+		Unk3|False
+		Unk4|False
+		Unk5|False
+		DescriptionID|False
 		MedalPosX|False
 		MedalPosY|False
 		Unk6|False
@@ -976,7 +1095,7 @@ YW3 [
 
 	CHARA_PARAM_INFO (
 		ParamID|True
-		BaseID|True
+		BaseID|False
 		ShowInMedallium|False
 		MedalliumOffset|False
 		Unk1|False
@@ -990,20 +1109,20 @@ YW3 [
 		MaxSpirit|False
 		MaxDefense|False
 		MaxSpeed|False
-		ExperienceCurve|True
+		ExperienceCurve|False
 		Strongest|False
 		Weakness|False
 		Unk2|False
-		AttackID|True
+		AttackID|False
 		Unk3|False
-		TechniqueID|True
+		TechniqueID|False
 		Unk4|False
-		InspiritID|True
+		InspiritID|False
 		Unk5|False
 		Unk6|False
 		Unk7|False
-		SoulimateID|True
-		SkillID|True
+		SoulimateID|False
+		SkillID|False
 		Unk8|False
 		BattleType|False
 		CanIStillBecomeBefriend|False
@@ -1011,7 +1130,7 @@ YW3 [
 		Unk10|False
 		Unk11|False
 		Unk12|False
-		ScoutableID|True
+		ScoutableID|False
 		IsFusable|False
 		EvolveOffset|False
 		Unk14|False
@@ -1186,16 +1305,16 @@ YW3 [
 	)
 
 	CHARA_ABILITY_CONFIG_INFO (
-		SkillID|True
-		NameID|True
-		DescID|True
-		TriggeredTextID|True
-		Unk1|True
-		Unk2|False
-		Unk3|False
-		Unk4|False
-		Unk5|False
-		Unk6|False
+		SkillID|False
+		NounID|False
+		DescID|False
+		TriggeredTextID|False
+		EffectID|False
+		Multipliers|False
+		AoE|False
+		AoE|False
+		AoE|False
+		AoE|False
 		Unk7|False
 		Unk8|False
 		Unk9|False
@@ -1271,11 +1390,11 @@ YW3 [
 	)
 
 	MISSION_CONFIG_INFO (
-		MissionID|True
+		MissionID|False
 		MissionNumber|False
 		Unk0|False
-		Unk3|True
-		Unk4|True
+		Unk3|False
+		Unk4|False
 		MissionType|False
 		Unk6|False
 		Unk7|False
@@ -1289,13 +1408,13 @@ YW3 [
 		Unk15|False
 		MissionMenuNumber|False
 		MissionCond|False
-		MissionTextID|True
-		BtMapID|True
+		MissionTextID|False
+		BtMapID|False
 		Unk20|False
 		Unk21|False
 		Unk22|False
 		Unk23|False
-		ItemUnlock|True
+		ItemUnlock|False
 		Unk25|False
 	)
 
@@ -1351,7 +1470,7 @@ YW3 [
 	)
 
 	NOUN_INFO (
-		TextID|True
+		TextID|False
 		Unk1|False
 		Unk2|False
 		Unk3|False
@@ -1924,6 +2043,7 @@ YW3 [
 		Unk0|True
 	)
 
+
 	SET_PATH_POP (
 		EncountID|True
 		Unk1|False
@@ -1938,8 +2058,55 @@ YW3 [
 		Cond|False
 	)
 
+	AURA_INFO (
+		NounID|False
+		Unk1|False
+		Unk2|False
+		Unk3|False
+		Unk4|False
+		Unk5|False
+		Unk6|False
+		Unk7|False
+		Unk8|False
+		Unk9|False
+		Unk10|False
+		Unk11|False
+		SkillID|False
+	)
+
+	CHARA_ABILITY_EFFECT_INFO (
+		EffectID|False
+		Unk1|False
+		Unk2|False
+		Unk3|False
+		Unk4|False
+		Unk5|False
+		Unk6|False
+		Unk7|False
+		Unk8|False
+		Unk9|False
+		Unk10|False
+		Unk11|False
+		Effects|False
+		AoE|False
+		AoE|False
+		AoE|False
+		AoE|False
+	)
+
+	SHOP_ITEM (
+		shpTUBID|False
+		Unk1|False
+		NounID|False
+	)
+
+
 	SET_PATH (
 		Unk0|True
+	)
+
+	SHOP_CONFIG_INFO (
+		shpTUBID|False
 	)
 ]
 
@@ -2003,6 +2170,7 @@ YW4 [
 		NameNounID|False
 		CharaModelID|False
 		CharaMotionID|False
+		CharaMotionID|False
 	)
 
 	CPSL_PRIZE_INFO (
@@ -2033,9 +2201,9 @@ YW4 [
 
 	ITBL_ITEMS (
 		ParamID|False
-		Unk1|False
-		Unk2|False
-		Unk3|False
+		NumberObtained|False
+		ObtainRate|False
+		Cond|False
 		Unk4|False
 	)
 
@@ -2044,7 +2212,7 @@ YW4 [
 	)
 
 	ITBL_BASE (
-		Unk0|False
+		TableID|False
 	)
 
 	ITEM_CONSUME_INFO (
@@ -2138,8 +2306,8 @@ YW4 [
 	)
 
 	ITBL_BASE_REF_ITEMS (
-		RewardID|False
-		ItemRewardNumber|False
+		ITEMS_LISTRef|False
+		EntriesReferenced|False
 	)
 
 	CPSL_PRIZE_TABLE_INFO_DATA (
@@ -2165,7 +2333,7 @@ YW4 [
 
 	CPSL_CONFIG_INFO_DATA (
 		Coin|False
-		Unk1|False
+		PossibleFirstPrizes|False
 		CoinCorrelation|False
 		FreeGiftPoolCorrelation|False
 		3rdPrizePoolCorrelation|False
@@ -2177,8 +2345,8 @@ YW4 [
 		ParamID|False
 		Unk1|False
 		Unk2|False
-		Unk3|False
-		Unk4|False
+		TableID|False
+		TableID|False
 	)
 
 	YOKAI_PARAM_INFO (
@@ -2217,16 +2385,16 @@ YW4 [
 	)
 
 	PASSWORD_INFO (
-		Password|False
+		Password|True
 		ParamID|False
 	)
 
 	BTL_TECHNIC_INFO (
 		ParamID|False
 		Unk1|False
-		Attribute?|False
+		Unk2|False
+		NounID|False
 		TextID|False
-		Unk4|False
 		Unk5|False
 		Unk6|False
 		Unk7|False
@@ -2265,20 +2433,20 @@ YW4 [
 		Unk8|False
 		RecommendedLevel|False
 		TimeLimit|False
-		Unk11|False
+		TableID|False
 		ClearReward|False
 		Unk13|False
 		Unk14|False
 		Unk15|False
 		Cond|False
-		Unk17|False
-		TextID|False
-		ObjectiveID|False
-		TextID|False
+		Cond2|False
+		NameTextID|False
+		ObjectiveTextID|False
+		DescriptionTextID|False
 		Unk21|False
-		Unk22|False
+		LevelLimit|False
 		Unk23|False
-		Unk24|False
+		UltraOrbsRequired|False
 		LocationID|False
 		IconID|False
 	)
@@ -2291,11 +2459,12 @@ YW4 [
 		Unk0|False
 		RequiredPoints|False
 		Unk2|False
-		SkillID|False
+		ParamID|False
 	)
 
 	HELP_LIST_IMAGE (
 		FileName|False
+		Unk1|True
 	)
 
 	TEXT_INFO (
@@ -2374,11 +2543,12 @@ YW4 [
 		Unk0|False
 		Cond|False
 		Unk2|False
-		TextID|False
+		NameTextID|False
 		RecommendedLevel|False
-		Unk5|False
+		ClearRewardTableID|False
 		GPReward|False
 		SumoEXPReward|False
+		TableID|False
 	)
 
 	NOUN_INFO (
@@ -2386,8 +2556,8 @@ YW4 [
 	)
 
 	CHARA_BASE_INFO_REF_BATTLE (
-		BASEBATTLERef|False
-		TypeID|False
+		BATTLE_LISTRef|False
+		EntriesReferenced|False
 	)
 
 	CHARA_BASE_BATTLE (
@@ -2425,7 +2595,7 @@ YW4 [
 
 	CHARA_MODEL_INFO (
 		CharaModelID|False
-		Unk1|False
+		Filepath|False
 		Unk2|False
 		Unk3|False
 		Unk4|False
@@ -2434,6 +2604,79 @@ YW4 [
 
 	CHARA_BASE_BATTLE_LIST_BEG (
 		EntryCount|False
+	)
+
+	NPC_BASE (
+		Unk0|False
+		BaseID|False
+	)
+
+	NPC_PRESET (
+		NpcID|False
+	)
+
+	TALK_INFO (
+		NpcID|False
+	)
+
+	TALK_INFO_REF_TALK (
+		TALK_LISTRef|False
+		EntriesReferenced|False
+	)
+
+	CHARA_MDL_PRESET_DATA (
+		Unk0|False
+		Unk1|False
+		Unk2|False
+	)
+
+	CHARA_MDL_PRESET_INFO (
+		Unk0|False
+	)
+
+	CHARA_MDL_CHANGE_DATA (
+		Unk0|False
+		Cond|False
+		Unk2|False
+		Unk3|False
+	)
+
+	CHARA_MDL_CHANGE_INFO (
+		Unk0|False
+	)
+
+	BTL_CMD_DATA_STEFF (
+		Unk0|False
+		Unk1|False
+		Unk2|False
+		ParamID|False
+	)
+
+	CHARA_MOTION_INFO (
+		CharaMotionID|False
+		Filepath|False
+	)
+
+	UPGRADE_INFO_CFG (
+		Unk0|False
+		PromotionPoints|False
+	)
+
+	FINISH_ATTACK_TEX (
+		Filename|False
+	)
+
+	FINISH_ATTACK_BASE_PATH (
+		Filepath|False
+	)
+
+	CONVENTION_INFO_CFG_CLEAR_CND (
+		ClearConditionType|False
+	)
+
+	CPK_ITEM (
+		Filepath|False
+		CPKpath|False
 	)
 ]
 
@@ -2592,11 +2835,11 @@ YWB2 [
 		Unk0|False
 		Unk2|False
 		SkillID|True
-		A-attackID|True
+		AAttackID|True
 		SoultimateID|True
-		Y-attackID|True
+		YAttackID|True
 		Unk3|False
-		X-Attack|True
+		XAttackID|True
 		Unk4|False
 		BossCommandAttackID1|True
 		Unk5|False
@@ -2636,7 +2879,7 @@ YWB2 [
 		DungeonID|True
 		DungeonNumber|False
 		Unk2|False
-		Unk3|False
+		DungeonCategory|False
 		Unk4|False
 		DungeonType|False
 		Unk6|False
@@ -2655,7 +2898,7 @@ YWB2 [
 		Unk19|False
 		Unk20|False
 		DungeonMenuNumber|False
-		DungeonCond|False
+		Cond|False
 		DungeonTextID|False
 		MapID|False
 		Unk25|False
@@ -2691,7 +2934,7 @@ YWB2 [
 	)
 
 	AURA_INFO (
-		YokiID|True
+		NounID|False
 		Unk1|False
 		Unk2|False
 		Unk3|False
@@ -2699,29 +2942,95 @@ YWB2 [
 		Unk5|False
 		Price|False
 		Unk7|False
-		Unk8|False
+		EffectType|False
 		DungeonNumber|False
+		EffectType|False
+		SkillID|False
+		EffectType|False
+		SkillID|False
+		EffectType|False
+		SkillID|False
+		EffectType|False
+		SkillID|False
+		EffectType|False
+		SkillID|False
+		EffectType|False
+		SkillID|False
+	)
+
+	SHOP_ITEM (
+		shpTUBID|False
+		Unk1|False
+		NounID|False
+		Price|False
+		Unk4|False
+		Cond|False
+	)
+
+	MISSION_RUINS_INFO (
+		Unk0|True
+		Unk1|True
+		Unk2|False
+		Unk3|False
+		Cond|False
+		Unk5|False
+		Unk6|False
+		Unk7|False
+		Unk8|False
+		Unk9|False
 		Unk10|False
 		Unk11|False
 		Unk12|False
 		Unk13|False
 		Unk14|False
 		Unk15|False
-		Unk16|False
-		Unk17|False
-		Unk18|False
-		Unk19|False
-		Unk20|False
-		Unk21|False
+		Unk16|True
+		Unk17|True
 	)
 
-	SHOP_ITEM (
+	NOUN_INFO (
+		Unk0|True
+	)
+
+	KEY_BOARD_STR (
 		Unk0|False
 		Unk1|False
-		YokiID|True
-		Price|False
+		Unk2|False
+		Alphabet|False
+		Character|False
+	)
+
+	SHOP_CONFIG_INFO (
+		shpTUBID|False
+	)
+
+	CHARA_ABILITY_CONFIG_INFO (
+		SkillID|False
+		NounID|False
+		TextID|False
+		Unk3|False
+		EffectID|False
+		Multipliers|False
+		AoE|False
+	)
+
+	CHARA_ABILITY_EFFECT_INFO (
+		EffectID|False
+		Unk1|False
+		Unk2|False
+		Unk3|False
 		Unk4|False
-		YokiCond|False
+		Unk5|False
+		Unk6|False
+		Unk7|False
+		Unk8|False
+		Unk9|False
+		Unk10|False
+		Unk11|False
+		Unk12|False
+		Effects|False
+		AoE|False
+		AoE|False
 	)
 ]
 
