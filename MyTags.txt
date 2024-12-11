@@ -1095,7 +1095,7 @@ YW3 [
 
 	CHARA_PARAM_INFO (
 		ParamID|True
-		BaseID|False
+		BaseID|True
 		ShowInMedallium|False
 		MedalliumOffset|False
 		Unk1|False
@@ -1109,20 +1109,20 @@ YW3 [
 		MaxSpirit|False
 		MaxDefense|False
 		MaxSpeed|False
-		ExperienceCurve|False
+		ExperienceCurve|True
 		Strongest|False
 		Weakness|False
 		Unk2|False
-		AttackID|False
+		AttackID|True
 		Unk3|False
-		TechniqueID|False
+		TechniqueID|True
 		Unk4|False
-		InspiritID|False
+		InspiritID|True
 		Unk5|False
 		Unk6|False
 		Unk7|False
-		SoulimateID|False
-		SkillID|False
+		SoulimateID|True
+		SkillID|True
 		Unk8|False
 		BattleType|False
 		CanIStillBecomeBefriend|False
@@ -1130,7 +1130,7 @@ YW3 [
 		Unk10|False
 		Unk11|False
 		Unk12|False
-		ScoutableID|False
+		ScoutableID|True
 		IsFusable|False
 		EvolveOffset|False
 		Unk14|False
@@ -1258,12 +1258,12 @@ YW3 [
 		ParamID|True
 		Unk1|False
 		Unk2|False
-		Unk3|False
-		Unk4|False
-		Unk5|True
-		Unk6|False
-		Unk7|True
-		Unk8|False
+		Money|False
+		Experience|False
+		Item1|True
+		Item1DropRate|False
+		Item2|True
+		Item2DropRate|False
 		Unk9|True
 	)
 
@@ -1305,11 +1305,11 @@ YW3 [
 	)
 
 	CHARA_ABILITY_CONFIG_INFO (
-		SkillID|False
-		NounID|False
-		DescID|False
-		TriggeredTextID|False
-		EffectID|False
+		SkillID|True
+		NounID|True
+		DescID|True
+		TriggeredTextID|True
+		EffectID|True
 		Multipliers|False
 		AoE|False
 		AoE|False
@@ -1349,16 +1349,86 @@ YW3 [
 	)
 
 	GYM_BOSS_SINGLE_INFO (
-		Unk0|False
+		RoundID|True
 		Unk1|False
-		Unk2|True
-		Unk3|False
-		Unk4|False
-		Unk5|False
+		RoundNameID|True
+		RecommendLv|False
+		Unk2|False
+		GymPointsPrize|False
 		Unk6|True
 		Unk7|False
-		Unk8|False
+		Cond|False
 		Unk9|False
+	)
+
+	GYM_BOSS_SINGLE_ENC_INFO (
+		RoundID|True
+	)
+
+	GYM_BOSS_SINGLE_ENC_INFO_DATA (
+		EncountID|True
+		BattleMapID|True
+	)
+
+	GYM_BOSS_RUSH_INFO (
+		RoundID|True
+		Unk1|False
+		RoundNameID|True
+		Unk2|False
+		Unk3|False
+		RewardID|True
+		Unk4|False
+		Unk5|False
+	)
+
+	GYM_BOSS_RUSH_ENC_INFO (
+		RoundID|True
+	)
+
+	GYM_BOSS_RUSH_ENC_INFO_DATA (
+		EncountID|True
+		BattleMapID|True
+	)
+
+	GYM_MISSION_BATTLE_INFO (
+		MissionID|True
+		Unk1|False
+		MissionNameID|True
+		Unk2|False
+		RewardID|True
+		Unk3|False
+		Unk4|False
+	)
+
+	GYM_MISSION_BATTLE_ENC_INFO (
+		MissionID|True
+	)
+
+	GYM_MISSION_BATTLE_ENC_INFO_DATA (
+		EncountID|True
+		BattleMapID|True
+	)
+
+	GYM_TOURNAMENT_INFO (
+		Unk0|False
+		TournamentID|True
+		Unk1|False
+		TournamentNameID|True
+		Unk2|False
+		Unk3|False
+		Unk4|False
+		RewardID|True
+		Unk5|False
+		Unk6|False
+	)
+
+	GYM_TOURNAMENT_ENC_INFO (
+		TournamentID|True
+	)
+
+	GYM_TOURNAMENT_ENC_INFO_DATA (
+		EncountID|True
+		BattleMapID|True
 	)
 
 	MISSION_MENU_INFO (
@@ -1390,11 +1460,11 @@ YW3 [
 	)
 
 	MISSION_CONFIG_INFO (
-		MissionID|False
+		MissionID|True
 		MissionNumber|False
 		Unk0|False
-		Unk3|False
-		Unk4|False
+		Unk3|True
+		Unk4|True
 		MissionType|False
 		Unk6|False
 		Unk7|False
@@ -1408,13 +1478,13 @@ YW3 [
 		Unk15|False
 		MissionMenuNumber|False
 		MissionCond|False
-		MissionTextID|False
-		BtMapID|False
+		MissionTextID|True
+		BtMapID|True
 		Unk20|False
 		Unk21|False
 		Unk22|False
 		Unk23|False
-		ItemUnlock|False
+		ItemUnlock|True
 		Unk25|False
 	)
 
@@ -1489,13 +1559,13 @@ YW3 [
 	ITEM_CONSUME (
 		ItemID|True
 		NounTextID|True
-		Unk2|False
-		Unk3|False
+		InventorySort|False
+		ItemType|False
 		Unk4|False
 		Unk5|False
-		Unk6|False
-		Unk7|False
-		Unk8|False
+		CarryCap|False
+		IsBuyable|False
+		IsSellable|False
 		IsFusable|False
 		SellPrice|False
 		ShopPrice|False
@@ -1505,20 +1575,20 @@ YW3 [
 		OnAllyTextID|True
 		OnFoeTextID|True
 		Unk17|False
-		Unk18|False
+		EffectValue|False
 		Unk19|False
 		Unk20|False
 		Unk21|False
 	)
 
 	ITEM_CREATURE (
-		Unk0|True
-		Unk1|True
-		Unk2|False
-		Unk3|False
+		ItemID|True
+		NounTextID|True
+		InventorySort|False
+		ItemType|False
 		Unk4|False
-		Unk5|False
-		Unk6|False
+		IconPosX|False
+		IconPosY|False
 		Unk7|False
 		Unk8|False
 		Unk9|False
@@ -1526,10 +1596,38 @@ YW3 [
 		Unk11|False
 		Unk12|False
 		Unk13|False
-		Unk14|True
+		DescTextID|True
 		Unk15|False
 		Unk16|False
-		Unk17|True
+		CreatureDictTextId|True
+	)
+	
+	ITEM_EQUIPMENT (
+		ItemID|True
+		NameID|True
+		InventorySort|False
+		ItemType|False
+		Unk5|False
+		Unk6|False
+		CarryCap|False
+		Unk7|False
+		Unk8|False
+		Unk9|False
+		SellPrice|False
+		BuyPrice|False
+		IconPosX|False
+		IconPosY|False
+		DescriptionID|True
+		BuffTextID|False
+		DebuffTextID|False
+		Unk17|False
+		Unk18|False
+		Unk19|False
+		Unk20|False
+		Unk21|False
+		Unk22|False
+		Unk23|False
+		Unk24|True
 	)
 
 	BGM_INFO (
@@ -1942,14 +2040,14 @@ YW3 [
 	)
 
 	CPSL_MACHINE_INFO_DATA (
-		Unk0|True
+		ItemID|True
 		Unk1|False
-		Unk2|True
-		Unk3|False
-		Unk4|True
-		Unk5|True
-		Unk6|True
-		Unk7|True
+		LotRateInfoID|True
+		Unk3|True
+		FreeGiftTableID|True
+		3rdPrizeTableID|True
+		2ndPrizeTableID|True
+		1stPrizeTableID|True
 		Unk8|False
 		Unk9|False
 	)
@@ -1989,10 +2087,10 @@ YW3 [
 	)
 
 	CPSL_PRIZE_INFO (
-		Unk0|True
-		Unk1|False
-		Unk2|True
-		Unk3|True
+		PrizeID|True
+		IsItem|False
+		ParamID|True
+		CapsuleTextID|True
 		Unk4|False
 		Unk5|False
 		Unk6|False
@@ -2002,12 +2100,12 @@ YW3 [
 	)
 
 	CPSL_PRIZE_TABLE_INFO (
-		Unk0|True
+		TableInfoID|True
 	)
 
 	CPSL_PRIZE_TABLE_INFO_DATA (
-		Unk0|False
-		Unk1|False
+		PrizeID|True
+		Drop%|False
 		Unk2|False
 		Unk3|False
 		Unk4|False
@@ -2043,6 +2141,39 @@ YW3 [
 		Unk0|True
 	)
 
+	SUMMON_SND_U_NAME (
+		SongFile|False
+		Yo-kaiBaseID|True
+	)
+
+	SUMMON_SND_D_NAME (
+		SongFile|False
+		Yo-kaiBaseID|False
+	)
+
+	QUEST_CONFIG (
+		QuestID|True
+		Unk1|False
+		Unk2|False
+		Unk3|False
+		Unk4|True
+		QuestTitleID|True
+		Unk6|False
+		Unk7|False
+		Unk8|False
+		Unk9|True
+		Unk10|False
+		Unk11|False
+		Unk12|True
+		RecommendedLevel|False
+		Unk14|False
+		PhaseAppear|False
+		Unk16|False
+	)
+
+	CHARA_EVOLVE_INFO (
+		Unk0|True
+	)
 
 	SET_PATH_POP (
 		EncountID|True
@@ -2100,13 +2231,30 @@ YW3 [
 		NounID|False
 	)
 
-
 	SET_PATH (
 		Unk0|True
 	)
 
 	SHOP_CONFIG_INFO (
 		shpTUBID|False
+	)
+
+	ITEM_IMPORTANT (
+		ItemID|True
+		NameID|True
+		InventorySort|False
+		ItemType|False
+		Unk4|False
+		Unk5|False
+		CarryCap|False
+		Unk7|False
+		Unk8|False
+		Unk9|False
+		Unk10|False
+		Unk11|False
+		IconPosX|False
+		IconPosY|False
+		Unk14|True
 	)
 ]
 
