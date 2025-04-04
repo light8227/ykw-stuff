@@ -265,13 +265,13 @@ YW2 [
 		FavFood|False
 		HatedFood|False
 		Unk7|False
-		Unk8|False
+		Unk8a|False
 		Unk9|False
 		Unk10|False
-		Unk11|False
+		Faction|False
 		Tribe|False
 		IsClassic|False
-		Unk12|False
+		Unk11|False
 	)
 
 	CHARA_PARAM_INFO (
@@ -326,7 +326,7 @@ YW2 [
 		EvolveOffset|False
 		MedaliumOffset|False
 		Unk13|False
-		Unk14|False
+		SameKindValue|False
 		Unk15|False
 	)
 
@@ -810,6 +810,13 @@ YW2 [
 		Unk3|False
 		Unk4|False
 		IsUnskippable|False
+	)
+
+	CHARA_SAME_KIND_INFO (
+		ParamID1|True
+		ParamID2|True
+		Unk2|True
+		Cond|False
 	)
 ]
 
@@ -1601,7 +1608,7 @@ YW3 [
 		Unk16|False
 		CreatureDictTextId|True
 	)
-	
+
 	ITEM_EQUIPMENT (
 		ItemID|True
 		NameID|True
