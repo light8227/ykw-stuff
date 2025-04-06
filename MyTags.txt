@@ -265,13 +265,13 @@ YW2 [
 		FavFood|False
 		HatedFood|False
 		Unk7|False
-		Unk8|False
+		Unk8a|False
 		Unk9|False
 		Unk10|False
-		Unk11|False
+		Faction|False
 		Tribe|False
 		IsClassic|False
-		Unk12|False
+		Unk11|False
 	)
 
 	CHARA_PARAM_INFO (
@@ -326,7 +326,7 @@ YW2 [
 		EvolveOffset|False
 		MedaliumOffset|False
 		Unk13|False
-		Unk14|False
+		SameKindValue|False
 		Unk15|False
 	)
 
@@ -810,6 +810,13 @@ YW2 [
 		Unk3|False
 		Unk4|False
 		IsUnskippable|False
+	)
+
+	CHARA_SAME_KIND_INFO (
+		ParamID1|True
+		ParamID2|True
+		Unk2|True
+		Cond|False
 	)
 ]
 
@@ -1601,7 +1608,7 @@ YW3 [
 		Unk16|False
 		CreatureDictTextId|True
 	)
-	
+
 	ITEM_EQUIPMENT (
 		ItemID|True
 		NameID|True
@@ -3257,5 +3264,224 @@ NNK1 [
 		Unk59|False
 		Unk60|True
 		Unk61|True
+	)
+]
+
+SW [
+	CHARA_BASE_BATTLE_INFO (
+		BaseID|True
+		Unk1|False
+		Unk2|False
+		NameID|True
+	)
+
+	CHARA_PARAM_INFO (
+		ParamID|False
+		BaseID|False
+		Unk2|False
+		Unk3|False
+		Unk4|False
+		Unk5|False
+		Unk6|False
+		Unk7|False
+		Unk8|False
+		Unk9|False
+		Unk10|False
+		Unk11|False
+		Color1|False
+		Color2|False
+	)
+]
+
+IEGO [
+	TRAINING_UD (
+		KickUp|False
+		DribbleUp|False
+		TechniqueUp|False
+		BlockUp|False
+		SpeedUp|False
+		StaminaUp|False
+		CatchUp|False
+		LuckUp|False
+	)
+
+	PHASE_INFO (
+		PhaseInt|False
+		PhaseTextID|True
+		PhaseStr|False
+	)
+
+	MMM_CONFIG (
+		Unk0|True
+	)
+
+	TEXT_INFO (
+		Unk0|True
+	)
+
+	NPC_BASE (
+		NPCID|True
+		HeadID|False
+		Type|False
+		Unk1|False
+		UniformID|False
+		BootsID|False
+		GlovesID|False
+		IconID|False
+	)
+
+	NPC_PRESET (
+		Unk0|True
+	)
+
+	NOUN_INFO (
+		Unk0|True
+	)
+
+	NPC_APPEAR (
+		LocationX|False
+		LocationZ|False
+		LocationY|False
+		Unk1|False
+		Unk2|False
+		Rotation|False
+		StandAnimation|False
+		Unk3|False
+		TalkAnimation|False
+		UnkAnimation|False
+		Unk4|False
+		PhaseAppear|False
+		Unk5|False
+	)
+
+	TALK_INFO (
+		NPCID|True
+		TalkOffset|False
+		TalkCount|False
+	)
+
+	TALK_CONFIG (
+		TalkType|False
+		TalkValue|False
+		PhaseAppear|False
+		Unk1|False
+	)
+
+	SHOP_CONFIG_INFO_BEGIN (
+		Unk0|True
+	)
+
+	COMMUNITY_INFO (
+		ShopID|True
+		CommunityName|True
+		AreaName|True
+	)
+
+	SHOP_CONFIG_INFO (
+		ItemID|True
+		Condition|False
+	)
+
+	ITEM_EQUIPMENT (
+		ItemID|True
+		NameID|True
+		DescriptionID|True
+		ItemCategory|False
+		ItemCategory2|False
+		MaxQuantity|False
+		Unk1|False
+		Unk2|False
+		SalePrice|False
+		PurchasePrice|False
+		Unk3|False
+		FPBoost|False
+		TPBoost|False
+		KickBoost|False
+		DribbleBoost|False
+		TechniqueBoost|False
+		BlockBoost|False
+		SpeedBoost|False
+		StaminaBoost|False
+		CatchBoost|False
+		LuckBoost|False
+		ItemModel|False
+		ItemIconPosX|False
+		ItemIconPosY|False
+		Unk4|True
+	)
+
+	SKILL_CONFIG_INFO (
+		SkillID|True
+		NameID|True
+		DescriptionID|True
+		Element|False
+		EvolutionType|False
+		EvolutionGrow|False
+		SkillPosition|False
+		TPCost|False
+		Number|False
+		SkillType|False
+		EffectType|False
+		PartnerNumber|False
+		Unk1|False
+		Unk2|False
+		Unk3|False
+		Fault|False
+		Power|False
+		Technique|False
+		Unk4|False
+		Boost|False
+		NameID2|True
+	)
+
+	CHARA_PARAM_INFO (
+		ParamID|True
+		BaseID|True
+		FP|False
+		TP|False
+		Kick|False
+		Dribble|False
+		Technique|False
+		Block|False
+		Speed|False
+		Stamina|False
+		Catch|False
+		Luck|False
+		Element|False
+		PlayerPosition|False
+		DescriptionID|True
+		Freedom|False
+		FightingSpiritID|False
+		SpecialMoveCount|False
+		SpecialMoveOffset|False
+		Unk1|False
+		Unk20|False
+		Unk21|False
+		Unk22|False
+		Unk23|False
+		Unk24|False
+		Unk25|False
+		Unk26|False
+		Unk27|False
+		Unk28|False
+		Unk29|False
+		Unk30|False
+		Unk31|False
+		Unk32|False
+		Unk33|False
+		Unk34|False
+		Unk35|False
+		Unk36|False
+		Unk37|False
+		Unk38|False
+		Unk39|False
+		Unk9|False
+		FightingSpiritMatchID|True
+	)
+
+	ITEM_REF (
+		ItemID|True
+		ItemCategory|False
+		ItemNum|False
 	)
 ]
