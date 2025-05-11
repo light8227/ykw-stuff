@@ -100,7 +100,7 @@ YW1 [
 	)
 
 	ITABLE_DATA_MORE (
-		ItemID|False
+		ItemID|True
 		Quantity|False
 		Percentage|False
 		Unk1|False
@@ -244,6 +244,23 @@ YW1 [
 ]
 
 YW2 [
+
+        SHOP_LIST (
+                Length|False
+         )
+
+        CAPSULE_ITEM_INFO_LIST (
+                Length|False
+            )
+
+        ITABLE_DATA_MORE (
+                ItemID|True
+                Quantity|False
+                Percentage|False
+                Unk1|False
+                Unk2|False
+            )
+
 	CHARA_BASE_YOKAI_INFO (
 		BaseID|True
 		FileNamePrefix|False
@@ -416,15 +433,33 @@ YW2 [
 		ShopSlotID|True
 		ItemID|True
 		Price|False
-		Unk1|False
+		Stock|False
 		Unk2|False
 		Unk3|False
 		Unk4|False
 		Unk5|False
 		Unk6|False
 		Unk7|False
-		Unk8|False
+		Cond|False
 	)
+
+        SHOP_VALID_CONDITION (
+                AltPrice|False
+                Cond|False
+        )
+
+        SHOP_ITEM_LIST (
+                Length|False
+        )
+
+        SHOP_ITEM (
+                BicycleorBellID|False
+                BicycleorBellID|False
+                Unk1|False
+                Unk2|False
+                Unk3|False
+                Cond|False
+        )
 
 	PASSWORD_INFO (
 		TextID|True
@@ -568,16 +603,16 @@ YW2 [
 		CapsuleBefriendID|True
 		Unk2|False
 		Unk3|False
-		Unk4|False
-		Unk5|False
-		Unk6|False
-		Unk7|False
-		Unk8|False
+		BluePercentage|False
+		ColorPercentageB|False
+		ColorPercentageC|False
+		ColorPercentageD|False
+		ColorPercentageE|False
 	)
 
 	CAPSULE_RATE_INFO_DATA (
 		RewardID|True
-		Unk1|False
+		Percentage|False
 		Unk2|False
 		Unk3|False
 	)
