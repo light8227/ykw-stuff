@@ -1,30 +1,35 @@
-# Yo-kai Watch
-[Yo-kai Watch Map and Character IDs](https://tcrf.net/Notes:Yo-kai_Watch_(Nintendo_3DS))
+# YO-KAI WATCH
+[YO-KAI WATCH Map and Character IDs](https://tcrf.net/Notes:Yo-kai_Watch_(Nintendo_3DS))
 
-[Yo-kai Watch Map IDs](https://ykw-modding.github.io/yo-docs/map-ids/ykw1-map-list.html)
+[YO-KAI WATCH Map IDs](https://yokai.wiki/modding-resources/map-ids/ykw1-map-list.html)
 
-# Yo-kai Watch 2
-[Yo-kai Watch 2 Character IDs](https://ykw-modding.github.io/yo-docs/character-ids/ykw2-yo-kai-ids.html)
+# YO-KAI WATCH 2
+[YO-KAI WATCH 2 Character IDs](https://yokai.wiki/modding-resources/character-ids/ykw2-yo-kai-ids.html)
 
-# Yo-kai Watch 3
+[YO-KAI WATCH 2 Map IDs](https://tcrf.net/Notes:Yo-kai_Watch_2)
 
-[Yo-kai Watch 3 Character IDs](https://tcrf.net/Notes:Yo-kai_Watch_3/Characters)
+# YO-KAI WATCH Blasters
+[YO-KAI WATCH Blasters capsule_config.cfg.bin IDs](https://docs.google.com/spreadsheets/d/19vM1jJ40lIfGY0Yskej82WqEjavmTk2lFYCQJqQD5EA/edit?gid=847663934#gid=847663934)
 
-[Yo-kai Watch  3 Map IDs](https://tcrf.net/Notes:Yo-kai_Watch_3/Maps)
+# YO-KAI WATCH 3
 
-# Yo-kai Watch Busters 2
+[YO-KAI WATCH 3 Character IDs](https://tcrf.net/Notes:Yo-kai_Watch_3/Characters)
 
-[Yo-kai Watch Busters 2 Map IDs](https://tcrf.net/Notes:Yo-kai_Watch_Busters_2:_Hihou_Densetsu_Banbarayaa)
+[YO-KAI WATCH 3 Map IDs](https://tcrf.net/Notes:Yo-kai_Watch_3/Maps)
 
-# Yo-kai Watch 4++
+# YO-KAI WATCH Busters 2
 
-[Yo-kai Watch 4++ Character, Item, and Move IDs](https://docs.google.com/spreadsheets/d/1JABcMLPR1lp2cjappmUGu_1kkLk2wTXtklrH5WlZcBM/edit?usp=sharing)
+[YO-KAI WATCH Busters 2 Map IDs](https://tcrf.net/Notes:Yo-kai_Watch_Busters_2:_Hihou_Densetsu_Banbarayaa)
 
-[Yo-kai Watch 4++ capsule_config.cfg.bin IDs](https://docs.google.com/spreadsheets/d/19vM1jJ40lIfGY0Yskej82WqEjavmTk2lFYCQJqQD5EA/edit?usp=sharing)
+# YO-KAI WATCH 4++
 
-# Yo-kai Watch Jam: Y School Heroes: Bustlin' School Life
+[YO-KAI WATCH 4++ Character, Item, and Move IDs](https://docs.google.com/spreadsheets/d/1JABcMLPR1lp2cjappmUGu_1kkLk2wTXtklrH5WlZcBM/edit?usp=sharing)
 
-[Yo-kai Watch Jam: Y School Heroes: Bustlin' School Life Character IDs](https://docs.google.com/spreadsheets/d/1wa6APIIgk4d_72eug1-QdVLUPEGRzk17JAerPSyKzqw/edit?usp=sharing)
+[YO-KAI WATCH 4++ capsule_config.cfg.bin IDs](https://docs.google.com/spreadsheets/d/19vM1jJ40lIfGY0Yskej82WqEjavmTk2lFYCQJqQD5EA/edit?usp=sharing)
+
+# YO-KAI WATCH Jam: Y School Heroes: Bustlin' School Life
+
+[YO-KAI WATCH Jam: Y School Heroes: Bustlin' School Life Character IDs](https://docs.google.com/spreadsheets/d/1wa6APIIgk4d_72eug1-QdVLUPEGRzk17JAerPSyKzqw/edit?usp=sharing)
 
 If you were here before MyTags were posted here, templates were deleted in favor of the CFGBinEditor MyTags now hosted.
 
