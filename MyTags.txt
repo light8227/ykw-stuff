@@ -108,8 +108,8 @@ YW1 [
 	)
 
 	ITEM_CONSUME (
-		ItemID|True
-		NameID|True
+		ItemID|False
+		NameID|False
 		InventorySort|False
 		ItemType|False
 		Offset1|False
@@ -241,30 +241,20 @@ YW1 [
 		Unk1|False
 		BaseID|False
 	)
+
+	CHARA_ABILITY_CONFIG_INFO (
+		Unk0|True
+		Unk1|True
+		Unk2|True
+		Unk3|True
+	)
+
+	TEXT_INFO (
+		Unk0|True
+	)
 ]
 
 YW2 [
-
-	CAPSULE_MACHINE_CONFIG_INFO_DATA (
-		ChildCount|False
-        )
-
-	CAPSULE_MACHINE_CONFIG_INFO (
-		Identifier|False
-        )
-
-        CREATURE_DICTIONARY_INFO (
-		Length|False
-        )
-
-        CREATURE_DICTIONARY_INFO (
-		ItemID|False
-		Unk0|False
-		Unk1|False
-		Unk2|False
-		Cond|False
-        )
-
         ITEM_IMPORTANT (
 		ItemID|False
 		MaybeNounTextID|False
@@ -416,7 +406,7 @@ YW2 [
 		Unk3|False
 		Unk4|False
 		Unk5|False
-		DescriptionID|True
+		DescriptionID|False
 		MedalPosX|False
 		MedalPosY|False
 		Unk6|False
@@ -448,36 +438,36 @@ YW2 [
 		MaxSpirit|False
 		MaxDefense|False
 		MaxSpeed|False
-		FavoriteDonut|False
+		CharaRandomActType|False
 		AttackID|True
-		Unk1|False
+		BaseAttack%|False
 		TechniqueID|True
-		Unk2|False
+		BaseTechnique%|False
 		InspiritID|True
-		Unk3|False
-		Unk4|False
-		Unk5|False
-		Unk6|False
+		BaseInspirit%|False
+		GuardID|False
+		BaseGuard%|False
+		BaseLoafAttitude|False
 		AttributeDamageFire|False
 		AttributeDamageIce|False
 		AttributeDamageEarth|False
 		AttributeDamageLigthning|False
 		AttributeDamageWater|False
 		AttributeDamageWind|False
-		SoultimateID|True
+		SoultimateID|False
 		Unk7|False
-		Unk8|False
+		LoafQuoteID|False
 		ScoutableID|True
 		SkillID|True
 		Money|False
 		Experience|False
-		Unk9|False
-		Drop1ID|True
+		ItemSlots|False
+		Drop1ID|False
 		Drop1Rate|False
-		Drop2ID|True
+		Drop2ID|False
 		Drop2Rate|False
-		Unk10|False
-		Unk11|False
+		InspiritBtleTxtPersonality|False
+		EnemyInspiritHit%|False
 		ExperienceCurve|False
 		Quote1ID|True
 		Quote2ID|True
@@ -486,8 +476,8 @@ YW2 [
 		IsFusable|False
 		EvolveOffset|False
 		MedaliumOffset|False
-		Unk13|False
-		SameKindValue|False
+		InMedallium?|False
+		CharaSameKind|False
 		Unk15|False
 	)
 
@@ -648,35 +638,35 @@ YW2 [
 	SKILL_CONFIG_INFO (
 		SkillConfigID|True
 		Unk1|False
-		TextID|True
-		TextID|True
-		Unk3|False
+		TextID|False
+		DescID|False
+		SkillGrowth|False
 		Power|False
 		Element|False
-		Unk5|False
-		Unk6|False
+		SoultChargeTier|False
+		ToritukuInfo|False
 	)
 
 	BATTLE_COMMAND_INFO (
-		BattleCommandID|True
-		TextID|True
+		BattleCommandID|False
+		TextID|False
 		unk1|False
 		unk2|False
 		unk3|False
-		PowerMultiplicator|False
+		NHits|False
 		unk4|False
 		unk5|False
 		unk6|False
 		TextureID|False
-		SkillConfigID|True
+		SkillConfigID|False
 		unk7|False
 		unk8|False
 		unk9|False
-		unk10|False
-		unk11|False
-		unk12|False
-		unk13|False
-		unk14|False
+		BattleCommandCond|False
+		Steff1|False
+		Steff2|False
+		Steff3|False
+		Steff4|False
 	)
 
 	BATTLE_COMMAND_LINK_INFO (
@@ -685,8 +675,8 @@ YW2 [
 	)
 
 	ITEM_CONSUME (
-		ItemID|True
-		NounTextID|True
+		ItemID|False
+		NounTextID|False
 		InventorySort|False
 		ItemType|False
 		Unk1|False
@@ -699,9 +689,9 @@ YW2 [
 		ShopPrice|False
 		IconPosX|False
 		IconPosY|False
-		DescTextID|True
-		OnAllyTextID|True
-		OnFoeTextID|True
+		DescTextID|False
+		OnAllyTextID|False
+		OnFoeTextID|False
 		Unk6|False
 		Effect|False
 		Unk7|False
@@ -767,10 +757,10 @@ YW2 [
 	)
 
 	CAPSULE_MACHINE_CONFIG_INFO_DATA (
-		CoinItemID|True
-		Disabled|False
+		ItemID|True
+		Unk1|False
 		MachineConfigID|True
-		Disabled|False
+		Unk2|False
 	)
 
 	MEDAL_LOAD_CFG (
@@ -783,7 +773,12 @@ YW2 [
 	)
 
 	NOUN_INFO (
-		Unk0|True
+		NameID|True
+		Unk1|False
+		Unk2|False
+		Unk3|False
+		Unk4|False
+		Unk5|False
 	)
 
 	GYM_BOSS_SINGLE_INFO (
@@ -2441,6 +2436,33 @@ YW3 [
 		IconPosX|False
 		IconPosY|False
 		Unk14|True
+	)
+
+	BATTLE_COMMAND_INFO (
+		BattleCommandID|False
+		Unk1|False
+		Unk2|False
+		BattleViewID|False
+		Unk4|True
+		CharaAbilityEffectID|False
+		BattleNextCommand|False
+		BattleCommandCond|False
+		Effect1|False
+		Effect2|False
+		Effect3|False
+		Effect4|False
+	)
+
+	BATTLE_COMMAND_STEFF_INFO (
+		Unk0|False
+		Unk1|False
+	)
+
+	BTL_AI_CHANGE_CHARA_INFO (
+		Unk0|False
+		Unk1|False
+		Unk2|False
+		Unk3|True
 	)
 ]
 
