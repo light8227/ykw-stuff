@@ -419,25 +419,50 @@ YW2 [
 		Unk8a|False
 		Unk9|False
 		Unk10|False
-		Faction|False
+		Unk11|False
 		Tribe|False
 		IsClassic|False
 		Unk11|False
 	)
 
+    SOUL_RARE_CONFIG_INFO (
+		ItemID|False
+		Unk0|False
+		Unk1|False
+		Unk2|False
+	)
+
+    SOUL_RARE_CONFIG_INFO_LIST (
+		Length|False
+	)
+
+	CHARA_FRIEND_RATE_INFO (
+       BaseXOR|False
+	   DecayScaleA|False
+	   DecayScaleB|False
+	   DecayScaleC|False
+	   DecayScaleD|False
+	   DecayScaleE|False
+       DecayingPenaltyA|False
+       ConstA|False
+       ConstB|False
+       ConstC|False
+       ConstD|False
+	)
+
 	CHARA_PARAM_INFO (
 		ParamID|True
 		BaseID|True
-		MinHP|False
-		MinStrength|False
-		MinSpirit|False
-		MinDefense|False
-		MinSpeed|False
-		MaxHP|False
-		MaxStrength|False
-		MaxSpirit|False
-		MaxDefense|False
-		MaxSpeed|False
+		bsA_HP|False
+		bsA_Strength|False
+		bsA_Spirit|False
+		bsA_Defense|False
+		bsA_Speed|False
+		bsB_HP|False
+		bsB_Strength|False
+		bsB_Spirit|False
+		bsB_Defense|False
+		bsB_Speed|False
 		CharaRandomActType|False
 		AttackID|True
 		BaseAttack%|False
@@ -744,6 +769,39 @@ YW2 [
 		ColorPercentageE|False
 	)
 
+	SKILL_GROWTH_INFO (
+		BaseGrowth|False
+        Unk2|False
+        Unk3|False
+        Unk4|False
+        Unk5|False
+        Unk6|False
+        Unk7|False
+        Unk8|False
+        Unk9|False
+        Unk10|False
+        Unk11|False
+        Unk12|False
+        Unk13|False
+        Unk14|False
+        Unk15|False
+        Unk16|False
+        Unk17|False
+        Unk18|False
+        Unk19|False
+        Unk20|False
+        Unk21|False
+        Unk22|False
+        Unk23|False
+        Unk24|False
+        Unk25|False
+        Unk26|False
+        Unk27|False
+        Unk28|False
+        Unk29|False
+        Unk30|False	
+	)
+
 	CAPSULE_RATE_INFO_DATA (
 		RewardID|True
 		Percentage|False
@@ -769,7 +827,7 @@ YW2 [
 
 	YOUKAI_SUMMON_INFO (
 		BaseID|True
-		SummonWithModelZero|False
+        UseModelZero|False
 	)
 
 	NOUN_INFO (
@@ -989,7 +1047,7 @@ YW2 [
 	CHARA_SAME_KIND_INFO (
 		ParamID1|True
 		ParamID2|True
-		Unk2|True
+		Unk0|True
 		Cond|False
 	)
 ]
