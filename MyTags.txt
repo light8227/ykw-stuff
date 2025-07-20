@@ -528,7 +528,7 @@ YW2 [
 		Unk8a|False
 		Unk9|False
 		Unk10|False
-		Unk11|False
+		LegalAlliances|False
 		Tribe|False
 		IsClassic|False
 		Unk11|False
