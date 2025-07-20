@@ -255,71 +255,180 @@ YW1 [
 ]
 
 YW2 [
+
+	    WEATHER_FORECAST_INFO (
+			IsPast|False
+		)
+
+	    WEATHER_FORECAST_INFO_DATA (
+			UnkID|False
+			UnkBool|False
+		)
+
+	    WEATHER_FORECAST_INFO_DATA_RATE (
+			Weight|False
+			Cond|False
+		)
+
+	    WEATHER_FORECAST_INFO_DATA_RATE_LIST (
+			Length|False
+		)
+
+	    WEATHER_FORECAST_INFO_DATA_LIST (
+			Length|False
+		)
+
+	    WEATHER_SCHEDULE_INFO_LIST (
+			Length|False
+		)
+
+	    WEATHER_SCHEDULE_INFO (
+			IsPast|False
+		)
+
+	    WEATHER_SCHEDULE_INFO_DATA_LIST (
+			Length|False
+		)
+
+	    WEATHER_SCHEDULE_INFO_DATA (
+			WeatherID|False
+			Unk0|False
+			Unk1|False
+			Unk2|False
+			Unk3|False
+			Unk4|False
+			Unk5|False
+			Unk6|False
+			Unk7|False
+			Unk8|False
+			Unk9|False
+			Unk10|False
+			Unk11|False
+			Unk12|False
+			Unk13|False
+			Unk14|False
+			Unk15|False
+			Unk16|False
+			Unk17|False
+			Unk18|False
+			Unk19|False
+			Unk20|False
+			Unk21|False
+			Unk22|False
+			Unk23|False
+			Unk24|False
+			sum45Weight|False
+		)
+
+	    QR_INFO (
+			StartTypeDec|False
+			EndTypeDec|False
+			TypeItemID|False
+		)
+
+	    QR0_INFO (
+			StartTypeDec|False
+			EndTypeDec|False
+			TypeItemID|False
+		)
+
+	    QR1_INFO (
+			StartTypeDec|False
+			EndTypeDec|False
+			TypeItemID|False
+		)
+
+        QR2_INFO (
+			StartTypeDec|False
+			EndTypeDec|False
+			TypeItemID|False
+		)
+
+	    QR_RAND_INFO (
+			ItemID|False
+			IsRand|False
+		)
+
+	    QR0_RAND_INFO (
+			ItemID|False
+			IsRand|False
+		)
+
+	    QR1_RAND_INFO (
+			ItemID|False
+			IsRand|False
+		)
+
+        QR2_RAND_INFO (
+			ItemID|False
+			IsRand|False
+		)
+
         ITEM_IMPORTANT (
-		ItemID|False
-		MaybeNounTextID|False
-		InventorySort|False
-		Unk1|False
-		Unk2|False
-		Unk3|False
-		CarryCap|False
+			ItemID|False
+			MaybeNounTextID|False
+			InventorySort|False
+			Unk1|False
+			Unk2|False
+			Unk3|False
+			CarryCap|False
         )
 
         ITEM_SOUL (
-		ItemID|False
-		MaybeNounTextID|False
-		InventorySort|False
-		Unk1|False
-		Unk2|False
-		Unk3|False
-		MaybeCarryCap|False
+			ItemID|False
+			MaybeNounTextID|False
+			InventorySort|False
+			Unk1|False
+			Unk2|False
+			Unk3|False
+			MaybeCarryCap|False
         )
 
         ITEM_CREATURE (
-		ItemID|False
-		MaybeNounTextID|False
-		InventorySort|False
-		Unk1|False
-		Unk2|False
-		Unk3|False
-		CarryCap|False
-		Unk4|False
-		Unk5|False
-		Unk6|False
-		ExchangePrice|False
-		ExchangePrice|False
-		Unk7|False
-		Unk8|False
-		MaybeDescTextID|False
+			ItemID|False
+			MaybeNounTextID|False
+			InventorySort|False
+			Unk1|False
+			Unk2|False
+			Unk3|False
+			CarryCap|False
+			Unk4|False
+			Unk5|False
+			Unk6|False
+			ExchangePrice|False
+			ExchangePrice|False
+			Unk7|False
+			Unk8|False
+			MaybeDescTextID|False
         )
 
         ITEM_EQUIPMENT (
-		ItemID|False
-		MaybeNounTextID|False
-		InventorySort|False
-		Unk1|False
-		Unk2|False
-		Unk3|False
-		CarryCap|False
-		Unk4|False
-		Unk5|False
-		Unk6|False
-		MaybeSellPrice|False
-		MaybeShopPrice|False
-		Unk7|False
-		Unk8|False
-		MaybeDescTextID|False
+			ItemID|False
+			MaybeNounTextID|False
+			InventorySort|False
+			Unk1|False
+			Unk2|False
+			Unk3|False
+			CarryCap|False
+			Unk4|False
+			Unk5|False
+			Unk6|False
+			MaybeSellPrice|False
+			MaybeShopPrice|False
+			Unk7|False
+			Unk8|False
+			MaybeDescTextID|False
         )
 
         ITEM_INDEX (
-		ItemID|False
-		InventorySort|False
-		Unk0|False
+			ItemID|False
+			InventorySort|False
+			Unk0|False
         )
 
         ITEM_EQUIP_COND (
-		Unk0|False
-		InventorySort|False
+			Unk0|False
+			InventorySort|False
         )
 
         SCRATCH_RATE_LIST (
@@ -419,25 +528,50 @@ YW2 [
 		Unk8a|False
 		Unk9|False
 		Unk10|False
-		Faction|False
+		LegalAlliances|False
 		Tribe|False
 		IsClassic|False
 		Unk11|False
 	)
 
+    SOUL_RARE_CONFIG_INFO (
+		ItemID|False
+		Unk0|False
+		Unk1|False
+		Unk2|False
+	)
+
+    SOUL_RARE_CONFIG_INFO_LIST (
+		Length|False
+	)
+
+	CHARA_FRIEND_RATE_INFO (
+       BaseXOR|False
+	   DecayScaleA|False
+	   DecayScaleB|False
+	   DecayScaleC|False
+	   DecayScaleD|False
+	   DecayScaleE|False
+       DecayingPenaltyA|False
+       ConstA|False
+       ConstB|False
+       ConstC|False
+       ConstD|False
+	)
+
 	CHARA_PARAM_INFO (
 		ParamID|True
 		BaseID|True
-		MinHP|False
-		MinStrength|False
-		MinSpirit|False
-		MinDefense|False
-		MinSpeed|False
-		MaxHP|False
-		MaxStrength|False
-		MaxSpirit|False
-		MaxDefense|False
-		MaxSpeed|False
+		baseA_HP|False
+		baseA_Strength|False
+		baseA_Spirit|False
+		baseA_Defense|False
+		baseA_Speed|False
+		baseB_HP|False
+		baseB_Strength|False
+		baseB_Spirit|False
+		baseB_Defense|False
+		baseB_Speed|False
 		CharaRandomActType|False
 		AttackID|True
 		BaseAttack%|False
@@ -744,6 +878,39 @@ YW2 [
 		ColorPercentageE|False
 	)
 
+	SKILL_GROWTH_INFO (
+		BaseGrowth|False
+        Unk2|False
+        Unk3|False
+        Unk4|False
+        Unk5|False
+        Unk6|False
+        Unk7|False
+        Unk8|False
+        Unk9|False
+        Unk10|False
+        Unk11|False
+        Unk12|False
+        Unk13|False
+        Unk14|False
+        Unk15|False
+        Unk16|False
+        Unk17|False
+        Unk18|False
+        Unk19|False
+        Unk20|False
+        Unk21|False
+        Unk22|False
+        Unk23|False
+        Unk24|False
+        Unk25|False
+        Unk26|False
+        Unk27|False
+        Unk28|False
+        Unk29|False
+        Unk30|False	
+	)
+
 	CAPSULE_RATE_INFO_DATA (
 		RewardID|True
 		Percentage|False
@@ -769,7 +936,7 @@ YW2 [
 
 	YOUKAI_SUMMON_INFO (
 		BaseID|True
-		SummonWithModelZero|False
+        UseModelZero|False
 	)
 
 	NOUN_INFO (
@@ -989,7 +1156,7 @@ YW2 [
 	CHARA_SAME_KIND_INFO (
 		ParamID1|True
 		ParamID2|True
-		Unk2|True
+		Unk0|True
 		Cond|False
 	)
 ]
