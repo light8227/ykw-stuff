@@ -320,56 +320,48 @@ YW2 [
 	)
 
 	QR_INFO (
-		StartTypeDec|False
-		EndTypeDec|False
-		TypeItemID|False
-	)
+			StartTypeDec|False
+			EndTypeDec|False
+			TypeItemID|False
+		)
 
-	QR0_INFO (
-		StartTypeDec|False
-		EndTypeDec|False
-		TypeItemID|False
-	)
+	    QR0_INFO (
+			StartTypeDec|False
+			EndTypeDec|False
+			TypeItemID|False
+		)
 
-	QR1_INFO (
-		StartTypeDec|False
-		EndTypeDec|False
-		TypeItemID|False
-	)
+	    QR1_INFO (
+			StartTypeDec|False
+			EndTypeDec|False
+			TypeItemID|False
+		)
 
-	QR2_INFO (
-		StartTypeDec|False
-		EndTypeDec|False
-		TypeItemID|True
-		Unk3|False
-		Unk4|False
-		Unk5|False
-		Unk6|False
-		Unk7|False
-		Unk8|False
-		Unk9|False
-		Unk10|True
-	)
+        QR2_INFO (
+			StartTypeDec|False
+			EndTypeDec|False
+			TypeItemID|False
+		)
 
-	QR_RAND_INFO (
-		ItemID|False
-		IsRand|False
-	)
+	    QR_RAND_INFO (
+			ItemID|False
+			IsRand|False
+		)
 
-	QR0_RAND_INFO (
-		ItemID|False
-		IsRand|False
-	)
+	    QR0_RAND_INFO (
+			ItemID|False
+			IsRand|False
+		)
 
-	QR1_RAND_INFO (
-		ItemID|False
-		IsRand|False
-	)
+	    QR1_RAND_INFO (
+			ItemID|False
+			IsRand|False
+		)
 
-	QR2_RAND_INFO (
-		ItemID|False
-		IsRand|False
-	)
+        QR2_RAND_INFO (
+			ItemID|False
+			IsRand|False
+		)
 
 	ITEM_IMPORTANT (
 		ItemID|False
