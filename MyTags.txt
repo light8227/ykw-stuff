@@ -320,48 +320,48 @@ YW2 [
 	)
 
 	QR_INFO (
-			StartTypeDec|False
-			EndTypeDec|False
-			TypeItemID|False
-		)
+		StartTypeDec|False
+		EndTypeDec|False
+		TypeItemID|False
+	)
 
-	    QR0_INFO (
-			StartTypeDec|False
-			EndTypeDec|False
-			TypeItemID|False
-		)
+	QR0_INFO (
+		StartTypeDec|False
+		EndTypeDec|False
+		TypeItemID|False
+	)
 
-	    QR1_INFO (
-			StartTypeDec|False
-			EndTypeDec|False
-			TypeItemID|False
-		)
+	QR1_INFO (
+		StartTypeDec|False
+		EndTypeDec|False
+		TypeItemID|False
+	)
 
-        QR2_INFO (
-			StartTypeDec|False
-			EndTypeDec|False
-			TypeItemID|False
-		)
+	QR2_INFO (
+		StartTypeDec|False
+		EndTypeDec|False
+		TypeItemID|False
+	)
 
-	    QR_RAND_INFO (
-			ItemID|False
-			IsRand|False
-		)
+	QR_RAND_INFO (
+		ItemID|False
+		IsRand|False
+	)
 
-	    QR0_RAND_INFO (
-			ItemID|False
-			IsRand|False
-		)
+	QR0_RAND_INFO (
+		ItemID|False
+		IsRand|False
+	)
 
-	    QR1_RAND_INFO (
-			ItemID|False
-			IsRand|False
-		)
+	QR1_RAND_INFO (
+		ItemID|False
+		IsRand|False
+	)
 
-        QR2_RAND_INFO (
-			ItemID|False
-			IsRand|False
-		)
+	QR2_RAND_INFO (
+		ItemID|False
+		IsRand|False
+	)
 
 	ITEM_IMPORTANT (
 		ItemID|False
@@ -1161,6 +1161,27 @@ YW2 [
 		Unk0|True
 		Cond|False
 	)
+
+	WM_YOKAI_APPEAR (
+		YokaiBaseID|False
+		Unk1|False
+		Unk2|False
+		Unk3|False
+		Unk4|False
+		Unk5|False
+		Unk6|False
+		Unk7|False
+		Unk8|False
+		Unk9|False
+		Unk10|False
+		Unk11|False
+		Unk12|False
+		Unk13|False
+	)
+
+	ITABLE_DATA (
+		Unk0|True
+	)
 ]
 
 YWB [
@@ -1452,14 +1473,14 @@ YW3 [
 		MinHP|False
 		MinStrength|False
 		MinSpririt|False
-		MinSpeed|False
 		MinDefense|False
+		MinSpeed|False
 		MaxHP|False
 		MaxStrength|False
 		MaxSpirit|False
 		MaxDefense|False
 		MaxSpeed|False
-		ExperienceCurve|True
+		ExperienceCurve|False
 		Strongest|False
 		Weakness|False
 		Unk2|False
@@ -1489,13 +1510,13 @@ YW3 [
 
 	CHARA_SCALE_INFO (
 		YokaiBaseID|True
-		Unk1|False
 		WorldMapSize|False
+		FollowMapSize|False
+		BattleOwnSize|False
+		BattleFoeSize|False
 		MenuSize|False
-		BattleSize|False
-		Unk2|False
-		Unk3|False
-		Unk4|False
+		BlastersTSize|False
+		BottomScreenSize|False
 	)
 
 	TEXT_INFO (
@@ -1506,16 +1527,16 @@ YW3 [
 
 	SKILL_CONFIG_INFO (
 		SkillConfigID|True
-		SkillType|True
+		SkillType|False
 		EffectID|True
 		NameID|True
-		DescID|False
+		DescID|True
 		SkillGrowth|False
 		Power|False
 		nºHits|False
 		Element|False
 		SoultChargeSpeed|False
-		BattleAnimation|False
+		BattleAnimation|True
 		SoultimateRange|False
 		SkillAbility|False
 	)
@@ -1656,7 +1677,7 @@ YW3 [
 
 	CHARA_ABILITY_CONFIG_INFO (
 		SkillID|True
-		NounID|True
+		NameID|True
 		DescID|True
 		TriggeredTextID|True
 		EffectID|True
@@ -1884,9 +1905,9 @@ YW3 [
 		IsItem|False
 		RewardID|True
 		IsYokai|False
-		Unk3|False
-		Unk4|False
-		Unk5|False
+		Quantity|False
+		Percentage|False
+		Condition|False
 	)
 
 	NOUN_INFO (
@@ -2560,7 +2581,7 @@ YW3 [
 	)
 
 	CHARA_ABILITY_EFFECT_INFO (
-		EffectID|False
+		EffectID|True
 		Unk1|False
 		Unk2|False
 		Unk3|False
@@ -2696,9 +2717,15 @@ YW3 [
 	QR2_INFO (
 		StartTypeDec|False
 		EndTypeDec|False
-		TypeItemID|True
+		TypeItem1ID|True
 		TypeItem2ID|True
-		Unk4|True
+		Flag1ID|True
+		Flag2ID|True
+		Unk6|False
+		Unk7|False
+		Item1Quantity|False
+		Item2Quantity|False
+		RandomQRTable|True
 	)
 
 	EFFECT_CONFIG (
@@ -2857,6 +2884,167 @@ YW3 [
 		Unk1|True
 		SystemTextID|True
 		Unk3|False
+	)
+
+	CHARA_ABILITY_CONFIG_INFO_EFF_DATA (
+		EffectID|True
+		Unk1|False
+		Unk2|False
+		Unk3|False
+		Unk4|False
+		Unk5|False
+		Unk6|False
+		Unk7|False
+		Unk8|False
+		Unk9|False
+		Unk10|False
+		Unk11|False
+		Unk12|False
+		Unk13|False
+		Unk14|False
+		Unk15|False
+		Unk16|False
+		Unk17|False
+		Unk18|False
+		Unk19|False
+	)
+
+	SKILL_CONFIG_BTL_INFO (
+		Unk0|True
+	)
+
+	FLAG_INFO (
+		Unk0|False
+		Unk1|True
+	)
+
+	MAP_ENV_INFO_CNF (
+		Unk0|False
+		BattleBgFolderID|False
+		Unk2|False
+		Unk3|False
+		Unk4|False
+		Unk5|False
+		Unk6|False
+		Unk7|False
+		XCord|False
+		YCord|False
+		ZCord|False
+		PTREE_0\PTVAL_3|False
+		Unk12|False
+		Unk13|False
+		Unk14|False
+		Unk15|False
+		Unk16|False
+		Unk17|False
+		Unk18|False
+		Unk19|False
+		Unk20|False
+		Unk21|False
+		Unk22|False
+		Unk23|False
+		Unk24|False
+		Unk25|False
+		Unk26|False
+		Unk27|False
+		Unk28|False
+		Unk29|False
+		Unk30|False
+		Unk31|False
+		Unk32|False
+		Unk33|False
+		Unk34|False
+		Unk35|False
+		Unk36|False
+		Unk37|False
+		Unk38|False
+		Unk39|False
+		Unk40|False
+		Unk41|False
+		Unk42|False
+		Unk43|False
+		Unk44|False
+		Unk45|False
+		Unk46|False
+		PTREE_3\PTVALS1|False
+		PTREE_3\PTVALS2|False
+		PTREE_3\PTVALS3|False
+		PTREE_3\PTVALS4|False
+		Unk51|False
+		PTREE_4\0\PTVALS1|False
+		PTREE_4\0\PTVALS2|False
+		PTREE_4\0\PTVALS3|False
+		PTREE_4\1\PTVALS1|False
+		PTREE_4\1\PTVALS2|False
+		PTREE_4\1\PTVALS3|False
+		PTREE_4\2\PTVALS1|False
+		PTREE_4\2\PTVALS2|False
+		PTREE_4\2\PTVALS3|False
+		PTREE_4\3\PTVALS1|False
+		PTREE_4\3\PTVALS2|False
+		PTREE_4\3\PTVALS3|False
+		PTREE_4\4\PTVALS1|False
+		PTREE_4\4\PTVALS2|False
+		PTREE_4\4\PTVALS3|False
+		PTREE_4\5\PTVALS1|False
+		PTREE_4\5\PTVALS2|False
+		PTREE_4\5\PTVALS3|False
+		PTREE_4\6\PTVALS1|False
+		PTREE_4\6\PTVALS2|False
+		PTREE_4\6\PTVALS3|False
+		PTREE_4\7\PTVALS1|False
+		PTREE_4\7\PTVALS2|False
+		PTREE_4\7\PTVALS3|False
+		PTREE_4\7\PTVALS1Clone|False
+		PTREE_4\7\PTVALS2Clone|False
+		PTREE_4\7\PTVALS3Clone|False
+		PTREE_4\8\PTVALS1|False
+		PTREE_4\8\PTVALS2|False
+		PTREE_4\8\PTVALS3|False
+		PTREE_4\9\PTVALS1|False
+		PTREE_4\9\PTVALS2|False
+		PTREE_4\9\PTVALS3|False
+		PTREE_4\10\PTVALS1|False
+		PTREE_4\10\PTVALS2|False
+		PTREE_4\10\PTVALS3|False
+		PTREE_4\10\PTVALS1Clone|False
+		PTREE_4\10\PTVALS2Clone|False
+		PTREE_4\10\PTVALS3Clone|False
+		PTREE_4\11\PTVALS1|False
+		PTREE_4\11\PTVALS2|False
+		PTREE_4\11\PTVALS3|False
+		PTREE_4\12\PTVALS1|False
+		PTREE_4\12\PTVALS2|False
+		PTREE_4\12\PTVALS3|False
+		PTREE_4\12\PTVALS1Clone|False
+		PTREE_4\12\PTVALS2Clone|False
+		PTREE_4\12\PTVALS3Clone|False
+		PTREE_4\13\PTVALS1|False
+		PTREE_4\13\PTVALS2|False
+		PTREE_4\13\PTVALS3|False
+	)
+
+	QR_RAND_TABLE_INFO (
+		RandomQrTable|True
+	)
+
+	QR2_RAND_INFO (
+		ItemID|True
+		Unk1|False
+	)
+
+	QR1_INFO (
+		StartTypeDec|False
+		EndTypeDec|False
+		TypeItem1ID|True
+		TypeItem2ID|True
+		Flag1ID|True
+		Flag2ID|True
+		Unk6|False
+		Unk7|False
+		Item1Quantity|False
+		Item2Quantity|False
+		RandomQRTable|False
 	)
 ]
 
