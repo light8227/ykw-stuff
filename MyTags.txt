@@ -268,7 +268,7 @@ YW2 [
 		Unk5|False
 		Unk6|False
 		Unk7|False
-		Unk8|False
+		DescriptionID|False
 		Unk9|False
 		Unk10|False
 		Cond|False
@@ -4298,5 +4298,4 @@ IEGO [
 	)
 
 ]
-
 
