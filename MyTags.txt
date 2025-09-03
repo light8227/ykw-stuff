@@ -255,6 +255,13 @@ YW1 [
 ]
 
 YW2 [
+	WANTED_MAP_ACT (
+		Index|False
+		X|False
+		Y|False
+		Z|False
+	)
+
     QUEST_CONFIG (
 		QuestID|False
 		QuestType|False
@@ -4298,5 +4305,4 @@ IEGO [
 	)
 
 ]
-
 
