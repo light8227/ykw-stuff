@@ -255,6 +255,15 @@ YW1 [
 ]
 
 YW2 [
+    TROPHY_INFO (
+		TrophyID|False
+		TrophyTextID|False
+		Unk1|False
+		Rarity|False
+		CondSomeAreHardcoded|False
+		Unk2|False
+    )
+
 	WEATHER_FORECAST_INFO (
 		IsPast|False
 	)
@@ -4267,4 +4276,5 @@ IEGO [
 		ItemCategory|False
 		ItemNum|False
 	)
+
 ]
