@@ -255,6 +255,35 @@ YW1 [
 ]
 
 YW2 [
+    QUEST_CONFIG (
+		QuestID|False
+		Unk1|False
+		MainIndex|False
+		InverseIndex|False
+		UnkID|False
+		QuestTitleID|False
+		Unk2|False
+		QuestTypeA|False
+		Unk4|False
+		Unk5|False
+		Unk6|False
+		QuestTypeB|False
+		DescriptionID|False
+		Unk9|False
+		Unk10|False
+		Cond|False
+		UnkType|False
+    )
+
+    TROPHY_INFO (
+		TrophyID|False
+		TrophyTextID|False
+		Unk1|False
+		Rarity|False
+		CondSomeAreHardcoded|False
+		ValueOfCond|False
+    )
+
 	WEATHER_FORECAST_INFO (
 		IsPast|False
 	)
@@ -4267,4 +4296,6 @@ IEGO [
 		ItemCategory|False
 		ItemNum|False
 	)
+
 ]
+
