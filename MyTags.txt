@@ -261,7 +261,7 @@ YW2 [
 		Unk1|False
 		Rarity|False
 		CondSomeAreHardcoded|False
-		Unk2|False
+		ValueOfCond|False
     )
 
 	WEATHER_FORECAST_INFO (
@@ -4278,3 +4278,4 @@ IEGO [
 	)
 
 ]
+
