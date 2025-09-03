@@ -257,19 +257,19 @@ YW1 [
 YW2 [
     QUEST_CONFIG (
 		QuestID|False
-		Unk1|False
+		QuestType|False
 		MainIndex|False
 		InverseIndex|False
 		UnkID|False
 		QuestTitleID|False
 		Unk2|False
-		QuestTypeA|False
-		Unk4|False
+		T_A|False
+		XP|False
 		Unk5|False
 		Unk6|False
-		QuestTypeB|False
+		T_B|False
 		DescriptionID|False
-		Unk9|False
+		RecommendedLevel|False
 		Unk10|False
 		Cond|False
 		UnkType|False
@@ -4299,3 +4299,4 @@ IEGO [
 
 ]
 
+ 
