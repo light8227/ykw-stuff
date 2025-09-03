@@ -265,7 +265,7 @@ YW2 [
 		Unk2|False
 		T_A|False
 		XP|False
-		Unk5|False
+		FavorMoney|False
 		Unk6|False
 		T_B|False
 		DescriptionID|False
@@ -4299,4 +4299,4 @@ IEGO [
 
 ]
 
- 
+
