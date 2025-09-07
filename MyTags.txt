@@ -784,7 +784,7 @@ YW2 [
 		Unk1|False
 		Unk2|False
 		Unk3|False
-		Character|False
+		Character|True
 	)
 
 	TEXT_INFO (
@@ -1257,6 +1257,22 @@ YW2 [
 	HELP_ORDER_CONFIG (
 		Unk0|False
 		Help|False
+	)
+
+	LOTTERY_INFO_RANK (
+		Rarity|False
+	)
+
+	LOTTERY_INFO (
+		LotteryID|False
+	)
+
+	LOTTERY_INFO_RANK_PRIZE (
+		ItemID|False
+		QuantityA??|False
+		ItemIDB|False
+		QuantityB??|False
+		AlwaysZero|False
 	)
 ]
 
