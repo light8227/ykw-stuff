@@ -1241,7 +1241,7 @@ YW2 [
 		BonusMovieID|False
 		File|False
 		Unk2|False
-		Boo/Bingo/Jackpot|False
+		Boo\Bingo\Jackpot|False
 	)
 
 	QUEST_BONUS_CONFIG (
@@ -3273,8 +3273,8 @@ YW4 [
 	ITEM_EQUIP_INFO (
 		ParamID|False
 		CategoryID|False
-		Unk2|False
-		Unk3|False
+		NounID|False
+		DescID|False
 		Unk4|False
 		Unk5|False
 		Unk6|False
@@ -3283,7 +3283,7 @@ YW4 [
 		Unk9|False
 		Unk10|False
 		ItemID|False
-		Unk12|False
+		Rarity|False
 		Unk13|False
 		Unk14|False
 		SkillID|False
@@ -3415,8 +3415,12 @@ YW4 [
 	)
 
 	PASSWORD_INFO (
-		Password|True
+		Password|False
 		ParamID|False
+		Unk2|False
+		FlagID|False
+		Unk4|False
+		NumberReceived|False
 	)
 
 	BTL_TECHNIC_INFO (
@@ -3435,7 +3439,7 @@ YW4 [
 
 	BTL_PASSIVE_SKILL_INFO (
 		ParamID|False
-		Unk1|False
+		SkillID|False
 		Unk2|False
 		Unk3|False
 		Unk4|False
@@ -3443,7 +3447,7 @@ YW4 [
 		Unk6|False
 		Unk7|False
 		Unk8|False
-		TextID|False
+		NounID|False
 		TextID|False
 	)
 
@@ -3708,6 +3712,69 @@ YW4 [
 		Filepath|False
 		CPKpath|False
 	)
+
+	NEWS_LIST_IMAGE (
+		Filename|False
+	)
+
+	NEWS_LIST_INFO (
+		Unk0|False
+		Unk1|False
+		NewsNameTextID|False
+		Unk3|False
+		SystemTextID|False
+	)
+
+	TROPHY_INFO (
+		Unk0|False
+		Unk1|False
+		Unk2|False
+		TextNameID|False
+		TrophyName|False
+		TextDescriptionID|False
+		Unk6|False
+		Unk7|False
+		Cond|False
+		TrophyObtainAoE|False
+	)
+
+	GENERAL_LIMIT_INFO_DATA (
+		Unk0|False
+		Cond|False
+	)
+
+	SETTING_INFO (
+		Unk0|False
+		Unk1|False
+		TextNameID|False
+		TextDescriptionID|False
+	)
+
+	BTL_PASSIVE_EFFECT_INFO (
+		PassiveEffectGroupInfoEffectParamListID|False
+	)
+
+	BTL_PASSIVE_EFFECT_GROUP_INFO (
+		SkillID|False
+	)
+
+	ENCOUNT_CONFIG_INFO_PARAM3 (
+		ParamID|False
+	)
+
+	NFC_INFO (
+		Unk0|False
+		Unk1|False
+		Unk2|False
+		Unk3|False
+		Unk4|False
+		Unk5|False
+		Unk6|False
+		Unk7|False
+		Unk8|False
+		Unk9|False
+		ParamID|False
+	)
 ]
 
 YSH [
@@ -3737,6 +3804,8 @@ YSH [
 	CHARA_BASE_INFO (
 		BaseID|False
 		ModelID|False
+		Unk2|False
+		NounID|False
 	)
 
 	CHARA_PARAM_COMMON_INFO_LIST_BEG (
@@ -3777,6 +3846,56 @@ YSH [
 
 	CHARA_BASE_INFO_LIST_BEG (
 		EntryCount|False
+	)
+
+	PASSWORD_OTHER (
+		Unk0|True
+	)
+
+	PASSWORD_INFO (
+		Password|True
+		ParamID|False
+		Unk2|False
+		Unk3|False
+		Unk4|False
+		NumberReceived|False
+	)
+
+	DELIVERY_INFO (
+		Unk0|False
+		NounID|False
+		TextID|False
+		Cond|False
+	)
+
+	ITEM_IMPORTANT_INFO (
+		ParamID|False
+		Unk1|False
+		NounID|False
+	)
+
+	ITEM_TECHNIC_MEDAL_INFO (
+		ParamID|False
+		Unk1|False
+		NounID|False
+	)
+
+	ITBL_ITEMS (
+		ParamID|False
+	)
+
+	ITBL_BASE (
+		Unk0|False
+	)
+
+	ITEM_WEAPON_INFO (
+		ParamID|False
+		Unk1|False
+		NounID|False
+	)
+
+	ENEMY_PARAM_INFO (
+		ParamID|False
 	)
 ]
 
