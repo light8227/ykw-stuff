@@ -262,7 +262,7 @@ YW2 [
 		Z|False
 	)
 
-    QUEST_CONFIG (
+	QUEST_CONFIG (
 		QuestID|False
 		QuestType|False
 		MainIndex|False
@@ -280,16 +280,16 @@ YW2 [
 		Unk10|False
 		Cond|False
 		UnkType|False
-    )
+	)
 
-    TROPHY_INFO (
+	TROPHY_INFO (
 		TrophyID|False
 		TrophyTextID|False
 		Unk1|False
 		Rarity|False
 		CondSomeAreHardcoded|False
 		ValueOfCond|False
-    )
+	)
 
 	WEATHER_FORECAST_INFO (
 		IsPast|False
@@ -844,7 +844,7 @@ YW2 [
 	)
 
 	ITEM_CONSUME (
-		ItemID|False
+		ItemID|True
 		NounTextID|False
 		InventorySort|False
 		ItemType|False
@@ -947,7 +947,7 @@ YW2 [
 	)
 
 	CAPSULE_RATE_INFO_DATA (
-		RewardID|True
+		RewardID|False
 		Percentage|False
 		Unk2|False
 		Unk3|False
@@ -959,8 +959,8 @@ YW2 [
 	)
 
 	CAPSULE_MACHINE_CONFIG_INFO_DATA (
-		ItemID|True
-		Unk1|False
+		CoinID|False
+		PlaycoinCount|False
 		MachineConfigID|True
 		Unk2|False
 	)
@@ -1226,6 +1226,37 @@ YW2 [
 
 	ITABLE_DATA (
 		Unk0|True
+	)
+
+	BONUS_ITEM_INFO (
+		Index|False
+		ItemID|False
+		Unk2|False
+		Unk3|False
+		IsEndOfLootTable|False
+		Probability|False
+	)
+
+	BONUS_MOVIE_CONFIG (
+		BonusMovieID|False
+		File|False
+		Unk2|False
+		Boo/Bingo/Jackpot|False
+	)
+
+	QUEST_BONUS_CONFIG (
+		BonusTableID|False
+		Index|False
+	)
+
+	CPSL_LOT_EFF_INFO_DATA (
+		UnkSumIsBoolean|False
+		Probability|False
+	)
+
+	HELP_ORDER_CONFIG (
+		Unk0|False
+		Help|False
 	)
 ]
 
@@ -4312,7 +4343,4 @@ IEGO [
 		ItemCategory|False
 		ItemNum|False
 	)
-
 ]
-
-
