@@ -3140,6 +3140,290 @@ YW3 [
 	)
 ]
 
+YWB2 [
+	CHARA_BASE_YOKAI_INFO (
+		BaseID|True
+		FileNamePrefix|False
+		FileNameNumber|False
+		FileNameVariant|False
+		NameID|True
+		Unk1|False
+		Unk2|False
+		Unk3|False
+		Unk4|False
+		Unk5|False
+		DescriptionID|True
+		MedalPosX|False
+		MedalPosY|False
+		Unk6|False
+		Rank|False
+		IsRare|False
+		IsLegendary|False
+		IsPionner|False
+		IsCommandant|False
+		FavFood|False
+		HatedFood|False
+		Unk11|False
+		Unk12|False
+		Tribe|False
+		IsClassic|False
+		IsMerican|False
+		BlastersTRole|False
+		Unk15|False
+		IsDeva|False
+		IsLegendaryMystery|False
+		IsTreasure|False
+		IsCrystalLegendary|False
+	)
+
+	CHARA_PARAM_INFO (
+		ParamID|True
+		BaseID|True
+		ShowInMedallium|False
+		MedalliumOffset|False
+		Unk1|False
+		MinHP|False
+		MinStrength|False
+		MinSpririt|False
+		MinSpeed|False
+		MinDefense|False
+		MaxHP|False
+		MaxStrength|False
+		MaxSpirit|False
+		MaxDefense|False
+		MaxSpeed|False
+		ExperienceCurve|True
+		Strongest|False
+		Weakness|False
+		Unk2|False
+		AttackID|True
+		Unk3|False
+		TechniqueID|True
+		Unk4|False
+		InspiritID|True
+		Unk5|False
+		Unk6|False
+		Unk7|False
+		SoultimateID|True
+		SkillID|True
+		Unk8|False
+		BattleType|False
+		CanIStillBecomeBefriend|False
+		Unk9|False
+		Unk10|False
+		Unk11|False
+		Unk12|False
+		ScoutableID|True
+		IsFusable|False
+		EvolveOffset|False
+		Unk14|False
+		WaitTime|False
+	)
+
+	HACKSLASH_CHARA_PARAM_INFO (
+		ParamID|True
+		Unk0|False
+		Unk2|False
+		SkillID|True
+		AAttackID|True
+		SoultimateID|True
+		YAttackID|True
+		Unk3|False
+		XAttackID|True
+		Unk4|False
+		BossCommandAttackID1|True
+		Unk5|False
+		BossCommandAttackID2|True
+		Unk6|False
+		BossCommandAttackID3|True
+		Unk7|False
+		BossCommandAttackID4|True
+		Unk8|False
+		BossCommandAttackID5|True
+		Unk9|False
+		BossCommandAttackID6|True
+		Unk10|False
+		BossCommandAttackID7|True
+		Unk11|False
+		Unk12|False
+		Unk13|False
+		Unk14|False
+		Unk15|False
+		Unk16|False
+		Unk17|False
+		Unk18|False
+		Unk19|False
+		Unk20|False
+		Unk21|False
+		Unk22|False
+		Unk23|False
+		Unk24|False
+		Unk25|False
+		Unk26|False
+		Unk27|False
+		Unk28|False
+		Unk29|False
+	)
+
+	MISSION_CONFIG_INFO (
+		DungeonID|True
+		DungeonNumber|False
+		Unk2|False
+		DungeonCategory|False
+		Unk4|False
+		DungeonType|False
+		Unk6|False
+		Unk7|False
+		TotalFloors|False
+		Unk9|False
+		Unk10|False
+		Unk11|False
+		Unk12|False
+		Unk13|False
+		Unk14|False
+		Unk15|False
+		Unk16|False
+		Unk17|False
+		Unk18|False
+		Unk19|False
+		Unk20|False
+		DungeonMenuNumber|False
+		Cond|False
+		DungeonTextID|False
+		MapID|False
+		Unk25|False
+		Unk26|False
+		Unk27|False
+		Unk28|False
+		ItemUnlock|False
+		Unk30|False
+		Unk31|False
+		Unk32|False
+		Unk33|False
+		Unk34|False
+		OniOrbsRewarded|False
+		Unk36|False
+		Unk37|False
+	)
+
+	REWARD_INFO (
+		MissionID|True
+	)
+
+	REWARD_INFO_DATA (
+		Unk0|False
+		RewardID|True
+		Level|False
+		Unk3|False
+		Rate|False
+		Unk5|False
+	)
+
+	TEXT_INFO (
+		Unk0|True
+	)
+
+	AURA_INFO (
+		NounID|False
+		Unk1|False
+		Unk2|False
+		Unk3|False
+		Unk4|False
+		Unk5|False
+		Price|False
+		Unk7|False
+		EffectType|False
+		DungeonNumber|False
+		EffectType|False
+		SkillID|False
+		EffectType|False
+		SkillID|False
+		EffectType|False
+		SkillID|False
+		EffectType|False
+		SkillID|False
+		EffectType|False
+		SkillID|False
+		EffectType|False
+		SkillID|False
+	)
+
+	SHOP_ITEM (
+		shpTUBID|False
+		Unk1|False
+		NounID|False
+		Price|False
+		Unk4|False
+		Cond|False
+	)
+
+	MISSION_RUINS_INFO (
+		Unk0|True
+		Unk1|True
+		Unk2|False
+		Unk3|False
+		Cond|False
+		Unk5|False
+		Unk6|False
+		Unk7|False
+		Unk8|False
+		Unk9|False
+		Unk10|False
+		Unk11|False
+		Unk12|False
+		Unk13|False
+		Unk14|False
+		Unk15|False
+		Unk16|True
+		Unk17|True
+	)
+
+	NOUN_INFO (
+		Unk0|True
+	)
+
+	KEY_BOARD_STR (
+		Unk0|False
+		Unk1|False
+		Unk2|False
+		Alphabet|False
+		Character|False
+	)
+
+	SHOP_CONFIG_INFO (
+		shpTUBID|False
+	)
+
+	CHARA_ABILITY_CONFIG_INFO (
+		SkillID|False
+		NounID|False
+		TextID|False
+		Unk3|False
+		EffectID|False
+		Multipliers|False
+		AoE|False
+	)
+
+	CHARA_ABILITY_EFFECT_INFO (
+		EffectID|False
+		Unk1|False
+		Unk2|False
+		Unk3|False
+		Unk4|False
+		Unk5|False
+		Unk6|False
+		Unk7|False
+		Unk8|False
+		Unk9|False
+		Unk10|False
+		Unk11|False
+		Unk12|False
+		Effects|False
+		AoE|False
+		AoE|False
+	)
+]
+
 YW4 [
 	CHARA_PARAM_INFO (
 		ParamID|False
@@ -3896,290 +4180,6 @@ YSH [
 
 	ENEMY_PARAM_INFO (
 		ParamID|False
-	)
-]
-
-YWB2 [
-	CHARA_BASE_YOKAI_INFO (
-		BaseID|True
-		FileNamePrefix|False
-		FileNameNumber|False
-		FileNameVariant|False
-		NameID|True
-		Unk1|False
-		Unk2|False
-		Unk3|False
-		Unk4|False
-		Unk5|False
-		DescriptionID|True
-		MedalPosX|False
-		MedalPosY|False
-		Unk6|False
-		Rank|False
-		IsRare|False
-		IsLegendary|False
-		IsPionner|False
-		IsCommandant|False
-		FavFood|False
-		HatedFood|False
-		Unk11|False
-		Unk12|False
-		Tribe|False
-		IsClassic|False
-		IsMerican|False
-		BlastersTRole|False
-		Unk15|False
-		IsDeva|False
-		IsLegendaryMystery|False
-		IsTreasure|False
-		IsCrystalLegendary|False
-	)
-
-	CHARA_PARAM_INFO (
-		ParamID|True
-		BaseID|True
-		ShowInMedallium|False
-		MedalliumOffset|False
-		Unk1|False
-		MinHP|False
-		MinStrength|False
-		MinSpririt|False
-		MinSpeed|False
-		MinDefense|False
-		MaxHP|False
-		MaxStrength|False
-		MaxSpirit|False
-		MaxDefense|False
-		MaxSpeed|False
-		ExperienceCurve|True
-		Strongest|False
-		Weakness|False
-		Unk2|False
-		AttackID|True
-		Unk3|False
-		TechniqueID|True
-		Unk4|False
-		InspiritID|True
-		Unk5|False
-		Unk6|False
-		Unk7|False
-		SoultimateID|True
-		SkillID|True
-		Unk8|False
-		BattleType|False
-		CanIStillBecomeBefriend|False
-		Unk9|False
-		Unk10|False
-		Unk11|False
-		Unk12|False
-		ScoutableID|True
-		IsFusable|False
-		EvolveOffset|False
-		Unk14|False
-		WaitTime|False
-	)
-
-	HACKSLASH_CHARA_PARAM_INFO (
-		ParamID|True
-		Unk0|False
-		Unk2|False
-		SkillID|True
-		AAttackID|True
-		SoultimateID|True
-		YAttackID|True
-		Unk3|False
-		XAttackID|True
-		Unk4|False
-		BossCommandAttackID1|True
-		Unk5|False
-		BossCommandAttackID2|True
-		Unk6|False
-		BossCommandAttackID3|True
-		Unk7|False
-		BossCommandAttackID4|True
-		Unk8|False
-		BossCommandAttackID5|True
-		Unk9|False
-		BossCommandAttackID6|True
-		Unk10|False
-		BossCommandAttackID7|True
-		Unk11|False
-		Unk12|False
-		Unk13|False
-		Unk14|False
-		Unk15|False
-		Unk16|False
-		Unk17|False
-		Unk18|False
-		Unk19|False
-		Unk20|False
-		Unk21|False
-		Unk22|False
-		Unk23|False
-		Unk24|False
-		Unk25|False
-		Unk26|False
-		Unk27|False
-		Unk28|False
-		Unk29|False
-	)
-
-	MISSION_CONFIG_INFO (
-		DungeonID|True
-		DungeonNumber|False
-		Unk2|False
-		DungeonCategory|False
-		Unk4|False
-		DungeonType|False
-		Unk6|False
-		Unk7|False
-		TotalFloors|False
-		Unk9|False
-		Unk10|False
-		Unk11|False
-		Unk12|False
-		Unk13|False
-		Unk14|False
-		Unk15|False
-		Unk16|False
-		Unk17|False
-		Unk18|False
-		Unk19|False
-		Unk20|False
-		DungeonMenuNumber|False
-		Cond|False
-		DungeonTextID|False
-		MapID|False
-		Unk25|False
-		Unk26|False
-		Unk27|False
-		Unk28|False
-		ItemUnlock|False
-		Unk30|False
-		Unk31|False
-		Unk32|False
-		Unk33|False
-		Unk34|False
-		OniOrbsRewarded|False
-		Unk36|False
-		Unk37|False
-	)
-
-	REWARD_INFO (
-		MissionID|True
-	)
-
-	REWARD_INFO_DATA (
-		Unk0|False
-		RewardID|True
-		Level|False
-		Unk3|False
-		Rate|False
-		Unk5|False
-	)
-
-	TEXT_INFO (
-		Unk0|True
-	)
-
-	AURA_INFO (
-		NounID|False
-		Unk1|False
-		Unk2|False
-		Unk3|False
-		Unk4|False
-		Unk5|False
-		Price|False
-		Unk7|False
-		EffectType|False
-		DungeonNumber|False
-		EffectType|False
-		SkillID|False
-		EffectType|False
-		SkillID|False
-		EffectType|False
-		SkillID|False
-		EffectType|False
-		SkillID|False
-		EffectType|False
-		SkillID|False
-		EffectType|False
-		SkillID|False
-	)
-
-	SHOP_ITEM (
-		shpTUBID|False
-		Unk1|False
-		NounID|False
-		Price|False
-		Unk4|False
-		Cond|False
-	)
-
-	MISSION_RUINS_INFO (
-		Unk0|True
-		Unk1|True
-		Unk2|False
-		Unk3|False
-		Cond|False
-		Unk5|False
-		Unk6|False
-		Unk7|False
-		Unk8|False
-		Unk9|False
-		Unk10|False
-		Unk11|False
-		Unk12|False
-		Unk13|False
-		Unk14|False
-		Unk15|False
-		Unk16|True
-		Unk17|True
-	)
-
-	NOUN_INFO (
-		Unk0|True
-	)
-
-	KEY_BOARD_STR (
-		Unk0|False
-		Unk1|False
-		Unk2|False
-		Alphabet|False
-		Character|False
-	)
-
-	SHOP_CONFIG_INFO (
-		shpTUBID|False
-	)
-
-	CHARA_ABILITY_CONFIG_INFO (
-		SkillID|False
-		NounID|False
-		TextID|False
-		Unk3|False
-		EffectID|False
-		Multipliers|False
-		AoE|False
-	)
-
-	CHARA_ABILITY_EFFECT_INFO (
-		EffectID|False
-		Unk1|False
-		Unk2|False
-		Unk3|False
-		Unk4|False
-		Unk5|False
-		Unk6|False
-		Unk7|False
-		Unk8|False
-		Unk9|False
-		Unk10|False
-		Unk11|False
-		Unk12|False
-		Effects|False
-		AoE|False
-		AoE|False
 	)
 ]
 
