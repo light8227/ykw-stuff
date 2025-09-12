@@ -587,7 +587,7 @@ YW2 [
 		DecayScaleC|False
 		DecayScaleD|False
 		DecayScaleE|False
-		DecayingPenaltyA|False
+		DecayingPenaltyUnpopularity?|False
 		ConstA|False
 		ConstB|False
 		ConstC|False
@@ -624,7 +624,7 @@ YW2 [
 		AttributeDamageWater|False
 		AttributeDamageWind|False
 		SoultimateID|False
-		Unk7|False
+		IsNotBoss|False
 		LoafQuoteID|False
 		ScoutableID|True
 		SkillID|True
@@ -647,7 +647,7 @@ YW2 [
 		MedaliumOffset|False
 		InMedallium?|False
 		CharaSameKind|False
-		Unk15|False
+		IsNotTypeRare|True
 	)
 
 	CHARA_EVOLVE_INFO (
@@ -1274,6 +1274,44 @@ YW2 [
 		QuantityB??|False
 		AlwaysZero|False
 	)
+
+	CAMPAIGN_ITEM_COND (
+		Cond|False
+	)
+
+	LAST_UPDATE_DATE_TIME (
+		LAST_UPDATE_DATE_TIME|False
+	)
+
+	LAST_UPDATE_USER (
+		LAST_UPDATE_USER|False
+	)
+
+	LAST_UPDATE_MACHINE (
+		LAST_UPDATE_MACHINE|False
+	)
+
+	FLAG_INFO_BEGIN (
+		Unk0|False
+		ChildCount|False
+	)
+
+	CHARA_ABILITY_EFFECT_INFO (
+		EffectID|False
+	)
+
+	QR_RAND_TABLE_INFO_DATA (
+		ItemID|False
+		IsRand?|False
+	)
+
+	QR_RAND_TABLE_INFO (
+		RandomQRTable|False
+	)
+
+	QR_RAND_TABLE_INFO_DATA_LIST_BEG (
+		ChildCount|False
+	)
 ]
 
 YWB [
@@ -1768,11 +1806,11 @@ YW3 [
 	)
 
 	CHARA_ABILITY_CONFIG_INFO (
-		SkillID|True
-		NameID|True
-		DescID|True
-		TriggeredTextID|True
-		EffectID|True
+		SkillID|False
+		NameID|False
+		DescID|False
+		TriggeredTextID|False
+		EffectID|False
 		Multipliers|False
 		AoE|False
 		AoE|False
@@ -2673,7 +2711,7 @@ YW3 [
 	)
 
 	CHARA_ABILITY_EFFECT_INFO (
-		EffectID|True
+		EffectID|False
 		Unk1|False
 		Unk2|False
 		Unk3|False
@@ -2809,12 +2847,12 @@ YW3 [
 	QR2_INFO (
 		StartTypeDec|False
 		EndTypeDec|False
-		TypeItem1ID|True
-		TypeItem2ID|True
+		Item1ID|True
+		Item2ID|True
 		Flag1ID|True
 		Flag2ID|True
 		Unk6|False
-		Unk7|False
+		UnkBoolean|False
 		Item1Quantity|False
 		Item2Quantity|False
 		RandomQRTable|True
@@ -3117,12 +3155,12 @@ YW3 [
 	)
 
 	QR_RAND_TABLE_INFO (
-		RandomQrTable|True
+		RandomQRTable|True
 	)
 
 	QR2_RAND_INFO (
 		ItemID|True
-		Unk1|False
+		IsRand|False
 	)
 
 	QR1_INFO (
@@ -3138,6 +3176,15 @@ YW3 [
 		Item2Quantity|False
 		RandomQRTable|False
 	)
+
+	QR_RAND_TABLE_INFO_DATA_LIST_BEG (
+		ChildCount|False
+        )
+
+	QR_RAND_TABLE_INFO_DATA (
+		ItemID|False
+		IsRand?|False
+        )
 ]
 
 YWB2 [
@@ -3168,7 +3215,7 @@ YWB2 [
 		Tribe|False
 		IsClassic|False
 		IsMerican|False
-		BlastersTRole|False
+		BustersTRole|False
 		Unk15|False
 		IsDeva|False
 		IsLegendaryMystery|False
@@ -3193,7 +3240,7 @@ YWB2 [
 		MaxDefense|False
 		MaxSpeed|False
 		ExperienceCurve|True
-		Strongest|False
+		Resistance|False
 		Weakness|False
 		Unk2|False
 		AttackID|True
@@ -3266,7 +3313,7 @@ YWB2 [
 	)
 
 	MISSION_CONFIG_INFO (
-		DungeonID|True
+		DungeonID|False
 		DungeonNumber|False
 		Unk2|False
 		DungeonCategory|False
@@ -3307,12 +3354,12 @@ YWB2 [
 	)
 
 	REWARD_INFO (
-		MissionID|True
+		MissionID|False
 	)
 
 	REWARD_INFO_DATA (
 		Unk0|False
-		RewardID|True
+		RewardID|False
 		Level|False
 		Unk3|False
 		Rate|False
@@ -3320,7 +3367,7 @@ YWB2 [
 	)
 
 	TEXT_INFO (
-		Unk0|True
+		Unk0|False
 	)
 
 	AURA_INFO (
@@ -3330,7 +3377,7 @@ YWB2 [
 		Unk3|False
 		Unk4|False
 		Unk5|False
-		Price|False
+		Unk6|False
 		Unk7|False
 		EffectType|False
 		DungeonNumber|False
@@ -3349,11 +3396,11 @@ YWB2 [
 	)
 
 	SHOP_ITEM (
-		shpTUBID|False
+		shpTUBID|True
 		Unk1|False
 		NounID|False
 		Price|False
-		Unk4|False
+		AuraNumber|False
 		Cond|False
 	)
 
@@ -3391,7 +3438,7 @@ YWB2 [
 	)
 
 	SHOP_CONFIG_INFO (
-		shpTUBID|False
+		shpTUBID|True
 	)
 
 	CHARA_ABILITY_CONFIG_INFO (
@@ -3421,6 +3468,89 @@ YWB2 [
 		Effects|False
 		AoE|False
 		AoE|False
+	)
+
+	CAMPAIGN_ITEM_COND (
+		Cond|False
+	)
+
+	CAMPAIGN_ITEM (
+		Unk0|False
+		ItemID|False
+	)
+
+	SHOP_VALID_CONDITION (
+		AltPrice|False
+		Cond|False
+	)
+
+	COMBINE_INFO (
+		BaseIsItem|True
+		BaseID|True
+		MaterialIsItem|False
+		MaterialID|True
+		EvolveToIsItem|False
+		IDOfResult|True
+		FusionID|True
+		UnkZeroOneOrThree|False
+		FusionPrice|False
+	)
+
+	SHOP_LIST_INFO (
+		ShopID|False
+	)
+
+	PASSWORD_INFO (
+		Password|False
+		Unk1|False
+		ParamID|True
+		Unk3|False
+		Unk4|False
+		FlagID|False
+	)
+
+	QR2_INFO (
+		StartTypeDec|False
+		EndTypeDec|False
+		Item1ID|True
+		Item2ID|False
+		Flag1ID|False
+		Flag2ID|False
+		Unk1|False
+		UnkBoolean|True
+		Item1Qty|False
+		Item2Qty|False
+		RandomQRTable|False
+		UnkBoolean2|False
+		UnkAlwaysZero?|False
+		UnkAlwaysZero?|False
+		UnkAlwaysZero?|False
+	)
+
+	QR2_RAND_INFO (
+		ItemID|False
+		IsRand?|False
+	)
+
+	QR_RAND_TABLE_INFO (
+		RandomQRTable|False
+	)
+
+	QR_RAND_TABLE_INFO_DATA_LIST_BEG (
+		ChildCount|False
+	)
+
+	QR_RAND_TABLE_INFO_DATA (
+		ItemID|False
+		IsRand?|False
+	)
+
+	COMBINE_INFO_LIST_BEG (
+		ChildCount|False
+	)
+
+	SHOP_CONFIG_INFO_BEGIN (
+		Unk0|False
 	)
 ]
 
