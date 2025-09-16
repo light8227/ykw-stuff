@@ -283,8 +283,8 @@ YW2 [
 	)
 
 	TROPHY_INFO (
-		TrophyID|False
-		TrophyTextID|False
+		TrophyID|True
+		TrophyTextID|True
 		Unk1|False
 		Rarity|False
 		CondSomeAreHardcoded|False
@@ -483,7 +483,7 @@ YW2 [
 	)
 
 	SCRATCH_SHOP (
-		ShopSlotID|True
+		ShopSlotID?|True
 	)
 
 	DATA_COUNT (
@@ -608,11 +608,11 @@ YW2 [
 		baseB_Defense|False
 		baseB_Speed|False
 		CharaRandomActType|False
-		AttackID|True
+		AttackID|False
 		BaseAttack%|False
-		TechniqueID|True
+		TechniqueID|False
 		BaseTechnique%|False
-		InspiritID|True
+		InspiritID|False
 		BaseInspirit%|False
 		GuardID|False
 		BaseGuard%|False
@@ -626,8 +626,8 @@ YW2 [
 		SoultimateID|False
 		IsNotBoss|False
 		LoafQuoteID|False
-		ScoutableID|True
-		SkillID|True
+		ScoutableID|False
+		SkillID|False
 		Money|False
 		Experience|False
 		ItemSlots|False
@@ -638,10 +638,10 @@ YW2 [
 		InspiritBtleTxtPersonality|False
 		EnemyInspiritHit%|False
 		ExperienceCurve|False
-		Quote1ID|True
-		Quote2ID|True
-		Quote3ID|True
-		Quote4ID|True
+		Quote1ID|False
+		Quote2ID|False
+		Quote3ID|False
+		Quote4ID|False
 		IsFusable|False
 		EvolveOffset|False
 		MedaliumOffset|False
@@ -901,16 +901,16 @@ YW2 [
 
 	CAPSULE_ITEM_INFO (
 		RewardID|True
-		Unk1|False
-		ParamIDORItemID|True
+		IsOniCrank|True
+		ParamID\ItemID|True
 		CapsuleBefriendID|True
-		Unk2|False
-		Unk3|False
-		ColorPercentageA|False
-		ColorPercentageB|False
-		ColorPercentageC|False
-		ColorPercentageD|False
-		ColorPercentageE|False
+		AlwaysZero?|True
+		AlwaysZero?|True
+		ColorPercentageA?|False
+		ColorPercentageB?|False
+		ColorPercentageC?|False
+		ColorPercentageD?|False
+		ColorPercentageE?|False
 	)
 
 	SKILL_GROWTH_INFO (
@@ -947,10 +947,10 @@ YW2 [
 	)
 
 	CAPSULE_RATE_INFO_DATA (
-		RewardID|False
-		Percentage|False
-		Unk2|False
-		Unk3|False
+		RewardID|True
+		Percentage\IsChoice|False
+		Unk2|True
+		Unk3|True
 	)
 
 	CAPSULE_RATE_INFO (
@@ -959,10 +959,10 @@ YW2 [
 	)
 
 	CAPSULE_MACHINE_CONFIG_INFO_DATA (
-		CoinID|False
+		CoinID|True
 		PlaycoinCount|False
 		MachineConfigID|True
-		Unk2|False
+		AlwaysZero?|True
 	)
 
 	MEDAL_LOAD_CFG (
@@ -1081,7 +1081,7 @@ YW2 [
 
 	BOSS_PARTS_INFO_BEGIN (
 		BossParamID|True
-		Unk0|False
+		ChildCount|False
 	)
 
 	BOSS_PARTS_INFO (
@@ -1123,7 +1123,7 @@ YW2 [
 	PURPOSE_POS_ITEM (
 		WorldmapPositionID|True
 		Unk1|False
-		Unk2|False
+		Cond|False
 	)
 
 	WMAP_POS (
@@ -1137,6 +1137,8 @@ YW2 [
 	DATA_ITEM (
 		Unk0|False
 		Unk1|True
+		Unk2|False
+		UnkBool|False
 	)
 
 	OP_SEARCH_POINT (
@@ -1203,7 +1205,7 @@ YW2 [
 	CHARA_SAME_KIND_INFO (
 		ParamID1|True
 		ParamID2|True
-		Unk0|True
+		UnkID|True
 		Cond|False
 	)
 
@@ -1250,8 +1252,8 @@ YW2 [
 	)
 
 	CPSL_LOT_EFF_INFO_DATA (
-		UnkSumIsBoolean|False
-		Probability|False
+		IsRarer?SumisBool|False
+		Probability?Sumis100|False
 	)
 
 	HELP_ORDER_CONFIG (
@@ -1310,6 +1312,124 @@ YW2 [
 	)
 
 	QR_RAND_TABLE_INFO_DATA_LIST_BEG (
+		ChildCount|False
+	)
+
+	SCRATCH_SHOP_DATA (
+		ScratchID|True
+		Percentage|False
+		UnkBool?|False
+	)
+
+	SCRATCH_RATE_DATA (
+		Index|False
+		Weight?|False
+	)
+
+	SCRATCH_RATE_DATA_LIST_BEG (
+		ChildCount|False
+	)
+
+	SCRATCH_RATE (
+		ScratchID|True
+	)
+
+	SCRATCH_INFO_RANK_LIST_BEG (
+		ChildCount|False
+	)
+
+	SCRATCH_INFO (
+		ScratchID|True
+	)
+
+	SCRATCH_INFO_RANK (
+		Index\Rank|False
+	)
+
+	SCRATCH_INFO_RANK_PRIZE_LIST_BEG (
+		ChildCount|False
+	)
+
+	SCRATCH_INFO_RANK_PRIZE (
+		ItemID|True
+		PrizeCond|False
+	)
+
+	SCRATCH_SHOP_DATA_LIST_BEG (
+		ChildCount|False
+	)
+
+	BOSS_CHARA_INFO_BEGIN (
+		ChildCount|False
+		Unk0|False
+	)
+
+	CHARA_EVOLVE_INFO_BEGIN (
+		ChildCount|False
+	)
+
+	CHARA_FRIEND_RATE_INFO_BEGIN (
+		ChildCount|False
+	)
+
+	CHARA_RANDOM_ACT_INFO_BEGIN (
+		ChildCount|False
+	)
+
+	CHARA_ACT_TYPE_OFFSET_INFO_BEGIN (
+		ChildCount|False
+	)
+
+	CHARA_SAME_KIND_INFO_BEGIN (
+		ChildCount|False
+	)
+
+	CAPSULE_MACHINE_CONFIG_INFO_DATA_LIST_BEG (
+		ChildCount|False
+	)
+
+	CAPSULE_MACHINE_CONFIG_INFO (
+		MachineID|True
+	)
+
+	CAPSULE_ITEM_INFO_LIST_BEG (
+		ChildCount|False
+	)
+
+	CAPSULE_RATE_INFO_LIST_BEG (
+		ChildCount|False
+	)
+
+	CPSL_LOT_EFF_INFO_LIST_BEG (
+		ChildCount|False
+	)
+
+	CPSL_ORGE_CALC_INFO_LIST_BEG (
+		ChildCount|False
+	)
+
+	CPSL_ORGE_CALC_INFO (
+		SomethingOrgreID|True
+	)
+
+	CPSL_ORGE_CALC_INFO_DATA (
+		UnkFloat|False
+		Always0\2\3\10|False
+	)
+
+	CAPSULE_RATE_INFO_DATA_LIST_BEG (
+		ChildCount|False
+	)
+
+	CPSL_LOT_EFF_INFO (
+		Index?|False
+	)
+
+	CPSL_LOT_EFF_INFO_DATA_LIST_BEG (
+		ChildCount|False
+	)
+
+	CPSL_ORGE_CALC_INFO_DATA_LIST_BEG (
 		ChildCount|False
 	)
 ]
@@ -1806,11 +1926,11 @@ YW3 [
 	)
 
 	CHARA_ABILITY_CONFIG_INFO (
-		SkillID|False
-		NameID|False
-		DescID|False
-		TriggeredTextID|False
-		EffectID|False
+		SkillID|True
+		NameID|True
+		DescID|True
+		TriggeredTextID|True
+		EffectID|True
 		Multipliers|False
 		AoE|False
 		AoE|False
@@ -2711,7 +2831,7 @@ YW3 [
 	)
 
 	CHARA_ABILITY_EFFECT_INFO (
-		EffectID|False
+		EffectID|True
 		Unk1|False
 		Unk2|False
 		Unk3|False
@@ -4310,6 +4430,380 @@ YSH [
 
 	ENEMY_PARAM_INFO (
 		ParamID|False
+	)
+]
+
+YWB2 [
+	CHARA_BASE_YOKAI_INFO (
+		BaseID|True
+		FileNamePrefix|False
+		FileNameNumber|False
+		FileNameVariant|False
+		NameID|True
+		Unk1|False
+		Unk2|False
+		Unk3|False
+		Unk4|False
+		Unk5|False
+		DescriptionID|True
+		MedalPosX|False
+		MedalPosY|False
+		Unk6|False
+		Rank|False
+		IsRare|False
+		IsLegendary|False
+		IsPionner|False
+		IsCommandant|False
+		FavFood|False
+		HatedFood|False
+		Unk11|False
+		Unk12|False
+		Tribe|False
+		IsClassic|False
+		IsMerican|False
+		BlastersTRole|False
+		Unk15|False
+		IsDeva|False
+		IsLegendaryMystery|False
+		IsTreasure|False
+		IsCrystalLegendary|False
+	)
+
+	CHARA_PARAM_INFO (
+		ParamID|True
+		BaseID|True
+		ShowInMedallium|False
+		MedalliumOffset|False
+		Unk1|False
+		MinHP|False
+		MinStrength|False
+		MinSpririt|False
+		MinSpeed|False
+		MinDefense|False
+		MaxHP|False
+		MaxStrength|False
+		MaxSpirit|False
+		MaxDefense|False
+		MaxSpeed|False
+		ExperienceCurve|True
+		Strongest|False
+		Weakness|False
+		Unk2|False
+		AttackID|True
+		Unk3|False
+		TechniqueID|True
+		Unk4|False
+		InspiritID|True
+		Unk5|False
+		Unk6|False
+		Unk7|False
+		SoultimateID|True
+		SkillID|True
+		Unk8|False
+		BattleType|False
+		CanIStillBecomeBefriend|False
+		Unk9|False
+		Unk10|False
+		Unk11|False
+		Unk12|False
+		ScoutableID|True
+		IsFusable|False
+		EvolveOffset|False
+		Unk14|False
+		WaitTime|False
+	)
+
+	HACKSLASH_CHARA_PARAM_INFO (
+		ParamID|True
+		Unk0|False
+		Unk2|False
+		SkillID|True
+		AAttackID|True
+		SoultimateID|True
+		YAttackID|True
+		Unk3|False
+		XAttackID|True
+		Unk4|False
+		BossCommandAttackID1|True
+		Unk5|False
+		BossCommandAttackID2|True
+		Unk6|False
+		BossCommandAttackID3|True
+		Unk7|False
+		BossCommandAttackID4|True
+		Unk8|False
+		BossCommandAttackID5|True
+		Unk9|False
+		BossCommandAttackID6|True
+		Unk10|False
+		BossCommandAttackID7|True
+		Unk11|False
+		Unk12|False
+		Unk13|False
+		Unk14|False
+		Unk15|False
+		Unk16|False
+		Unk17|False
+		Unk18|False
+		Unk19|False
+		Unk20|False
+		Unk21|False
+		Unk22|False
+		Unk23|False
+		Unk24|False
+		Unk25|False
+		Unk26|False
+		Unk27|False
+		Unk28|False
+		Unk29|False
+	)
+
+	MISSION_CONFIG_INFO (
+		DungeonID|True
+		DungeonNumber|False
+		Unk2|False
+		DungeonCategory|False
+		Unk4|False
+		DungeonType|False
+		Unk6|False
+		Unk7|False
+		TotalFloors|False
+		Unk9|False
+		Unk10|False
+		Unk11|False
+		Unk12|False
+		Unk13|False
+		Unk14|False
+		Unk15|False
+		Unk16|False
+		Unk17|False
+		Unk18|False
+		Unk19|False
+		Unk20|False
+		DungeonMenuNumber|False
+		Cond|False
+		DungeonTextID|False
+		MapID|False
+		Unk25|False
+		Unk26|False
+		Unk27|False
+		Unk28|False
+		ItemUnlock|False
+		Unk30|False
+		Unk31|False
+		Unk32|False
+		Unk33|False
+		Unk34|False
+		OniOrbsRewarded|False
+		Unk36|False
+		Unk37|False
+	)
+
+	REWARD_INFO (
+		MissionID|True
+	)
+
+	REWARD_INFO_DATA (
+		Unk0|False
+		RewardID|True
+		Level|False
+		Unk3|False
+		Rate|False
+		Unk5|False
+	)
+
+	TEXT_INFO (
+		Unk0|True
+	)
+
+	AURA_INFO (
+		NounID|False
+		Unk1|False
+		Unk2|False
+		Unk3|False
+		Unk4|False
+		Unk5|False
+		Price|False
+		Unk7|False
+		EffectType|False
+		DungeonNumber|False
+		EffectType|False
+		SkillID|False
+		EffectType|False
+		SkillID|False
+		EffectType|False
+		SkillID|False
+		EffectType|False
+		SkillID|False
+		EffectType|False
+		SkillID|False
+		EffectType|False
+		SkillID|False
+	)
+
+	SHOP_ITEM (
+		shpTUBID|False
+		Unk1|True
+		NounID|False
+		Price|False
+		Unk4|False
+		Cond|False
+	)
+
+	MISSION_RUINS_INFO (
+		Unk0|True
+		Unk1|True
+		Unk2|False
+		Unk3|False
+		Cond|False
+		Unk5|False
+		Unk6|False
+		Unk7|False
+		Unk8|False
+		Unk9|False
+		Unk10|False
+		Unk11|False
+		Unk12|False
+		Unk13|False
+		Unk14|False
+		Unk15|False
+		Unk16|True
+		Unk17|True
+	)
+
+	NOUN_INFO (
+		Unk0|True
+	)
+
+	KEY_BOARD_STR (
+		Unk0|False
+		Unk1|False
+		Unk2|False
+		Alphabet|False
+		Character|False
+	)
+
+	SHOP_CONFIG_INFO (
+		shpTUBID|False
+		ItemID|False
+		Unk2|False
+		Unk3|False
+		Unk4|False
+		Unk5|False
+		Unk6|False
+		Unk7|False
+		Unk8|False
+		Unk9|False
+		Unk10|False
+		Index|False
+	)
+
+	CHARA_ABILITY_CONFIG_INFO (
+		SkillID|False
+		NounID|False
+		TextID|False
+		Unk3|False
+		EffectID|False
+		Multipliers|False
+		AoE|False
+	)
+
+	CHARA_ABILITY_EFFECT_INFO (
+		EffectID|False
+		Unk1|False
+		Unk2|False
+		Unk3|False
+		Unk4|False
+		Unk5|False
+		Unk6|False
+		Unk7|False
+		Unk8|False
+		Unk9|False
+		Unk10|False
+		Unk11|False
+		Unk12|False
+		Effects|False
+		AoE|False
+		AoE|False
+	)
+
+	CAMPAIGN_ITEM_COND (
+		Cond|False
+	)
+
+	CAMPAIGN_ITEM (
+		Unk0|False
+		ItemID|False
+	)
+
+	SHOP_VALID_CONDITION (
+		AltPrice|False
+		Cond|False
+	)
+
+	COMBINE_INFO (
+		BaseIsItem|True
+		BaseID|True
+		MaterialIsItem|False
+		MaterialID|True
+		EvolveToIsItem|False
+		IDOfResult|True
+		FusionID|True
+		UnkZeroOneOrThree|False
+		FusionPrice|False
+	)
+
+	SHOP_LIST_INFO (
+		ShopID|False
+	)
+
+	PASSWORD_INFO (
+		Password|False
+		Unk1|False
+		ItemID|True
+		Unk3|False
+		Unk4|False
+		FlagID|False
+	)
+
+	QR2_INFO (
+		StartTypeDec|False
+		EndTypeDec|False
+		Item1ID|True
+		Item2ID|False
+		Flag1ID|False
+		Flag2ID|False
+		Unk1|False
+		UnkBoolean|True
+		Item1Qty|False
+		Item2Qty|False
+		RandomQRTable|False
+		UnkBoolean2|False
+		UnkAlwaysZero?|False
+		UnkAlwaysZero?|False
+		UnkAlwaysZero?|False
+	)
+
+	QR2_RAND_INFO (
+		ItemID|False
+		IsRand?|False
+	)
+
+	QR_RAND_TABLE_INFO (
+		RandomQRTable|False
+	)
+
+	QR_RAND_TABLE_INFO_DATA_LIST_BEG (
+		ChildCount|False
+	)
+
+	QR_RAND_TABLE_INFO_DATA (
+		ItemID|False
+		IsRand?|False
+	)
+
+	COMBINE_INFO_LIST_BEG (
+		ChildCount|False
 	)
 ]
 
