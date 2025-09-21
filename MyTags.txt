@@ -1433,27 +1433,6 @@ YW2 [
 		ChildCount|False
 	)
 
-	MAP_ENV_INFO_LIST_BEG (
-		Notin2mb|False
-	)
-
-	MAP_ENV_INFO (
-		Notin2mb|True
-	)
-
-	MAP_ENV_INFO_CNF_LIST_BEG (
-		notin2mb|False
-	)
-
-	MAP_ENV_INFO_CNF (
-		thisisntinyw2mb|False
-		Unk1|False
-		Unk2|False
-		Unk3|False
-		Unk4|False
-		Unk5|False
-		ignorethis|False
-	)
 
 	PTVAL (
 		Unk0|False
@@ -1702,15 +1681,6 @@ YWB [
 
 	CHARA_ABLITY_BUFF_EFFECT_INFO (
 		EffectID|False
-	)
-
-	MAP_ENV_INFO_CNF (
-		OopsNotBlasters|False
-		Unk1|False
-		Unk2|False
-		Unk3|False
-		Unk4|False
-		Unk5|False
 	)
 ]
 
