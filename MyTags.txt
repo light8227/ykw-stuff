@@ -3299,12 +3299,12 @@ YW3 [
 
 	QR_RAND_TABLE_INFO_DATA_LIST_BEG (
 		ChildCount|False
-        )
+	)
 
 	QR_RAND_TABLE_INFO_DATA (
 		ItemID|False
 		IsRand?|False
-        )
+	)
 ]
 
 YWB2 [
@@ -3621,9 +3621,9 @@ YWB2 [
 	)
 
 	PASSWORD_INFO (
-		Password|False
+		Password|True
 		Unk1|False
-		ParamID|True
+		ParamID|False
 		Unk3|False
 		Unk4|False
 		FlagID|False
@@ -4406,12 +4406,14 @@ YSH [
 		ParamID|False
 		Unk1|False
 		NounID|False
+		TextID|False
 	)
 
 	ITEM_TECHNIC_MEDAL_INFO (
 		ParamID|False
 		Unk1|False
 		NounID|False
+		TextID|False
 	)
 
 	ITBL_ITEMS (
@@ -4430,6 +4432,133 @@ YSH [
 
 	ENEMY_PARAM_INFO (
 		ParamID|False
+	)
+
+	CPSL_PRIZE_INFO (
+		PrizeID|False
+		ParamID|False
+	)
+
+	CPSL_PRIZE_TABLE_INFO_DATA (
+		PrizeID|False
+	)
+
+	ITEM_CONSUME_INFO (
+		ParamID|False
+		Unk1|False
+		NounID|False
+		TextID|False
+	)
+
+	W_EVENT_DATA_CFG (
+		Unk0|False
+		Unk1|False
+		Unk2|False
+		Unk3|False
+		Unk4|False
+		TextID|False
+		Filename|False
+	)
+
+	QUEST_DATA_CFG (
+		Unk0|False
+		Unk1|False
+		Unk2|False
+		NounID|False
+		Difficulty|False
+		Cond|False
+		Unk6|False
+		Unk7|False
+		ClearedEXP|False
+		ClearedMani|False
+		ClearedLikes|False
+	)
+
+	QUEST_DATA_PPS_INFO (
+		Unk0|False
+		Cond|False
+	)
+
+	QUEST_DATA_PPS_TEXT_INFO (
+		TextID|False
+		Cond|False
+	)
+
+	QUEST_DATA_REWARD_ITEM (
+		ParamID|False
+		NumberGiven|False
+	)
+
+	QUEST_DATA_CFG_REF_REWARD_ITEM (
+		REWARD_ITEM_LISTEntry|False
+		EntriesReferenced|False
+	)
+
+	ITEM_FOOD_INFO (
+		ParamID|False
+		Unk1|False
+		NounID|False
+		TextID|False
+	)
+
+	ITEM_ARMOR_INFO (
+		ParamID|False
+		Unk1|False
+		NounID|False
+	)
+
+	ITEM_WEAPON_MEDAL_INFO (
+		ParamID|False
+		Unk1|False
+		NounID|False
+	)
+
+	ITEM_SUMMON_MEDAL_INFO (
+		ParamID|False
+		Unk1|False
+		NounID|False
+		TextID|False
+	)
+
+	ITEM_METAMORPHOSE_MEDAL_INFO (
+		ParamID|False
+		Unk1|False
+		NounID|False
+		TextID|False
+	)
+
+	ITEM_FASHION_INFO (
+		ParamID|False
+		Unk1|False
+		NounID|False
+		TextID|False
+	)
+
+	HELP_LIST_INFO (
+		Unk0|False
+		Unk1|False
+		Unk2|False
+		Unk3|False
+		NounID|False
+		TextID|False
+		Unk6|False
+		TextID2|False
+	)
+
+	HELP_LIST_IMAGE (
+		Filename|False
+	)
+
+	TROPHY_INFO (
+		Unk0|False
+		Unk1|False
+		Unk2|False
+		NounID|False
+		Unk4|False
+		TextID|False
+		Unk6|False
+		Unk7|False
+		Cond|False
 	)
 ]
 
