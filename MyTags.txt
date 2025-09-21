@@ -1432,6 +1432,32 @@ YW2 [
 	CPSL_ORGE_CALC_INFO_DATA_LIST_BEG (
 		ChildCount|False
 	)
+
+	MAP_ENV_INFO_LIST_BEG (
+		Notin2mb|False
+	)
+
+	MAP_ENV_INFO (
+		Notin2mb|True
+	)
+
+	MAP_ENV_INFO_CNF_LIST_BEG (
+		notin2mb|False
+	)
+
+	MAP_ENV_INFO_CNF (
+		thisisntinyw2mb|False
+		Unk1|False
+		Unk2|False
+		Unk3|False
+		Unk4|False
+		Unk5|False
+		ignorethis|False
+	)
+
+	PTVAL (
+		Unk0|False
+	)
 ]
 
 YWB [
@@ -1676,6 +1702,15 @@ YWB [
 
 	CHARA_ABLITY_BUFF_EFFECT_INFO (
 		EffectID|False
+	)
+
+	MAP_ENV_INFO_CNF (
+		OopsNotBlasters|False
+		Unk1|False
+		Unk2|False
+		Unk3|False
+		Unk4|False
+		Unk5|False
 	)
 ]
 
@@ -3169,109 +3204,125 @@ YW3 [
 	)
 
 	MAP_ENV_INFO_CNF (
-		Unk0|False
-		BattleBgFolderID|False
-		Unk2|False
-		Unk3|False
-		Unk4|False
-		Unk5|False
-		Unk6|False
-		Unk7|False
-		XCord|False
-		YCord|False
-		ZCord|False
-		PTREE_0\PTVAL_3|False
+		CondThatChecksAFlag|False
+		BtlMapID|False
+		MapEffectMORNING_DAY?|False
+		MapEffectEVENING?|False
+		MapEffectNIGHT?|False
+		MapEffectRAIN?|False
+		MapEffectFORCE?|False
+		MMScroll|False
+		MMModelPos-X?|False
+		MMModelPos-Y?|False
+		MMModelPos-Z?|False
+		MMModelPos-Rot?|False
 		Unk12|False
 		Unk13|False
 		Unk14|False
 		Unk15|False
-		Unk16|False
-		Unk17|False
-		Unk18|False
-		Unk19|False
-		Unk20|False
-		Unk21|False
-		Unk22|False
-		Unk23|False
-		Unk24|False
-		Unk25|False
-		Unk26|False
-		Unk27|False
-		Unk28|False
-		Unk29|False
-		Unk30|False
-		Unk31|False
-		Unk32|False
-		Unk33|False
-		Unk34|False
-		Unk35|False
-		Unk36|False
-		Unk37|False
-		Unk38|False
-		Unk39|False
-		Unk40|False
-		Unk41|False
-		Unk42|False
-		Unk43|False
-		Unk44|False
-		Unk45|False
-		Unk46|False
-		PTREE_3\PTVALS1|False
-		PTREE_3\PTVALS2|False
-		PTREE_3\PTVALS3|False
-		PTREE_3\PTVALS4|False
+		MMViewSize-PixelsX|False
+		MMViewSize-PixelsY|False
+		CameraFOV|False
+		CameraDist|False
+		CameraRotH|False
+		CameraRotV|False
+		CameraRotUnk|False
+		CameraRotAlsoUnk|False
+		DptRngRate|False
+		DptLvl|False
+		Near|False
+		Far|False
+		LIGHTMapLight|False
+		LIGHTBGColorNormalisedR|False
+		LIGHTBGColorNormalisedG|False
+		LIGHTBGColorNormalisedB|False
+		ShadowColsdw01-NormalisedR|False
+		ShadowColsdw01-NormalisedG|False
+		ShadowColsdw01-NormalisedB|False
+		ShadowColsdw02-NormalisedR|False
+		ShadowColsdw02-NormalisedG|False
+		ShadowColsdw02-NormalisedB|False
+		ShadowColsdw03-NormalisedR|False
+		ShadowColsdw03-NormalisedG|False
+		ShadowColsdw03-NormalisedB|False
+		ShadowColsdw04-NormalisedR|False
+		ShadowColsdw04-NormalisedG|False
+		ShadowColsdw04-NormalisedB|False
+		ShadowColsdw05-NormalisedR|False
+		ShadowColsdw05-NormalisedG|False
+		ShadowColsdw05-NormalisedB|False
+		DEF_POSX?|False
+		DEF_POSY?|False
+		DEF_POSZ?|False
+		DEF_POSROT?|False
 		Unk51|False
-		PTREE_4\0\PTVALS1|False
-		PTREE_4\0\PTVALS2|False
-		PTREE_4\0\PTVALS3|False
-		PTREE_4\1\PTVALS1|False
-		PTREE_4\1\PTVALS2|False
-		PTREE_4\1\PTVALS3|False
-		PTREE_4\2\PTVALS1|False
-		PTREE_4\2\PTVALS2|False
-		PTREE_4\2\PTVALS3|False
-		PTREE_4\3\PTVALS1|False
-		PTREE_4\3\PTVALS2|False
-		PTREE_4\3\PTVALS3|False
-		PTREE_4\4\PTVALS1|False
-		PTREE_4\4\PTVALS2|False
-		PTREE_4\4\PTVALS3|False
-		PTREE_4\5\PTVALS1|False
-		PTREE_4\5\PTVALS2|False
-		PTREE_4\5\PTVALS3|False
-		PTREE_4\6\PTVALS1|False
-		PTREE_4\6\PTVALS2|False
-		PTREE_4\6\PTVALS3|False
-		PTREE_4\7\PTVALS1|False
-		PTREE_4\7\PTVALS2|False
-		PTREE_4\7\PTVALS3|False
-		PTREE_4\7\PTVALS1Clone|False
-		PTREE_4\7\PTVALS2Clone|False
-		PTREE_4\7\PTVALS3Clone|False
-		PTREE_4\8\PTVALS1|False
-		PTREE_4\8\PTVALS2|False
-		PTREE_4\8\PTVALS3|False
-		PTREE_4\9\PTVALS1|False
-		PTREE_4\9\PTVALS2|False
-		PTREE_4\9\PTVALS3|False
-		PTREE_4\10\PTVALS1|False
-		PTREE_4\10\PTVALS2|False
-		PTREE_4\10\PTVALS3|False
+		WEATHERSUN_MCLR-NormalisedR|False
+		WEATHERSUN_MCLR-NormalisedG|False
+		WEATHERSUN_MCLR-NormalisedB|False
+		WEATHERSUN_DCLR-NormalisedR|False
+		WEATHERSUN_DCLR-NormalisedG|False
+		WEATHERSUN_DCLR-NormalisedB|False
+		WEATHERSUN_ECLR-NormalisedR|False
+		WEATHERSUN_ECLR-NormalisedG|False
+		WEATHERSUN_ECLR-NormalisedB|False
+		WEATHERSUN_N_EARLYCLR-NormalisedR|False
+		WEATHERSUN_N_EARLYCLR-NormalisedG|False
+		WEATHERSUN_N_EARLYCLR-NormalisedB|False
+		WEATHERSUN_NCLR-NormalisedR|False
+		WEATHERSUN_NCLR-NormalisedG|False
+		WEATHERSUN_NCLR-NormalisedB|False
+		WEATHERSUN_N_LATECLR-NormalisedR|False
+		WEATHERSUN_N_LATECLR-NormalisedG|False
+		WEATHERSUN_N_LATECLR-NormalisedB|False
+		WEATHERRAIN_MCLR-NormalisedR|False
+		WEATHERRAIN_MCLR-NormalisedG|False
+		WEATHERRAIN_MCLR-NormalisedB|False
+		WEATHERRAIN_DCLR-NormalisedR|False
+		WEATHERRAIN_DCLR-NormalisedG|False
+		WEATHERRAIN_DCLR-NormalisedB|False
+		WEATHERRAIN_ECLR-NormalisedR|False
+		WEATHERRAIN_ECLR-NormalisedG|False
+		WEATHERRAIN_ECLR-NormalisedB|False
+		WEATHERRAIN_N_EARLYCLR-NormalisedR|False
+		WEATHERRAIN_N_EARLYCLR-NormalisedG|False
+		WEATHERRAIN_N_EARLYCLR-NormalisedB|False
+		WEATHERRAIN_NCLR-NormalisedR|False
+		WEATHERRAIN_NCLR-NormalisedG|False
+		WEATHERRAIN_NCLR-NormalisedB|False
+		WEATHERRAIN_N_LATECLR-NormalisedR|False
+		WEATHERRAIN_N_LATECLR-NormalisedG|False
+		WEATHERRAIN_N_LATECLR-NormalisedB|False
 		PTREE_4\10\PTVALS1Clone|False
 		PTREE_4\10\PTVALS2Clone|False
 		PTREE_4\10\PTVALS3Clone|False
-		PTREE_4\11\PTVALS1|False
-		PTREE_4\11\PTVALS2|False
-		PTREE_4\11\PTVALS3|False
-		PTREE_4\12\PTVALS1|False
-		PTREE_4\12\PTVALS2|False
-		PTREE_4\12\PTVALS3|False
+		CHARA_LGT_E_CLR-NormalisedR|False
+		CHARA_LGT_E_CLR-NormalisedG|False
+		CHARA_LGT_E_CLR-NormalisedB|False
+		CHARA_LGT_CLR-NormalisedR|False
+		CHARA_LGT_CLR-NormalisedG|False
+		CHARA_LGT_CLR-NormalisedB|False
 		PTREE_4\12\PTVALS1Clone|False
-		PTREE_4\12\PTVALS2Clone|False
-		PTREE_4\12\PTVALS3Clone|False
+		Unk98|False
+		Unk99|False
 		PTREE_4\13\PTVALS1|False
 		PTREE_4\13\PTVALS2|False
 		PTREE_4\13\PTVALS3|False
+		Unk103Greyscale??|False
+		Unk104|False
+		Unk105|False
+		Unk106|False
+		Unk107|False
+		Unk108|False
+		Unk109|False
+		Unk110|False
+		Unk111|False
+		Unk112|False
+		Unk113|False
+		Unk114|False
+		Unk115|False
+		Unk116|False
+		Unk117|False
+		Fog??|False
 	)
 
 	QR_RAND_TABLE_INFO (
@@ -3305,372 +3356,17 @@ YW3 [
 		ItemID|False
 		IsRand?|False
 	)
-]
 
-YWB2 [
-	CHARA_BASE_YOKAI_INFO (
-		BaseID|True
-		FileNamePrefix|False
-		FileNameNumber|False
-		FileNameVariant|False
-		NameID|True
-		Unk1|False
-		Unk2|False
-		Unk3|False
-		Unk4|False
-		Unk5|False
-		DescriptionID|True
-		MedalPosX|False
-		MedalPosY|False
-		Unk6|False
-		Rank|False
-		IsRare|False
-		IsLegendary|False
-		IsPionner|False
-		IsCommandant|False
-		FavFood|False
-		HatedFood|False
-		Unk11|False
-		Unk12|False
-		Tribe|False
-		IsClassic|False
-		IsMerican|False
-		BustersTRole|False
-		Unk15|False
-		IsDeva|False
-		IsLegendaryMystery|False
-		IsTreasure|False
-		IsCrystalLegendary|False
-	)
-
-	CHARA_PARAM_INFO (
-		ParamID|True
-		BaseID|True
-		ShowInMedallium|False
-		MedalliumOffset|False
-		Unk1|False
-		MinHP|False
-		MinStrength|False
-		MinSpririt|False
-		MinSpeed|False
-		MinDefense|False
-		MaxHP|False
-		MaxStrength|False
-		MaxSpirit|False
-		MaxDefense|False
-		MaxSpeed|False
-		ExperienceCurve|True
-		Resistance|False
-		Weakness|False
-		Unk2|False
-		AttackID|True
-		Unk3|False
-		TechniqueID|True
-		Unk4|False
-		InspiritID|True
-		Unk5|False
-		Unk6|False
-		Unk7|False
-		SoultimateID|True
-		SkillID|True
-		Unk8|False
-		BattleType|False
-		CanIStillBecomeBefriend|False
-		Unk9|False
-		Unk10|False
-		Unk11|False
-		Unk12|False
-		ScoutableID|True
-		IsFusable|False
-		EvolveOffset|False
-		Unk14|False
-		WaitTime|False
-	)
-
-	HACKSLASH_CHARA_PARAM_INFO (
-		ParamID|True
-		Unk0|False
-		Unk2|False
-		SkillID|True
-		AAttackID|True
-		SoultimateID|True
-		YAttackID|True
-		Unk3|False
-		XAttackID|True
-		Unk4|False
-		BossCommandAttackID1|True
-		Unk5|False
-		BossCommandAttackID2|True
-		Unk6|False
-		BossCommandAttackID3|True
-		Unk7|False
-		BossCommandAttackID4|True
-		Unk8|False
-		BossCommandAttackID5|True
-		Unk9|False
-		BossCommandAttackID6|True
-		Unk10|False
-		BossCommandAttackID7|True
-		Unk11|False
-		Unk12|False
-		Unk13|False
-		Unk14|False
-		Unk15|False
-		Unk16|False
-		Unk17|False
-		Unk18|False
-		Unk19|False
-		Unk20|False
-		Unk21|False
-		Unk22|False
-		Unk23|False
-		Unk24|False
-		Unk25|False
-		Unk26|False
-		Unk27|False
-		Unk28|False
-		Unk29|False
-	)
-
-	MISSION_CONFIG_INFO (
-		DungeonID|False
-		DungeonNumber|False
-		Unk2|False
-		DungeonCategory|False
-		Unk4|False
-		DungeonType|False
-		Unk6|False
-		Unk7|False
-		TotalFloors|False
-		Unk9|False
-		Unk10|False
-		Unk11|False
-		Unk12|False
-		Unk13|False
-		Unk14|False
-		Unk15|False
-		Unk16|False
-		Unk17|False
-		Unk18|False
-		Unk19|False
-		Unk20|False
-		DungeonMenuNumber|False
-		Cond|False
-		DungeonTextID|False
-		MapID|False
-		Unk25|False
-		Unk26|False
-		Unk27|False
-		Unk28|False
-		ItemUnlock|False
-		Unk30|False
-		Unk31|False
-		Unk32|False
-		Unk33|False
-		Unk34|False
-		OniOrbsRewarded|False
-		Unk36|False
-		Unk37|False
-	)
-
-	REWARD_INFO (
-		MissionID|False
-	)
-
-	REWARD_INFO_DATA (
-		Unk0|False
-		RewardID|False
-		Level|False
-		Unk3|False
-		Rate|False
-		Unk5|False
-	)
-
-	TEXT_INFO (
-		Unk0|False
-	)
-
-	AURA_INFO (
-		NounID|False
-		Unk1|False
-		Unk2|False
-		Unk3|False
-		Unk4|False
-		Unk5|False
-		Unk6|False
-		Unk7|False
-		EffectType|False
-		DungeonNumber|False
-		EffectType|False
-		SkillID|False
-		EffectType|False
-		SkillID|False
-		EffectType|False
-		SkillID|False
-		EffectType|False
-		SkillID|False
-		EffectType|False
-		SkillID|False
-		EffectType|False
-		SkillID|False
-	)
-
-	SHOP_ITEM (
-		shpTUBID|True
-		Unk1|False
-		NounID|False
-		Price|False
-		AuraNumber|False
-		Cond|False
-	)
-
-	MISSION_RUINS_INFO (
-		Unk0|True
-		Unk1|True
-		Unk2|False
-		Unk3|False
-		Cond|False
-		Unk5|False
-		Unk6|False
-		Unk7|False
-		Unk8|False
-		Unk9|False
-		Unk10|False
-		Unk11|False
-		Unk12|False
-		Unk13|False
-		Unk14|False
-		Unk15|False
-		Unk16|True
-		Unk17|True
-	)
-
-	NOUN_INFO (
-		Unk0|True
-	)
-
-	KEY_BOARD_STR (
-		Unk0|False
-		Unk1|False
-		Unk2|False
-		Alphabet|False
-		Character|False
-	)
-
-	SHOP_CONFIG_INFO (
-		shpTUBID|True
-	)
-
-	CHARA_ABILITY_CONFIG_INFO (
-		SkillID|False
-		NounID|False
-		TextID|False
-		Unk3|False
-		EffectID|False
-		Multipliers|False
-		AoE|False
-	)
-
-	CHARA_ABILITY_EFFECT_INFO (
-		EffectID|False
-		Unk1|False
-		Unk2|False
-		Unk3|False
-		Unk4|False
-		Unk5|False
-		Unk6|False
-		Unk7|False
-		Unk8|False
-		Unk9|False
-		Unk10|False
-		Unk11|False
-		Unk12|False
-		Effects|False
-		AoE|False
-		AoE|False
-	)
-
-	CAMPAIGN_ITEM_COND (
-		Cond|False
-	)
-
-	CAMPAIGN_ITEM (
-		Unk0|False
-		ItemID|False
-	)
-
-	SHOP_VALID_CONDITION (
-		AltPrice|False
-		Cond|False
-	)
-
-	COMBINE_INFO (
-		BaseIsItem|True
-		BaseID|True
-		MaterialIsItem|False
-		MaterialID|True
-		EvolveToIsItem|False
-		IDOfResult|True
-		FusionID|True
-		UnkZeroOneOrThree|False
-		FusionPrice|False
-	)
-
-	SHOP_LIST_INFO (
-		ShopID|False
-	)
-
-	PASSWORD_INFO (
-		Password|True
-		Unk1|False
-		ParamID|False
-		Unk3|False
-		Unk4|False
-		FlagID|False
-	)
-
-	QR2_INFO (
-		StartTypeDec|False
-		EndTypeDec|False
-		Item1ID|True
-		Item2ID|False
-		Flag1ID|False
-		Flag2ID|False
-		Unk1|False
-		UnkBoolean|True
-		Item1Qty|False
-		Item2Qty|False
-		RandomQRTable|False
-		UnkBoolean2|False
-		UnkAlwaysZero?|False
-		UnkAlwaysZero?|False
-		UnkAlwaysZero?|False
-	)
-
-	QR2_RAND_INFO (
-		ItemID|False
-		IsRand?|False
-	)
-
-	QR_RAND_TABLE_INFO (
-		RandomQRTable|False
-	)
-
-	QR_RAND_TABLE_INFO_DATA_LIST_BEG (
+	MAP_ENV_INFO_LIST_BEG (
 		ChildCount|False
 	)
 
-	QR_RAND_TABLE_INFO_DATA (
-		ItemID|False
-		IsRand?|False
+	MAP_ENV_INFO (
+		HashedMapIDCRC32|True
 	)
 
-	COMBINE_INFO_LIST_BEG (
+	MAP_ENV_INFO_CNF_LIST_BEG (
 		ChildCount|False
-	)
-
-	SHOP_CONFIG_INFO_BEGIN (
-		Unk0|False
 	)
 ]
 
@@ -4309,9 +4005,18 @@ YW4 [
 		Unk9|False
 		ParamID|False
 	)
+
+	CPSL_PRIZE_INFO_LIST_BEG (
+		ChildCount|False
+	)
+
+	CPSL_PRIZE_TABLE_INFO_LIST_BEG (
+		ChildCount|False
+	)
 ]
 
 YSH [
+
 	CHARA_PARAM_COMMON_INFO (
 		ParamID|False
 		BaseID|False
@@ -4590,7 +4295,7 @@ YWB2 [
 		Tribe|False
 		IsClassic|False
 		IsMerican|False
-		BlastersTRole|False
+		BustersTRole|False
 		Unk15|False
 		IsDeva|False
 		IsLegendaryMystery|False
@@ -4615,7 +4320,7 @@ YWB2 [
 		MaxDefense|False
 		MaxSpeed|False
 		ExperienceCurve|True
-		Strongest|False
+		Resistance|False
 		Weakness|False
 		Unk2|False
 		AttackID|True
@@ -4647,11 +4352,11 @@ YWB2 [
 		Unk0|False
 		Unk2|False
 		SkillID|True
-		AAttackID|True
+		A_AttackID|True
 		SoultimateID|True
-		YAttackID|True
+		Y_AttackID|True
 		Unk3|False
-		XAttackID|True
+		X_AttackID|True
 		Unk4|False
 		BossCommandAttackID1|True
 		Unk5|False
@@ -4723,7 +4428,7 @@ YWB2 [
 		Unk32|False
 		Unk33|False
 		Unk34|False
-		OniOrbsRewarded|False
+		RewardOniOrbs|False
 		Unk36|False
 		Unk37|False
 	)
@@ -4775,7 +4480,7 @@ YWB2 [
 		Unk1|True
 		NounID|False
 		Price|False
-		Unk4|False
+		AuraNum?|False
 		Cond|False
 	)
 
@@ -4875,7 +4580,7 @@ YWB2 [
 		BaseID|True
 		MaterialIsItem|False
 		MaterialID|True
-		EvolveToIsItem|False
+		IsItemEvolution|False
 		IDOfResult|True
 		FusionID|True
 		UnkZeroOneOrThree|False
@@ -4889,8 +4594,8 @@ YWB2 [
 	PASSWORD_INFO (
 		Password|False
 		Unk1|False
-		ItemID|True
-		Unk3|False
+		ItemID\ParamID|True
+		NounID|False
 		Unk4|False
 		FlagID|False
 	)
@@ -4934,6 +4639,10 @@ YWB2 [
 	COMBINE_INFO_LIST_BEG (
 		ChildCount|False
 	)
+
+        SHOP_CONFIG_INFO_BEGIN (
+                Unk0|False
+        )
 ]
 
 NNK1 [
