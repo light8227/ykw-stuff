@@ -545,7 +545,7 @@ YW1 [
         Length|False
     )
     SHOP_ITEM (
-        shpTUBID|%%CONFLICT:SHOP_ITEM_shpTUBID%%
+        shpTUBID|True
         Unk1|True
         NounID|False
         Price|False
@@ -554,7 +554,7 @@ YW1 [
         AuraNumber|False
     )
     PASSWORD_INFO (
-        Password|%%CONFLICT:PASSWORD_INFO_Password%%
+        Password|True
         Unk1|False
         ItemID\ParamID|True
         NounID|False
@@ -689,7 +689,7 @@ YW1 [
         Unk30|False
     )
     CAPSULE_RATE_INFO_DATA (
-        RewardID|%%CONFLICT:CAPSULE_RATE_INFO_DATA_RewardID%%
+        RewardID|True
         Percentage\IsChoice|False
         Unk2|True
         Unk3|True
@@ -700,7 +700,7 @@ YW1 [
         EntryNumber|False
     )
     CAPSULE_MACHINE_CONFIG_INFO_DATA (
-        CoinID|%%CONFLICT:CAPSULE_MACHINE_CONFIG_INFO_DATA_CoinID%%
+        CoinID|True
         PlaycoinCount|False
         MachineConfigID|True
         AlwaysZero?|True
@@ -980,7 +980,7 @@ YW1 [
     LOTTERY_INFO_RANK_PRIZE (
         ItemIDA|True
         QtyA|False
-        ItemIDB|%%CONFLICT:LOTTERY_INFO_RANK_PRIZE_ItemIDB%%
+        ItemIDB|True
         QtyB|False
         Unk-AlwaysZero(Flag??|
         ItemID|False
@@ -2122,11 +2122,11 @@ YW1 [
         Unk2|True
     )
     REWARD_INFO (
-        MissionID|%%CONFLICT:REWARD_INFO_MissionID%%
+        MissionID|True
     )
     REWARD_INFO_DATA (
         Unk0|False
-        RewardID|%%CONFLICT:REWARD_INFO_DATA_RewardID%%
+        RewardID|True
         Level|False
         Unk3|False
         Rate|False
