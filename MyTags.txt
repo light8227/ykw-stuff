@@ -458,7 +458,7 @@ YW2 [
 	ITEM_INDEX (
 		ItemID|False
 		InventorySort|False
-		Unk0|False
+		Index|False
 	)
 
 	ITEM_EQUIP_COND (
@@ -766,12 +766,12 @@ YW2 [
 
 	PASSWORD_INFO (
 		TextID|True
-		Unk1|False
+		Unk1-AlwaysZero|False
 		ItemID|True
-		Unk2|False
-		Unk3|False
+		Unk2-AlwaysZero|False
+		Unk3-AlwaysZero|False
 		FlagID|True
-		Unk4|False
+		Unk4-AlwaysZero|False
 	)
 
 	FLAG_INFO (
@@ -985,13 +985,13 @@ YW2 [
 
 	GYM_BOSS_SINGLE_INFO (
 		RoundID|True
-		Unk1|False
+		TName|False
 		RoundNameID|True
 		Unk2|False
 		Unk3|False
 		RewardID|True
 		Unk4|False
-		Unk5|False
+		Cond|False
 	)
 
 	GYM_BOSS_SINGLE_ENC_INFO (
@@ -1005,13 +1005,13 @@ YW2 [
 
 	GYM_BOSS_RUSH_INFO (
 		RoundID|True
-		Unk1|False
+		TName|False
 		RoundNameID|True
 		Unk2|False
 		Unk3|False
 		RewardID|True
 		Unk4|False
-		Unk5|False
+		Cond|False
 	)
 
 	GYM_BOSS_RUSH_ENC_INFO (
@@ -1025,7 +1025,7 @@ YW2 [
 
 	GYM_MISSION_BATTLE_INFO (
 		MissionID|True
-		Unk1|False
+		TName|False
 		MissionNameID|True
 		Unk2|False
 		RewardID|True
@@ -1045,14 +1045,14 @@ YW2 [
 	GYM_TOURNAMENT_INFO (
 		Unk0|False
 		TournamentID|True
-		Unk1|False
+		TName|False
 		TournamentNameID|True
 		Unk2|False
 		Unk3|False
 		Unk4|False
 		RewardID|True
 		Unk5|False
-		Unk6|False
+		Cond|False
 	)
 
 	GYM_TOURNAMENT_ENC_INFO (
@@ -1257,7 +1257,7 @@ YW2 [
 	)
 
 	HELP_ORDER_CONFIG (
-		Unk0|False
+		UnkID|False
 		Help|False
 	)
 
@@ -1270,11 +1270,11 @@ YW2 [
 	)
 
 	LOTTERY_INFO_RANK_PRIZE (
-		ItemID|False
-		QuantityA??|False
-		ItemIDB|False
-		QuantityB??|False
-		AlwaysZero|False
+		ItemIDA|True
+		QtyA|False
+		ItemIDB|True
+		QtyB|False
+		Unk-AlwaysZero(Flag??)|False
 	)
 
 	CAMPAIGN_ITEM_COND (
@@ -1433,9 +1433,573 @@ YW2 [
 		ChildCount|False
 	)
 
-
 	PTVAL (
 		Unk0|False
+	)
+
+	BTL_FRIEND_BONUS_INFO (
+		Tribe|False
+		YokaiInaRow|False
+		UnityEffectType?|False
+		Bonus%|False
+		Also%??|False
+	)
+
+	BTL_SPIRIT_APPEAR_TIME_INFO_LIST_BEG (
+		ChildCount|False
+	)
+
+	BTL_SPIRIT_APPEAR_LV_INFO_LIST_BEG (
+		ChildCount|False
+	)
+
+	BTL_TURN_WAIT_TIME_INFO_LIST_BEG (
+		ChildCount|False
+	)
+
+	BTL_FRIEND_BONUS_INFO_LIST_BEG (
+		ChildCount|False
+	)
+
+	BTL_DROP_TABLE_INFO (
+		IsFirstEntry?|False
+		ItemID|True
+	)
+
+	BTL_WATCH_ZERO_SPECIAL_CHANGE_INFO (
+		BtlCommandID|True
+		UnkID|True
+	)
+
+	BTL_ONLINE_BGM_INFO (
+		UnkIDA|True
+		UnkIDB|True
+	)
+
+	BATTLE_AI_ACT_CONDITION (
+		UnkID|True
+		Cond|False
+	)
+
+	BATTLE_COMMAND_COND_INFO (
+		UnkIDA|True
+		UnkIDB|True
+		Unk|False
+	)
+
+	TITLE_CONFIG (
+		MinRank|False
+		Maxrank??|False
+		PointRequirement|False
+	)
+
+	BTL_YOKAI_FAMILY_INFO (
+		IsFirstEntry?|False
+		BaseIDOfFSFlamuriceTarget|True
+	)
+
+	BTL_PURIFY_EXP_INFO_LIST_BEG (
+		ChildCount|False
+	)
+
+	BTL_YOKAI_FAMILY_INFO_LIST_BEG (
+		ChildCount|False
+	)
+
+	BTL_BGM_INFO_LIST_BEG (
+		ChildCount|False
+	)
+
+	BTL_DROP_TABLE_INFO_LIST_BEG (
+		ChildCount|False
+	)
+
+	BTL_WATCH_ZERO_SPECIAL_CHANGE_INFO_LIST_BEG (
+		ChildCount|False
+	)
+
+	BTL_ONLINE_BGM_INFO_LIST_BEG (
+		ChildCount|False
+	)
+
+	BTL_AI_GAMBIT_INFO_BEGIN (
+		ChildCount|False
+	)
+
+	BTL_AI_GAMBIT_DATA_BEGIN (
+		ChildCount|False
+	)
+
+	BTL_AI_GAMBIT_DATA (
+		UnkID|True
+		Unk1|False
+		Unk2|False
+		Unk3|False
+		Unk4|False
+		Unk5|False
+	)
+
+	BTL_AI_CHANGE_CHARA_INFO_BEGIN (
+		ChildCount|False
+	)
+
+	BTL_AI_CHANGE_CHARA_INFO (
+		Unk0|False
+		Unk1|False
+		Unk2|False
+		UnkID|True
+	)
+
+	BTL_AI_CHANGE_CHARA_DATA_BEGIN (
+		ChildCount|False
+	)
+
+	BTL_AI_SP_RATE_INFO_BEGIN (
+		ChildCount|False
+	)
+
+	BTL_AI_PURIFY_RATE_INFO_BEGIN (
+		ChildCount|False
+	)
+
+	BTL_AI_SP_RATE_INFO (
+		WeightA|False
+		WeightB|False
+		WeightC|False
+		WeightD|False
+	)
+
+	BTL_AI_PURIFY_RATE_INFO (
+		WeightA|False
+		WeightB|False
+		WeightC|False
+		WeightD|False
+		WeightE|False
+		WeightF|False
+		WeightG|False
+	)
+
+	BATTLE_AI_ACT_CONDITION_BEGIN (
+		ChildCount|False
+	)
+
+	BATTLE_COMMAND_COND_INFO_BEGIN (
+		ChildCount|False
+	)
+
+	BATTLE_COMMAND_STEFF_INFO_BEGIN (
+		ChildCount|False
+	)
+
+	BATTLE_COMMAND_INFO_BEGIN (
+		ChildCount|False
+	)
+
+	BATTLE_COMMAND_LINK_INFO_BEGIN (
+		ChildCount|False
+	)
+
+	VALUE_INFO_BEGIN (
+		ChildCount|False
+	)
+
+	VALUE_INFO (
+		UnkID|True
+		UnkFloat|False
+	)
+
+	BTL_RULE_INFO_LIST_BEG (
+		ChildCount|False
+	)
+
+	BTL_RULE_INFO (
+		UnkID|False
+	)
+
+	BTL_RULE_INFO_RULE_DATA_LIST_BEG (
+		ChildCount|False
+	)
+
+	BTL_RULE_INFO_RULE_DATA (
+		Unk0|False
+		Unk1|False
+		Unk2|False
+		Unk3|False
+		Unk4|False
+		Unk5|False
+		Unk6|False
+		Unk7|False
+		UnkID|False
+		Unk9|False
+		Unk10|False
+		Unk11|False
+		Unk12|False
+		UnkFloat|False
+	)
+
+	BTLSTEFF_INFO_LIST_BEG (
+		ChildCount|False
+	)
+
+	BTLSTEFF_INFO (
+		Steff??|False
+		UnkID|False
+	)
+
+	BTL_VIEW_CONFIG_INFO_LIST_BEG (
+		ChildCount|False
+	)
+
+	BTL_VIEW_CONFIG_INFO (
+		UnkID|False
+	)
+
+	BTL_VIEW_CONFIG_INFO_HIT_INFO_HIT_DATA_LIST_BEG (
+		ChildCount|False
+	)
+
+	BATTLE_CHARA_COMMAND_INFO_BEGIN (
+		ChildCount|False
+	)
+
+	BATTLE_CHARA_COMMAND_INFO (
+		UnkIDA|False
+		UnkIDB|False
+	)
+
+	ENCOUNT_TABLE_BEGIN (
+		ChildCount|False
+	)
+
+	ENCOUNT_CHARA_BEGIN (
+		ChildCount|False
+	)
+
+	ENC_ACT_PARAM_INFO_LIST_BEG (
+		ChildCount|False
+	)
+
+	ENC_ACT_PARAM_INFO (
+		ParamID|True
+		UnkFloat1|False
+		UnkFloat2|False
+		AmountofYokai??????|True
+	)
+
+	ENEN_TUNNEL_EVENT_PARAM_LIST_BEG (
+		ChildCount|False
+	)
+
+	ENEN_TUNNEL_GOAL_PARAM_LIST_BEG (
+		ChildCount|False
+	)
+
+	ENEN_TUNNEL_LENGTH_PARAM_LIST_BEG (
+		ChildCount|False
+	)
+
+	ENEN_TUNNEL_EVENT_PARAM (
+		UnkIDA|False
+		UnkFloat|False
+		Cond|False
+		UnkIDB|False
+	)
+
+	ENEN_TUNNEL_EVENT_PARAM_PATTERN_LIST_BEG (
+		ChildCount|False
+	)
+
+	ENEN_TUNNEL_EVENT_PARAM_PATTERN (
+		UnkIDA|False
+		UnkIDB|False
+	)
+
+	ENEN_TUNNEL_GOAL_PARAM (
+		UnkID|False
+		Cond|False
+		UnkFloat|False
+	)
+
+	ENEN_TUNNEL_LENGTH_PARAM (
+		Cond|False
+		CBool|False
+		LenA|False
+		LenB|False
+	)
+
+	FACE_FEATURE_BEGIN (
+		ChildCount|False
+	)
+
+	FACE_YOKAI_BEGIN (
+		ChildCount|False
+	)
+
+	FACE_PRESENT_BEGIN (
+		ChildCount|False
+	)
+
+	FACE_SAMPLE_BEGIN (
+		ChildCount|False
+	)
+
+	FACE_MISSION_BEGIN (
+		ChildCount|False
+	)
+
+	FACE_YOKAI_OFS_BEGIN (
+		ChildCount|False
+	)
+
+	FACE_YOKAI (
+		CamIndex|False
+		ParamID|True
+	)
+
+	FACE_PRESENT (
+		CamIndex|False
+		UnkID|True
+		Unk|False
+	)
+
+	FACE_SAMPLE (
+		UnkIDA|False
+		UnkIDB|False
+		Unk|False
+	)
+
+	FACE_MISSION (
+		Unk0|False
+		UnkIDA|True
+		Unk1|False
+		UnkIDB|True
+		Unk2|False
+	)
+
+	FACE_YOKAI_OFS (
+		UnkID|True
+		Unk1|False
+		Unk2|False
+		Unk3|False
+		Unk4|False
+		UnkFloat|False
+	)
+
+	FRIENDBOOK_MYPAGE_INFO_LIST_BEG (
+		ChildCount|False
+	)
+
+	FRIENDBOOK_MYPAGE_INFO (
+		UnkID|True
+		Unk1|False
+		Unk2|False
+		Unk3|False
+		Unk4|False
+		Unk5|False
+		Unk6|False
+		Cond|False
+	)
+
+	FRIENDBOOK_ICON_INFO (
+		Unk0|True
+		Unk1|True
+		Cond|False
+	)
+
+	FRIENDBOOK_ICON_INFO_LIST_BEG (
+		ChildCount|False
+	)
+
+	FRIENDBOOK_ADDRESS_INFO_LIST_BEG (
+		ChildCount|False
+	)
+
+	FRIENDBOOK_ADDRESS_INFO (
+		TextID|False
+	)
+
+	FRIENDBOOK_JOB_INFO_LIST_BEG (
+		ChildCount|False
+	)
+
+	FRIENDBOOK_JOB_INFO (
+		TextID|False
+	)
+
+	FRIENDBOOK_HOBBY_INFO_LIST_BEG (
+		ChildCount|False
+	)
+
+	FRIENDBOOK_HOBBY_INFO (
+		TextID|False
+	)
+
+	FRIENDBOOK_DREAM_INFO_LIST_BEG (
+		ChildCount|False
+	)
+
+	FRIENDBOOK_DREAM_INFO (
+		TextID|False
+	)
+
+	GYM_TOURNAMENT_INFO_LIST_BEG (
+		ChildCount|False
+	)
+
+	GYM_TOURNAMENT_ENC_INFO_LIST_BEG (
+		ChildCount|False
+	)
+
+	GYM_TOURNAMENT_ENC_INFO_DATA_LIST_BEG (
+		ChildCount|False
+	)
+
+	GYM_BOSS_RUSH_INFO_LIST_BEG (
+		ChildCount|False
+	)
+
+	GYM_BOSS_RUSH_ENC_INFO_LIST_BEG (
+		ChildCount|False
+	)
+
+	GYM_BOSS_RUSH_ENC_INFO_DATA_LIST_BEG (
+		ChildCount|False
+	)
+
+	GYM_BOSS_SINGLE_INFO_LIST_BEG (
+		ChildCount|False
+	)
+
+	GYM_BOSS_SINGLE_ENC_INFO_LIST_BEG (
+		ChildCount|False
+	)
+
+	GYM_BOSS_SINGLE_ENC_INFO_DATA_LIST_BEG (
+		ChildCount|False
+	)
+
+	GYM_MISSION_BATTLE_INFO_LIST_BEG (
+		ChildCount|False
+	)
+
+	GYM_MISSION_BATTLE_ENC_INFO_LIST_BEG (
+		ChildCount|False
+	)
+
+	GYM_MISSION_BATTLE_ENC_INFO_DATA_LIST_BEG (
+		ChildCount|False
+	)
+
+	GYM_TRAINING_COURSE_INFO_LIST_BEG (
+		ChildCount|False
+	)
+
+	GYM_TRAINING_COURSE_INFO (
+		Index|False
+		Unk1|False
+		Unk2|False
+	)
+
+	GYM_PARAM_INFO_LIST_BEG (
+		ChildCount|False
+	)
+
+	GYM_PARAM_INFO (
+		UnkID|True
+		Unk|False
+	)
+
+	HELP_ORDER_CONFIG_LIST_BEG (
+		ChildCount|False
+	)
+
+	CREATURE_DICTIONARY_INFO_LIST_BEG (
+		ChildCount|False
+	)
+
+	CREATURE_DICTIONARY_INFO (
+		ItemID|True
+		Index|False
+		Flag?|True
+		Unk3|True
+		Cond|False
+	)
+
+	ITEM_EQUIPMENT_BEGIN (
+		ChildCount|False
+	)
+
+	ITEM_SOUL_BEGIN (
+		ChildCount|False
+	)
+
+	ITEM_CONSUME_BEGIN (
+		ChildCount|False
+	)
+
+	ITEM_IMPORTANT_BEGIN (
+		ChildCount|False
+	)
+
+	ITEM_CREATURE_BEGIN (
+		ChildCount|False
+	)
+
+	ITEM_INDEX_BEGIN (
+		ChildCount|False
+	)
+
+	ITEM_EQUIP_COND_BEGIN (
+		ChildCount|False
+	)
+
+	ITEM_EQUIP_COND_CHARA_BEGIN (
+		ChildCount|False
+	)
+
+	ITEM_EQUIP_COND_CHARA (
+		UnkID|True
+	)
+
+	KEY_BOARD_STR_LIST_BEG (
+		ChildCount|False
+	)
+
+	LOTTERY_INFO_LIST_BEG (
+		ChildCount|False
+	)
+
+	LOTTERY_INFO_RANK_LIST_BEG (
+		ChildCount|False
+	)
+
+	LOTTERY_INFO_RANK_PRIZE_LIST_BEG (
+		ChildCount|False
+	)
+
+	MUSIC_GAME_REWARD_LIST_BEG (
+		ChildCount|False
+	)
+
+	MUSIC_GAME_REWARD_ITEM_LIST_BEG (
+		ChildCount|False
+	)
+
+	MUSIC_GAME_REWARD (
+		RewardID|True
+		MusNPCIndex??|False
+		IsReplay??|False
+	)
+
+	MUSIC_GAME_REWARD_ITEM (
+		ItemID|True
+		Quantity|False
+		Unk2|False
+		Cond|False
+	)
+
+	PASSWORD_INFO_LIST_BEG (
+		ChildCount|False
 	)
 ]
 
@@ -1682,6 +2246,124 @@ YWB [
 	CHARA_ABLITY_BUFF_EFFECT_INFO (
 		EffectID|False
 	)
+
+	MAP_ENV_INFO_CNF (
+		ActivationCond|False
+		MapEffectMORNING_DAY?|False
+		MapEffectEVENING?|False
+		MapEffectNIGHT?|False
+		MapEffectRAIN?|False
+		MapEffectFORCE???|False
+		MMScroll|False
+		MMModelPos-X?|False
+		MMModelPos-Y?|False
+		MMModelPos-Z?|False
+		MMModelPos-ROT?|False
+		MMMaskPos-X??|False
+		MMMaskPos-Y??|False
+		MMMaskPos-Z??|False
+		MMMaskPos-ROT??|False
+		MMViewSize-PixelsX|False
+		MMViewSize-PixelsY|False
+		CameraFOV|False
+		CameraDist|False
+		CameraRotH|False
+		CameraRotV|False
+		CameraRotUnk|False
+		CameraRotAlsoUnk|False
+		DptRngRate|False
+		DptLvl|False
+		Near|False
+		Far|False
+		LIGHTMapLight|False
+		LIGHTBGColorNormalisedR|False
+		LIGHTBGColorNormalisedG|False
+		LIGHTBGColorNormalisedB|False
+		ShadowColsdw01-NormalisedR|False
+		ShadowColsdw01-NormalisedG|False
+		ShadowColsdw01-NormalisedB|False
+		ShadowColsdw02-NormalisedR|False
+		ShadowColsdw02-NormalisedG|False
+		ShadowColsdw02-NormalisedB|False
+		ShadowColsdw03-NormalisedR|False
+		ShadowColsdw03-NormalisedG|False
+		ShadowColsdw03-NormalisedB|False
+		ShadowColsdw04-NormalisedR|False
+		ShadowColsdw04-NormalisedG|False
+		ShadowColsdw04-NormalisedB|False
+		ShadowColsdw05-NormalisedR|False
+		ShadowColsdw05-NormalisedG|False
+		ShadowColsdw05-NormalisedB|False
+		DEF_POSX?|False
+		DEF_POSY?|False
+		DEF_POSZ?|False
+		DEF_POSROT?|False
+		UnkBoolMaybeINDOOR-BooleanIsIndoors?????|False
+		WEATHERSUN_MCLR-NormalisedR|False
+		WEATHERSUN_MCLR-NormalisedG|False
+		WEATHERSUN_MCLR-NormalisedB|False
+		WEATHERSUN_DCLR-NormalisedR|False
+		WEATHERSUN_DCLR-NormalisedG|False
+		WEATHERSUN_DCLR-NormalisedB|False
+		WEATHERSUN_ECLR-NormalisedR|False
+		WEATHERSUN_ECLR-NormalisedG|False
+		WEATHERSUN_ECLR-NormalisedB|False
+		WEATHERSUN_N_EARLYCLR-NormalisedR|False
+		WEATHERSUN_N_EARLYCLR-NormalisedG|False
+		WEATHERSUN_N_EARLYCLR-NormalisedB|False
+		WEATHERSUN_NCLR-NormalisedR|False
+		WEATHERSUN_NCLR-NormalisedG|False
+		WEATHERSUN_NCLR-NormalisedB|False
+		WEATHERSUN_N_LATECLR-NormalisedR|False
+		WEATHERSUN_N_LATECLR-NormalisedG|False
+		WEATHERSUN_N_LATECLR-NormalisedB|False
+		WEATHERRAIN_MCLR-NormalisedR|False
+		WEATHERRAIN_MCLR-NormalisedG|False
+		WEATHERRAIN_MCLR-NormalisedB|False
+		WEATHERRAIN_DCLR-NormalisedR|False
+		WEATHERRAIN_DCLR-NormalisedG|False
+		WEATHERRAIN_DCLR-NormalisedB|False
+		WEATHERRAIN_ECLR-NormalisedR|False
+		WEATHERRAIN_ECLR-NormalisedG|False
+		WEATHERRAIN_ECLR-NormalisedB|False
+		WEATHERRAIN_N_EARLYCLR-NormalisedR|False
+		WEATHERRAIN_N_EARLYCLR-NormalisedG|False
+		WEATHERRAIN_N_EARLYCLR-NormalisedB|False
+		WEATHERRAIN_NCLR-NormalisedR|False
+		WEATHERRAIN_NCLR-NormalisedG|False
+		WEATHERRAIN_NCLR-NormalisedB|False
+		WEATHERRAIN_N_LATECLR-NormalisedR|False
+		WEATHERRAIN_N_LATECLR-NormalisedG|False
+		WEATHERRAIN_N_LATECLR-NormalisedB|False
+		Unk1|False
+		Unk2|False
+		Unk3|False
+		CHARA_LGT_E_CLR-NormalisedR|False
+		CHARA_LGT_E_CLR-NormalisedG|False
+		CHARA_LGT_E_CLR-NormalisedB|False
+		CHARA_LGT_CLR-NormalisedR|False
+		CHARA_LGT_CLR-NormalisedG|False
+		CHARA_LGT_CLR-NormalisedB|False
+		UnkFloat?1?|False
+		UnkFloat?2?|False
+		UnkFloat?3?|False
+		Unk4|False
+		Unk5|False
+		Unk6|False
+		Unk7-Greyscale?????|False
+		BgImgA?|False
+		BgImgB?|False
+		BgImgC?|False
+		BgImgD?|False
+		BgImgE?|False
+		BgImgF?|False
+		BgImgG??|False
+		BgImgH??|False
+		BgImgI??|False
+		BgImgJ??|False
+		BgImgK??|False
+		BgImgL??|False
+	)
 ]
 
 YW3 [
@@ -1854,7 +2536,7 @@ YW3 [
 	)
 
 	BOSS_PARTS_INFO (
-		Unk0|True
+		ParamID|True
 		Unk1|False
 		Unk2|False
 		Unk3|False
@@ -1912,22 +2594,60 @@ YW3 [
 		Unk1|False
 		Unk2|False
 		Unk3|False
-		Unk4|False
+		DamageValue|False
 		Unk5|False
 		Unk6|False
 		Unk7|False
 	)
 
 	HS_ENCOUNT_TABLE (
-		Unk0|True
+		MissionID|True
 		Unk1|False
-		Unk2|True
-		Unk3|False
+		ParamID1|True
+		YokaiPercentage1|False
 		Unk4|False
-		Unk5|True
-		Unk6|False
+		ParamID2|True
+		YokaiPercentage2|False
 		Unk7|False
-		Unk8|True
+		ParamID3|True
+		YokaiPercentage3|False
+		Unk10|False
+		ParamID4|True
+		YokaiPercentage4|False
+		Unk13|False
+		ParamID5|True
+		YokaiPercentage5|False
+		Unk16|False
+		ParamID6|True
+		YokaiPercentage6|False
+		Unk19|False
+		ParamID7|True
+		YokaiPercentage7|False
+		Unk22|False
+		ParamID8|True
+		YokaiPercentage8|False
+		Unk25|False
+		ParamID9|True
+		YokaiPercentage9|False
+		Unk28|False
+		ParamID10|True
+		YokaiPercentage19|False
+		Unk31|False
+		ParamID11|True
+		YokaiPercentage11|False
+		Unk34|False
+		ParamID12|True
+		YokaiPercentage12|False
+		Unk37|False
+		ParamID13|True
+		YokaiPercentage13|False
+		Unk40|False
+		ParamID14|True
+		YokaiPercentage14|False
+		Unk43|False
+		ParamID15|True
+		YokaiPercentage15|False
+		Unk46|False
 	)
 
 	CHARA_ABILITY_CONFIG_INFO (
@@ -2820,11 +3540,11 @@ YW3 [
 	)
 
 	AURA_INFO (
-		NounID|False
-		Unk1|False
-		Unk2|False
+		NameID|True
+		TelopNumber|False
+		EntryNumber|False
 		Unk3|False
-		Unk4|False
+		MapID|False
 		Unk5|False
 		Unk6|False
 		Unk7|False
@@ -2832,7 +3552,7 @@ YW3 [
 		Unk9|False
 		Unk10|False
 		Unk11|False
-		SkillID|False
+		SkillID|True
 	)
 
 	CHARA_ABILITY_EFFECT_INFO (
@@ -2866,7 +3586,17 @@ YW3 [
 	)
 
 	SHOP_CONFIG_INFO (
-		shpTUBID|False
+		shpTUBID|True
+		ItemID|True
+		ItemsLeft|False
+		ItemHaveALimitOrNot|False
+		Unk4|False
+		Unk5|False
+		Unk6|False
+		Unk7|False
+		Unk8|False
+		ConfigInfoNumber|False
+		Unk10|False
 	)
 
 	ITEM_IMPORTANT (
@@ -3165,7 +3895,20 @@ YW3 [
 	)
 
 	SKILL_CONFIG_BTL_INFO (
-		Unk0|True
+		SkillConfigID|True
+		Unk1|False
+		Unk2|False
+		Unk3|False
+		Unk4|False
+		Unk5|False
+		Unk6|False
+		Unk7|False
+		BattleTextID|True
+		InspiritedDialogueID|True
+		InspiritedDialogueID2|True
+		Unk11|False
+		Unk12|False
+		_|False
 	)
 
 	FLAG_INFO (
@@ -3174,7 +3917,7 @@ YW3 [
 	)
 
 	MAP_ENV_INFO_CNF (
-		CondThatChecksAFlag|False
+		ActivationCond|False
 		BtlMapID|False
 		MapEffectMORNING_DAY?|False
 		MapEffectEVENING?|False
@@ -3185,11 +3928,11 @@ YW3 [
 		MMModelPos-X?|False
 		MMModelPos-Y?|False
 		MMModelPos-Z?|False
-		MMModelPos-Rot?|False
-		Unk12|False
-		Unk13|False
-		Unk14|False
-		Unk15|False
+		MMModelPos-ROT?|False
+		MMMaskPos-X?|False
+		MMMaskPos-Y?|False
+		MMMaskPos-Z?|False
+		MMMaskPos-ROT?|False
 		MMViewSize-PixelsX|False
 		MMViewSize-PixelsY|False
 		CameraFOV|False
@@ -3225,7 +3968,7 @@ YW3 [
 		DEF_POSY?|False
 		DEF_POSZ?|False
 		DEF_POSROT?|False
-		Unk51|False
+		INDOOR-BooleanIsIndoors|False
 		WEATHERSUN_MCLR-NormalisedR|False
 		WEATHERSUN_MCLR-NormalisedG|False
 		WEATHERSUN_MCLR-NormalisedB|False
@@ -3271,28 +4014,41 @@ YW3 [
 		CHARA_LGT_CLR-NormalisedR|False
 		CHARA_LGT_CLR-NormalisedG|False
 		CHARA_LGT_CLR-NormalisedB|False
-		PTREE_4\12\PTVALS1Clone|False
-		Unk98|False
-		Unk99|False
+		UnkFloat97|False
+		UnkFloat98|False
+		UnkFloat99|False
 		PTREE_4\13\PTVALS1|False
 		PTREE_4\13\PTVALS2|False
 		PTREE_4\13\PTVALS3|False
 		Unk103Greyscale??|False
-		Unk104|False
-		Unk105|False
-		Unk106|False
-		Unk107|False
-		Unk108|False
-		Unk109|False
-		Unk110|False
-		Unk111|False
-		Unk112|False
-		Unk113|False
-		Unk114|False
-		Unk115|False
-		Unk116|False
-		Unk117|False
+		BgImgA|False
+		BgImgB|False
+		BgImgC|False
+		BgImgD|False
+		BgImgE|False
+		BgImgF|False
+		BgImgF_2?|False
+		BgImgG|False
+		BgImgH|False
+		BgImgI|False
+		BgImgJ|False
+		BgImgK|False
+		BgImgL|False
+		BgImgL_2?|False
 		Fog??|False
+		Unk119|False
+		Unk120|False
+		Unk121|False
+		Unk122|False
+		Unk123|False
+		Unk124|False
+		Unk125|False
+		MaybeCameraRelated?|False
+		Unk127|False
+		Unk128|False
+		Unk129|False
+		Unk130|False
+		Unk131|False
 	)
 
 	QR_RAND_TABLE_INFO (
@@ -3986,7 +4742,6 @@ YW4 [
 ]
 
 YSH [
-
 	CHARA_PARAM_COMMON_INFO (
 		ParamID|False
 		BaseID|False
@@ -4455,24 +5210,35 @@ YWB2 [
 	)
 
 	MISSION_RUINS_INFO (
-		Unk0|True
-		Unk1|True
-		Unk2|False
+		RuinNameID|True
+		EntranceNameID|True
+		RuinNumber|False
 		Unk3|False
 		Cond|False
 		Unk5|False
 		Unk6|False
-		Unk7|False
-		Unk8|False
+		XPosition|False
+		YPosition|False
 		Unk9|False
-		Unk10|False
-		Unk11|False
-		Unk12|False
-		Unk13|False
-		Unk14|False
-		Unk15|False
-		Unk16|True
-		Unk17|True
+	)
+
+	RANDOMMAP_DUNGEON_CONFIG (
+		DungeonConfigID|True
+		Unk1|False
+		ItemPlacementID|True
+		TrapPlacementID|True
+		LotteryConfigID|True
+		Unk2|False
+	)
+
+	BTL_BGM_INFO (
+		BGMID|True
+		IntroFile|False
+		Unk2|False
+		LoopFile|False
+		Unk4|False
+		Unk5|False
+		Unk6|False
 	)
 
 	NOUN_INFO (
@@ -4610,9 +5376,9 @@ YWB2 [
 		ChildCount|False
 	)
 
-        SHOP_CONFIG_INFO_BEGIN (
-                Unk0|False
-        )
+	SHOP_CONFIG_INFO_BEGIN (
+		Unk0|False
+	)
 ]
 
 NNK1 [
