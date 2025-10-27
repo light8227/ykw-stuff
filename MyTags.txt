@@ -802,7 +802,7 @@ YW2 [
 
 	SHOP_CONFIG_INFO (
 		ShopSlotID|True
-		ItemID|True
+		ItemID|False
 		Stock|False
 		HasLimitedStock|False
 		Unk1|False
@@ -2091,7 +2091,7 @@ YW2 [
 		ItemID|True
 		CreatureIndex|False
 		UnkIDA|True
-		UnkIDB|True
+		LocationTextID|True
 		Cond|False
 	)
 
