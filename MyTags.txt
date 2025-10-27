@@ -4069,9 +4069,9 @@ YW2 [
 
 	EVENT (
 		Unk0|False
-		Unk1|True
-		Unk2|False
-		Index?|False
+		UnkID|True
+		StartPos|False
+		Length|False
 	)
 
 	SOUND_EVENT_PARAM_ (
@@ -4080,8 +4080,18 @@ YW2 [
 
 	PARAM (
 		FileName|False
-		Unk1|False
-		Unk2|False
+		A_1|False
+		B_1|False
+		FileNameB|False
+		A_2|False
+		B_2|False
+		FileNameC|False
+		A_3|False
+		B_3|False
+		C_1|False
+		FileNameD|False
+		A_4|False
+		B_4|False
 	)
 
 	WEATHER_FORECAST_INFO_DATA_LIST_BEG (
@@ -4386,6 +4396,13 @@ YW2 [
 
 	TRAIN_STATION_TRAIN (
 		TrainDataID|True
+	)
+
+	EVENT_PAGE (
+		Unk0|False
+		UnkID|True
+		Unk2|False
+		Unk3|False
 	)
 ]
 
