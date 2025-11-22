@@ -3,7 +3,7 @@
   40: "typeof", // return 0 (Gets the type of the static or variable value)
   500: "log", // return 0 (no-op)
   501: "format", // return 0 (Formats a string like printf)
-  503: "substring", // return 0 (Cuts a string at the beginning by n bytes)
+  503: "substring", // return 0 (Cuts a string at the beginning by n bytes; crashes on negative numbers)
   510: "parameter_count", // return 0 (returns the amount of input parameters of the current function)
   520: "random", // return 0 (Take one random from the n arguments and use it as the ceiling to create a random value)
   521: "crc16", // return 0 (0, the value of the argument, or the CRC16 of the string)
@@ -16,7 +16,6 @@
   605: "math_min", // return 0 (Gets the lowest of any 2 or more values)
   606: "math_max", // return 0 (Gets the highest of any 2 or more values)
   607: "math_clamp", // return 0 (Clamps a value between a minimum and maximum, given in that order)
-  //608: "", // return 0 (Something with 2*PI and 1/(2*PI))
   610: "math_sin", // return 0 (Gets the sin of the value)
   611: "math_cos", // return 0 (Gets the cos of the value)
   612: "math_tan", // return 0 (Gets the tan of the value)
@@ -83,7 +82,9 @@
   21004: "delete_chara",
   23501: "img_delete",
   13608: "reserve_event",
+  
   // context clues
+
   13668 : "set_bike_state",
   13010 : "display_chapter_title", //chapter number
   15310 : "heal_party", //no params
@@ -95,5 +96,12 @@
   14000 : "set_global_bit_flag", //(flagID,value; must be 0 or 1)
   // update 22th November 2025 (22/11/2025)
   14011 : "set_global_byte_flag", // params: (int: FlagID, int: value; must be between 0-255)
-  14012 : "get_global_byte_flag" // params: FlagID; returns a value between 0-255 corresponding to the value of said GlobalByteFlag (FLAG_INFO_1)
+  14012 : "get_global_byte_flag", // params: FlagID; returns a value between 0-255 corresponding to the value of said GlobalByteFlag (FLAG_INFO_1)
+  111: "to_number", // return 0 (Validates a literal value or variable to another variable. Ints and floats remain unchanged, other types coerce to 0)
+  502: "utf8_to_wide", // return 0 (Converts a UTF-8 encoded string into a UTF-16 (wide) string).
+  608: "math_normalize_angle", // return 0 (Normalizes an angle (in radians) to the range [-π, π])
+  623: "math_atan2", // return 0 (Gets the arctangent of two values (y and x) considering the correct quadrant and sets to another variable)
+  630: "math_powf", // return 0 (Raises a base value to the power of an exponent and sets to another variable. Allows fractional bases and exponents)
+  631: "math_exp" // return 0 (Gets e (Euler’s number) raised to the power of a value and sets to another variable)
 }
+
