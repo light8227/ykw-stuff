@@ -92,5 +92,8 @@
   1103 : "get_controller_input", //unknown
   13101 : "change_character", //parameters (0, baseid)
   13733 : "get_menu_text",
-  14000 : "set_global_bit_flag" //(flagID,value)
+  14000 : "set_global_bit_flag", //(flagID,value; must be 0 or 1)
+  // update 22th November 2025 (22/11/2025)
+  14011 : "set_global_byte_flag", // params: (int: FlagID, int: value; must be between 0-255)
+  14012 : "get_global_byte_flag" // params: FlagID; returns a value between 0-255 corresponding to the value of said GlobalByteFlag (FLAG_INFO_1)
 }
