@@ -102,7 +102,10 @@
   608: "math_normalize_angle", // return 0 (Normalizes an angle (in radians) to the range [-π, π])
   623: "math_atan2", // return 0 (Gets the arctangent of two values (y and x) considering the correct quadrant and sets to another variable)
   630: "math_powf", // return 0 (Raises a base value to the power of an exponent and sets to another variable. Allows fractional bases and exponents)
-  631: "math_exp" // return 0 (Gets e (Euler’s number) raised to the power of a value and sets to another variable)
+  631: "math_exp", // return 0 (Gets e (Euler’s number) raised to the power of a value and sets to another variable)
+  14003: "set_temp_bit_flag", // params: (int: FlagID, int: value; must be between 0-1)
+  14004: "get_temp_bit_flag" // params: FlagID; returns a value between 0-1 corresponding to the value of said TempBitFlag (FLAG_INFO_3)
 }
+
 
 
