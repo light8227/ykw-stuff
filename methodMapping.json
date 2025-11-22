@@ -94,7 +94,7 @@
   13101 : "change_character", //parameters (0, baseid)
   13733 : "get_menu_text",
   14000 : "set_global_bit_flag", //(flagID,value; must be 0 or 1)
-  // update 22th November 2025 (22/11/2025)
+  // update 22th November 2025 (22/11/2025); official terms used for game-specific subs i.e. GlobalBitFlag is the official name confirmed by CExpression funcs
   14011 : "set_global_byte_flag", // params: (int: FlagID, int: value; must be between 0-255)
   14012 : "get_global_byte_flag", // params: FlagID; returns a value between 0-255 corresponding to the value of said GlobalByteFlag (FLAG_INFO_1)
   111: "to_number", // return 0 (Validates a literal value or variable to another variable. Ints and floats remain unchanged, other types coerce to 0)
@@ -104,4 +104,5 @@
   630: "math_powf", // return 0 (Raises a base value to the power of an exponent and sets to another variable. Allows fractional bases and exponents)
   631: "math_exp" // return 0 (Gets e (Euler’s number) raised to the power of a value and sets to another variable)
 }
+
 
