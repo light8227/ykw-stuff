@@ -24,7 +24,7 @@
   622: "math_atan", // return 0 (Gets the inverse tan of the value)
   14040: "set_daytime",
   13609: "reserve_jump_map", //params: mapid, startingPositionX, startingPositionY, startingPositionZ
-  3502: "load_xi",
+  3502: "load_xi", // params: fileName (without extension) and relative file path; checks language fa (locale dependant) then the main fa to find it i.e. data/menu/mm_wmap
   13612: "load_battle_ev", //params: battle event id, battle map
   16526: "load_xa",
   3702: "load_xc",
@@ -108,6 +108,7 @@
   14005: "set_temp_byte_flag", // params: (int: FlagID, int: value; must be between 0-255)
   14006: "get_temp_byte_flag" // params: FlagID; returns a value between 0-255 corresponding to the value of said TempByteFlag (FLAG_INFO_4)
 }
+
 
 
 
