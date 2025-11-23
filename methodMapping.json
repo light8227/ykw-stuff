@@ -29,7 +29,7 @@
   16526: "load_xa",
   3702: "load_xc",
   14051: "reserve_jump_map_2", //params: map name, startingPositionX, startingPositionY, startingPositionZ
-  16532: "get_game_region", //no params
+  16532: "get_game_region", // no params; gets the current locale (not reigon!) the full list is: JP (Japanese), EN (English), FR (French), DE (German), IT (Italian), ES (Spanish), ZH (Chinese), KO (Korean), NL (Dutch), PT (Portugese), RU (Russian), TW (Taiwanese)
   //Added Feb. 20th. Source: YW1 Mobile binary
   13734: "get_by_texttype",
   13735: "get_by_texttype_idx",
@@ -39,7 +39,7 @@
   15170: "create_tbox_ext",
   15151: "get_player_name",
   15150: "get_player_type",
-  15145: "is_not_obtain_item",
+  15145: "is_not_obtain_item", // returns 1 if you have the max capacity of that item, params: (ItemID; can be a hashed string or hashed int)
   21302: "set_shadow_type",
   21301: "set_shadow_bone",
   21304: "set_shadow_scale",
@@ -108,6 +108,7 @@
   14005: "set_temp_byte_flag", // params: (int: FlagID, int: value; must be between 0-255)
   14006: "get_temp_byte_flag" // params: FlagID; returns a value between 0-255 corresponding to the value of said TempByteFlag (FLAG_INFO_4)
 }
+
 
 
 
