@@ -1594,9 +1594,48 @@ YW3 [
 		IsTreasure|False
 	)
 
-	CHARA_PARAM_INFO (
-		Unk0|False
+		CHARA_PARAM_INFO  (
+		ParamID|True
+		BaseID|True
+		ShowInMedallium|False
+		MedalliumOffset|False
 		Unk1|False
+		MinHP|False
+		MinStrength|False
+		MinSpririt|False
+		MinDefense|False
+		MinSpeed|False
+		MaxHP|False
+		MaxStrength|False
+		MaxSpirit|False
+		MaxDefense|False
+		MaxSpeed|False
+		ExperienceCurve|False
+		Strongest|False
+		Weakness|False
+		Unk2|False
+		AttackID|True
+		Attack%|False
+		TechniqueID|True
+		Technique%|False
+		InspiritID|True
+		Inspirit%|False
+		GuardID|True
+		Guard%|False
+		SoulimateID|True
+		SkillID|True
+		Unk8|False
+		BattleType|False
+		CanIStillBecomeBefriend|False
+		Unk9|False
+		Unk10|False
+		Unk11|False
+		Unk12|False
+		Addmember&TradeTextID|True
+		IsFusable|False
+		EvolveOffset|False
+		EquipSlots|False
+		WaitTime|False
 	)
 
 	CHARA_SCALE_INFO (
@@ -1606,7 +1645,7 @@ YW3 [
 		BattleOwnSize|False
 		BattleFoeSize|False
 		MenuSize|False
-		BlastersTSize|False
+		MenuYPosition|False
 		BottomScreenSize|False
 	)
 
